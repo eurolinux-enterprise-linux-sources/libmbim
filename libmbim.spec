@@ -5,7 +5,7 @@
 Name: libmbim
 Summary: Support library for the Mobile Broadband Interface Model protocol
 Version: %{?realversion}
-Release: 1%{snapshot}%{?dist}
+Release: 3%{snapshot}%{?dist}
 License: LGPLv2+
 URL: http://www.freedesktop.org/software/libmbim
 
@@ -88,6 +88,12 @@ make check
 
 
 %changelog
+* Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 1.5.0-3.20130815git
+- Mass rebuild 2014-01-24
+
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1.5.0-2.20130815git
+- Mass rebuild 2013-12-27
+
 * Thu Aug 15 2013 Dan Williams <dcbw@redhat.com> - 1.5.0-1.20130815git
 - Initial Fedora release
 
