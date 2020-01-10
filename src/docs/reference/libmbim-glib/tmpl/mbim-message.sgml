@@ -1,0 +1,434 @@
+<!-- ##### SECTION Title ##### -->
+mbim-message
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### STRUCT MbimMessage ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ENUM MbimMessageType ##### -->
+<para>
+
+</para>
+
+@MBIM_MESSAGE_TYPE_INVALID: 
+@MBIM_MESSAGE_TYPE_OPEN: 
+@MBIM_MESSAGE_TYPE_CLOSE: 
+@MBIM_MESSAGE_TYPE_COMMAND: 
+@MBIM_MESSAGE_TYPE_HOST_ERROR: 
+@MBIM_MESSAGE_TYPE_OPEN_DONE: 
+@MBIM_MESSAGE_TYPE_CLOSE_DONE: 
+@MBIM_MESSAGE_TYPE_COMMAND_DONE: 
+@MBIM_MESSAGE_TYPE_FUNCTION_ERROR: 
+@MBIM_MESSAGE_TYPE_INDICATE_STATUS: 
+
+<!-- ##### STRUCT MbimIPv4 ##### -->
+<para>
+
+</para>
+
+@addr: 
+
+<!-- ##### STRUCT MbimIPv6 ##### -->
+<para>
+
+</para>
+
+@addr: 
+
+<!-- ##### ENUM MbimMessageCommandType ##### -->
+<para>
+
+</para>
+
+@MBIM_MESSAGE_COMMAND_TYPE_UNKNOWN: 
+@MBIM_MESSAGE_COMMAND_TYPE_QUERY: 
+@MBIM_MESSAGE_COMMAND_TYPE_SET: 
+
+<!-- ##### FUNCTION mbim_message_new ##### -->
+<para>
+
+</para>
+
+@data: 
+@data_length: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_dup ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_ref ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_unref ##### -->
+<para>
+
+</para>
+
+@self: 
+
+
+<!-- ##### FUNCTION mbim_message_get_printable ##### -->
+<para>
+
+</para>
+
+@self: 
+@line_prefix: 
+@headers_only: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_get_raw ##### -->
+<para>
+
+</para>
+
+@self: 
+@length: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_get_message_type ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_get_message_length ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_get_transaction_id ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_set_transaction_id ##### -->
+<para>
+
+</para>
+
+@self: 
+@transaction_id: 
+
+
+<!-- ##### FUNCTION mbim_message_type_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_open_new ##### -->
+<para>
+
+</para>
+
+@transaction_id: 
+@max_control_transfer: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_open_get_max_control_transfer ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_open_done_get_status_code ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_open_done_get_result ##### -->
+<para>
+
+</para>
+
+@self: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_close_new ##### -->
+<para>
+
+</para>
+
+@transaction_id: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_close_done_get_status_code ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_close_done_get_result ##### -->
+<para>
+
+</para>
+
+@self: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_error_new ##### -->
+<para>
+
+</para>
+
+@transaction_id: 
+@error_status_code: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_error_get_error_status_code ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_error_get_error ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_command_new ##### -->
+<para>
+
+</para>
+
+@transaction_id: 
+@service: 
+@cid: 
+@command_type: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_command_append ##### -->
+<para>
+
+</para>
+
+@self: 
+@buffer: 
+@buffer_size: 
+
+
+<!-- ##### FUNCTION mbim_message_command_get_service ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_command_get_service_id ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_command_get_cid ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_command_get_command_type ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_command_get_raw_information_buffer ##### -->
+<para>
+
+</para>
+
+@self: 
+@length: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_command_type_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_command_done_get_service ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_command_done_get_service_id ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_command_done_get_cid ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_command_done_get_status_code ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_command_done_get_result ##### -->
+<para>
+
+</para>
+
+@self: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_command_done_get_raw_information_buffer ##### -->
+<para>
+
+</para>
+
+@self: 
+@length: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_indicate_status_get_service ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_indicate_status_get_service_id ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_indicate_status_get_cid ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_indicate_status_get_raw_information_buffer ##### -->
+<para>
+
+</para>
+
+@self: 
+@length: 
+@Returns: 
+
+

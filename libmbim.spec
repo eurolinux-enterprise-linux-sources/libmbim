@@ -1,20 +1,29 @@
-
+%global snapshot .20130815git
+%global realversion 1.5.0
 %global _hardened_build 1
 
 Name: libmbim
 Summary: Support library for the Mobile Broadband Interface Model protocol
-Version: 1.14.2
-Release: 1%{?dist}
+Version: %{?realversion}
+Release: 1%{snapshot}%{?dist}
 License: LGPLv2+
-URL: http://freedesktop.org/software/libmbim
-Source: http://freedesktop.org/software/libmbim/%{name}-%{version}.tar.xz
+URL: http://www.freedesktop.org/software/libmbim
+
+# If snapshot is defined, source will be a snapshot of git from the
+# master branch on the given date.  To re-generate the tarball:
+#  git://anongit.freedesktop.org/libmbim/libmbim
+#  cd libmbim
+#  git reset --hard <commit from snapshot date>
+#  ./autogen.sh
+#  make distcheck
+#
+Source: %{name}-%{realversion}%{snapshot}.tar.xz
 
 BuildRequires: glib2-devel
 BuildRequires: pkgconfig
-BuildRequires: automake autoconf libtool
+BuildRequires: automake autoconf intltool libtool
 BuildRequires: python >= 2.7
 BuildRequires: pkgconfig(gudev-1.0) >= 147
-BuildRequires: gtk-doc
 
 
 %description
@@ -42,27 +51,18 @@ functionality from the command line.
 
 
 %prep
-%setup -q
+# NOTE: the documentation is pre-generated and shipped in the dist tarball;
+# it is not build during the RPM build but the pre-generated docs are simply
+# installed as-is.
+%setup -q -n %{name}-%{realversion}
 
 %build
-%configure --disable-static --enable-gtk-doc
-make %{?_smp_mflags} V=1
-
-# Build the library with older SONAME too
-rm src/libmbim-glib/libmbim-glib.la
-make %{?_smp_mflags} V=1 -C src/libmbim-glib libmbim_glib_la_LDFLAGS='-version-info 2:0:2' libmbim-glib.la
-mv src/libmbim-glib/.libs/libmbim-glib.so.0.2.0 .
-rm src/libmbim-glib/libmbim-glib.la
-make %{?_smp_mflags} V=1
-
+%configure --disable-static
+V=1 make %{?_smp_mflags}
 
 %install
 make install INSTALL="install -p" DESTDIR=$RPM_BUILD_ROOT
 %{__rm} -f $RPM_BUILD_ROOT%{_libdir}/*.la
-find %{buildroot}%{_datadir}/gtk-doc |xargs touch --reference configure.ac
-install libmbim-glib.so.0.2.0 %{buildroot}%{_libdir}/
-ln -sf libmbim-glib.so.0.2.0 %{buildroot}%{_libdir}/libmbim-glib.so.0
-
 
 %check
 make check
@@ -75,39 +75,19 @@ make check
 %files
 %doc COPYING NEWS AUTHORS README
 %{_libdir}/libmbim-glib.so.*
-%{_datadir}/bash-completion
-
 
 %files devel
 %{_includedir}/libmbim-glib/
 %{_libdir}/pkgconfig/mbim-glib.pc
 %{_libdir}/libmbim-glib.so
-%dir %{_datadir}/gtk-doc/html/libmbim-glib
-%{_datadir}/gtk-doc/html/libmbim-glib/*
+%{_datadir}/gtk-doc/
 
 %files utils
 %{_bindir}/mbimcli
 %{_bindir}/mbim-network
-%{_mandir}/man1/*
-%{_libexecdir}/mbim-proxy
 
 
 %changelog
-* Tue Aug 29 2017 Lubomir Rintel <lrintel@redhat.com> - 1.14.2-1
-- Update to 1.14.2 release (rh #1483051)
-
-* Wed Jul 20 2016 Lubomir Rintel <lkundrak@v3.sk> - 1.14.0-2
-- Preserve the older SONAME too
-
-* Fri Jul 08 2016 Lubomir Rintel <lkundrak@v3.sk> - 1.14.0-1
-- Update to 1.14.0 release
-
-* Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 1.5.0-3.20130815git
-- Mass rebuild 2014-01-24
-
-* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1.5.0-2.20130815git
-- Mass rebuild 2013-12-27
-
 * Thu Aug 15 2013 Dan Williams <dcbw@redhat.com> - 1.5.0-1.20130815git
 - Initial Fedora release
 

@@ -1,0 +1,105 @@
+<!-- ##### SECTION Title ##### -->
+Auth
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION mbim_message_auth_aka_query_new ##### -->
+<para>
+
+</para>
+
+@rand: 
+@autn: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_auth_aka_response_parse ##### -->
+<para>
+
+</para>
+
+@message: 
+@res: 
+@res_len: 
+@integrating_key: 
+@ciphering_key: 
+@auts: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_auth_akap_query_new ##### -->
+<para>
+
+</para>
+
+@rand: 
+@autn: 
+@network_name: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_auth_akap_response_parse ##### -->
+<para>
+
+</para>
+
+@message: 
+@res: 
+@res_len: 
+@integrating_key: 
+@ciphering_key: 
+@auts: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_auth_sim_query_new ##### -->
+<para>
+
+</para>
+
+@rand1: 
+@rand2: 
+@rand3: 
+@n: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_auth_sim_response_parse ##### -->
+<para>
+
+</para>
+
+@message: 
+@sres1: 
+@kc1: 
+@sres2: 
+@kc2: 
+@sres3: 
+@kc3: 
+@n: 
+@error: 
+@Returns: 
+
+

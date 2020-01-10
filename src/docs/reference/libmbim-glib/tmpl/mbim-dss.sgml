@@ -1,0 +1,44 @@
+<!-- ##### SECTION Title ##### -->
+DSS
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION mbim_message_dss_connect_set_new ##### -->
+<para>
+
+</para>
+
+@device_service_id: 
+@dss_session_id: 
+@dss_link_state: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_dss_connect_response_parse ##### -->
+<para>
+
+</para>
+
+@message: 
+@error: 
+@Returns: 
+
+

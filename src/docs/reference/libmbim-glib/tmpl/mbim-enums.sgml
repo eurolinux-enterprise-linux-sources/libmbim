@@ -1,0 +1,961 @@
+<!-- ##### SECTION Title ##### -->
+mbim-enums
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### ENUM MbimDeviceType ##### -->
+<para>
+
+</para>
+
+@MBIM_DEVICE_TYPE_UNKNOWN: 
+@MBIM_DEVICE_TYPE_EMBEDDED: 
+@MBIM_DEVICE_TYPE_REMOVABLE: 
+@MBIM_DEVICE_TYPE_REMOTE: 
+
+<!-- ##### ENUM MbimCellularClass ##### -->
+<para>
+
+</para>
+
+@MBIM_CELLULAR_CLASS_GSM: 
+@MBIM_CELLULAR_CLASS_CDMA: 
+
+<!-- ##### ENUM MbimVoiceClass ##### -->
+<para>
+
+</para>
+
+@MBIM_VOICE_CLASS_UNKNOWN: 
+@MBIM_VOICE_CLASS_NO_VOICE: 
+@MBIM_VOICE_CLASS_SEPARATED_VOICE_DATA: 
+@MBIM_VOICE_CLASS_SIMULTANEOUS_VOICE_DATA: 
+
+<!-- ##### ENUM MbimSimClass ##### -->
+<para>
+
+</para>
+
+@MBIM_SIM_CLASS_LOGICAL: 
+@MBIM_SIM_CLASS_REMOVABLE: 
+
+<!-- ##### ENUM MbimDataClass ##### -->
+<para>
+
+</para>
+
+@MBIM_DATA_CLASS_GPRS: 
+@MBIM_DATA_CLASS_EDGE: 
+@MBIM_DATA_CLASS_UMTS: 
+@MBIM_DATA_CLASS_HSDPA: 
+@MBIM_DATA_CLASS_HSUPA: 
+@MBIM_DATA_CLASS_LTE: 
+@MBIM_DATA_CLASS_1XRTT: 
+@MBIM_DATA_CLASS_1XEVDO: 
+@MBIM_DATA_CLASS_1XEVDO_REVA: 
+@MBIM_DATA_CLASS_1XEVDV: 
+@MBIM_DATA_CLASS_3XRTT: 
+@MBIM_DATA_CLASS_1XEVDO_REVB: 
+@MBIM_DATA_CLASS_UMB: 
+@MBIM_DATA_CLASS_CUSTOM: 
+
+<!-- ##### ENUM MbimSmsCaps ##### -->
+<para>
+
+</para>
+
+@MBIM_SMS_CAPS_PDU_RECEIVE: 
+@MBIM_SMS_CAPS_PDU_SEND: 
+@MBIM_SMS_CAPS_TEXT_RECEIVE: 
+@MBIM_SMS_CAPS_TEXT_SEND: 
+
+<!-- ##### ENUM MbimCtrlCaps ##### -->
+<para>
+
+</para>
+
+@MBIM_CTRL_CAPS_REG_MANUAL: 
+@MBIM_CTRL_CAPS_HW_RADIO_SWITCH: 
+@MBIM_CTRL_CAPS_CDMA_MOBILE_IP: 
+@MBIM_CTRL_CAPS_CDMA_SIMPLE_IP: 
+@MBIM_CTRL_CAPS_MULTI_CARRIER: 
+
+<!-- ##### ENUM MbimSubscriberReadyState ##### -->
+<para>
+
+</para>
+
+@MBIM_SUBSCRIBER_READY_STATE_NOT_INITIALIZED: 
+@MBIM_SUBSCRIBER_READY_STATE_INITIALIZED: 
+@MBIM_SUBSCRIBER_READY_STATE_SIM_NOT_INSERTED: 
+@MBIM_SUBSCRIBER_READY_STATE_BAD_SIM: 
+@MBIM_SUBSCRIBER_READY_STATE_FAILURE: 
+@MBIM_SUBSCRIBER_READY_STATE_NOT_ACTIVATED: 
+@MBIM_SUBSCRIBER_READY_STATE_DEVICE_LOCKED: 
+
+<!-- ##### ENUM MbimReadyInfoFlag ##### -->
+<para>
+
+</para>
+
+@MBIM_READY_INFO_FLAG_PROTECT_UNIQUE_ID: 
+
+<!-- ##### ENUM MbimRadioSwitchState ##### -->
+<para>
+
+</para>
+
+@MBIM_RADIO_SWITCH_STATE_OFF: 
+@MBIM_RADIO_SWITCH_STATE_ON: 
+
+<!-- ##### ENUM MbimPinType ##### -->
+<para>
+
+</para>
+
+@MBIM_PIN_TYPE_UNKNOWN: 
+@MBIM_PIN_TYPE_CUSTOM: 
+@MBIM_PIN_TYPE_PIN1: 
+@MBIM_PIN_TYPE_PIN2: 
+@MBIM_PIN_TYPE_DEVICE_SIM_PIN: 
+@MBIM_PIN_TYPE_DEVICE_FIRST_SIM_PIN: 
+@MBIM_PIN_TYPE_NETWORK_PIN: 
+@MBIM_PIN_TYPE_NETWORK_SUBSET_PIN: 
+@MBIM_PIN_TYPE_SERVICE_PROVIDER_PIN: 
+@MBIM_PIN_TYPE_CORPORATE_PIN: 
+@MBIM_PIN_TYPE_SUBSIDY_PIN: 
+@MBIM_PIN_TYPE_PUK1: 
+@MBIM_PIN_TYPE_PUK2: 
+@MBIM_PIN_TYPE_DEVICE_FIRST_SIM_PUK: 
+@MBIM_PIN_TYPE_NETWORK_PUK: 
+@MBIM_PIN_TYPE_NETWORK_SUBSET_PUK: 
+@MBIM_PIN_TYPE_SERVICE_PROVIDER_PUK: 
+@MBIM_PIN_TYPE_CORPORATE_PUK: 
+
+<!-- ##### ENUM MbimPinState ##### -->
+<para>
+
+</para>
+
+@MBIM_PIN_STATE_UNLOCKED: 
+@MBIM_PIN_STATE_LOCKED: 
+
+<!-- ##### ENUM MbimPinOperation ##### -->
+<para>
+
+</para>
+
+@MBIM_PIN_OPERATION_ENTER: 
+@MBIM_PIN_OPERATION_ENABLE: 
+@MBIM_PIN_OPERATION_DISABLE: 
+@MBIM_PIN_OPERATION_CHANGE: 
+
+<!-- ##### ENUM MbimPinMode ##### -->
+<para>
+
+</para>
+
+@MBIM_PIN_MODE_NOT_SUPPORTED: 
+@MBIM_PIN_MODE_ENABLED: 
+@MBIM_PIN_MODE_DISABLED: 
+
+<!-- ##### ENUM MbimPinFormat ##### -->
+<para>
+
+</para>
+
+@MBIM_PIN_FORMAT_UNKNOWN: 
+@MBIM_PIN_FORMAT_NUMERIC: 
+@MBIM_PIN_FORMAT_ALPHANUMERIC: 
+
+<!-- ##### ENUM MbimProviderState ##### -->
+<para>
+
+</para>
+
+@MBIM_PROVIDER_STATE_UNKNOWN: 
+@MBIM_PROVIDER_STATE_HOME: 
+@MBIM_PROVIDER_STATE_FORBIDDEN: 
+@MBIM_PROVIDER_STATE_PREFERRED: 
+@MBIM_PROVIDER_STATE_VISIBLE: 
+@MBIM_PROVIDER_STATE_REGISTERED: 
+@MBIM_PROVIDER_STATE_PREFERRED_MULTICARRIER: 
+
+<!-- ##### ENUM MbimVisibleProvidersAction ##### -->
+<para>
+
+</para>
+
+@MBIM_VISIBLE_PROVIDERS_ACTION_FULL_SCAN: 
+@MBIM_VISIBLE_PROVIDERS_ACTION_RESTRICTED_SCAN: 
+
+<!-- ##### ENUM MbimNwError ##### -->
+<para>
+
+</para>
+
+@MBIM_NW_ERROR_UNKNOWN: 
+@MBIM_NW_ERROR_IMSI_UNKNOWN_IN_HLR: 
+@MBIM_NW_ERROR_IMSI_UNKNOWN_IN_VLR: 
+@MBIM_NW_ERROR_ILLEGAL_ME: 
+@MBIM_NW_ERROR_GPRS_NOT_ALLOWED: 
+@MBIM_NW_ERROR_GPRS_AND_NON_GPRS_NOT_ALLOWED: 
+@MBIM_NW_ERROR_PLMN_NOT_ALLOWED: 
+@MBIM_NW_ERROR_LOCATION_AREA_NOT_ALLOWED: 
+@MBIM_NW_ERROR_ROAMING_NOT_ALLOWED_IN_LOCATION_AREA: 
+@MBIM_NW_ERROR_GPRS_NOT_ALLOWED_IN_PLMN: 
+@MBIM_NW_ERROR_NO_CELLS_IN_LOCATION_AREA: 
+@MBIM_NW_ERROR_NETWORK_FAILURE: 
+@MBIM_NW_ERROR_CONGESTION: 
+
+<!-- ##### ENUM MbimRegisterAction ##### -->
+<para>
+
+</para>
+
+@MBIM_REGISTER_ACTION_AUTOMATIC: 
+@MBIM_REGISTER_ACTION_MANUAL: 
+
+<!-- ##### ENUM MbimRegisterState ##### -->
+<para>
+
+</para>
+
+@MBIM_REGISTER_STATE_UNKNOWN: 
+@MBIM_REGISTER_STATE_DEREGISTERED: 
+@MBIM_REGISTER_STATE_SEARCHING: 
+@MBIM_REGISTER_STATE_HOME: 
+@MBIM_REGISTER_STATE_ROAMING: 
+@MBIM_REGISTER_STATE_PARTNER: 
+@MBIM_REGISTER_STATE_DENIED: 
+
+<!-- ##### ENUM MbimRegisterMode ##### -->
+<para>
+
+</para>
+
+@MBIM_REGISTER_MODE_UNKNOWN: 
+@MBIM_REGISTER_MODE_AUTOMATIC: 
+@MBIM_REGISTER_MODE_MANUAL: 
+
+<!-- ##### ENUM MbimRegistrationFlag ##### -->
+<para>
+
+</para>
+
+@MBIM_REGISTRATION_FLAG_NONE: 
+@MBIM_REGISTRATION_FLAG_MANUAL_SELECTION_NOT_AVAILABLE: 
+@MBIM_REGISTRATION_FLAG_MANUAL_PACKET_SERVICE_AUTOMATIC_ATTACH: 
+
+<!-- ##### ENUM MbimPacketServiceAction ##### -->
+<para>
+
+</para>
+
+@MBIM_PACKET_SERVICE_ACTION_ATTACH: 
+@MBIM_PACKET_SERVICE_ACTION_DETACH: 
+
+<!-- ##### ENUM MbimPacketServiceState ##### -->
+<para>
+
+</para>
+
+@MBIM_PACKET_SERVICE_STATE_UNKNOWN: 
+@MBIM_PACKET_SERVICE_STATE_ATTACHING: 
+@MBIM_PACKET_SERVICE_STATE_ATTACHED: 
+@MBIM_PACKET_SERVICE_STATE_DETACHING: 
+@MBIM_PACKET_SERVICE_STATE_DETACHED: 
+
+<!-- ##### ENUM MbimActivationCommand ##### -->
+<para>
+
+</para>
+
+@MBIM_ACTIVATION_COMMAND_DEACTIVATE: 
+@MBIM_ACTIVATION_COMMAND_ACTIVATE: 
+
+<!-- ##### ENUM MbimCompression ##### -->
+<para>
+
+</para>
+
+@MBIM_COMPRESSION_NONE: 
+@MBIM_COMPRESSION_ENABLE: 
+
+<!-- ##### ENUM MbimAuthProtocol ##### -->
+<para>
+
+</para>
+
+@MBIM_AUTH_PROTOCOL_NONE: 
+@MBIM_AUTH_PROTOCOL_PAP: 
+@MBIM_AUTH_PROTOCOL_CHAP: 
+@MBIM_AUTH_PROTOCOL_MSCHAPV2: 
+
+<!-- ##### ENUM MbimContextIpType ##### -->
+<para>
+
+</para>
+
+@MBIM_CONTEXT_IP_TYPE_DEFAULT: 
+@MBIM_CONTEXT_IP_TYPE_IPV4: 
+@MBIM_CONTEXT_IP_TYPE_IPV6: 
+@MBIM_CONTEXT_IP_TYPE_IPV4V6: 
+@MBIM_CONTEXT_IP_TYPE_IPV4_AND_IPV6: 
+
+<!-- ##### ENUM MbimActivationState ##### -->
+<para>
+
+</para>
+
+@MBIM_ACTIVATION_STATE_UNKNOWN: 
+@MBIM_ACTIVATION_STATE_ACTIVATED: 
+@MBIM_ACTIVATION_STATE_ACTIVATING: 
+@MBIM_ACTIVATION_STATE_DEACTIVATED: 
+@MBIM_ACTIVATION_STATE_DEACTIVATING: 
+
+<!-- ##### ENUM MbimVoiceCallState ##### -->
+<para>
+
+</para>
+
+@MBIM_VOICE_CALL_STATE_NONE: 
+@MBIM_VOICE_CALL_STATE_IN_PROGRESS: 
+@MBIM_VOICE_CALL_STATE_HANG_UP: 
+
+<!-- ##### ENUM MbimIPConfigurationAvailableFlag ##### -->
+<para>
+
+</para>
+
+@MBIM_IP_CONFIGURATION_AVAILABLE_FLAG_NONE: 
+@MBIM_IP_CONFIGURATION_AVAILABLE_FLAG_ADDRESS: 
+@MBIM_IP_CONFIGURATION_AVAILABLE_FLAG_GATEWAY: 
+@MBIM_IP_CONFIGURATION_AVAILABLE_FLAG_DNS: 
+@MBIM_IP_CONFIGURATION_AVAILABLE_FLAG_MTU: 
+
+<!-- ##### ENUM MbimSmsStorageState ##### -->
+<para>
+
+</para>
+
+@MBIM_SMS_STORAGE_STATE_NOT_INITIALIZED: 
+@MBIM_SMS_STORAGE_STATE_INITIALIZED: 
+
+<!-- ##### ENUM MbimSmsFormat ##### -->
+<para>
+
+</para>
+
+@MBIM_SMS_FORMAT_PDU: 
+@MBIM_SMS_FORMAT_CDMA: 
+
+<!-- ##### ENUM MbimSmsFlag ##### -->
+<para>
+
+</para>
+
+@MBIM_SMS_FLAG_ALL: 
+@MBIM_SMS_FLAG_INDEX: 
+@MBIM_SMS_FLAG_NEW: 
+@MBIM_SMS_FLAG_OLD: 
+@MBIM_SMS_FLAG_SENT: 
+@MBIM_SMS_FLAG_DRAFT: 
+
+<!-- ##### ENUM MbimSmsCdmaLang ##### -->
+<para>
+
+</para>
+
+@MBIM_SMS_CDMA_LANG_UNKNOWN: 
+@MBIM_SMS_CDMA_LANG_ENGLISH: 
+@MBIM_SMS_CDMA_LANG_FRENCH: 
+@MBIM_SMS_CDMA_LANG_SPANISH: 
+@MBIM_SMS_CDMA_LANG_JAPANESE: 
+@MBIM_SMS_CDMA_LANG_KOREAN: 
+@MBIM_SMS_CDMA_LANG_CHINESE: 
+@MBIM_SMS_CDMA_LANG_HEBREW: 
+
+<!-- ##### ENUM MbimSmsCdmaEncoding ##### -->
+<para>
+
+</para>
+
+@MBIM_SMS_CDMA_ENCODING_OCTET: 
+@MBIM_SMS_CDMA_ENCODING_EPM: 
+@MBIM_SMS_CDMA_ENCODING_7BIT_ASCII: 
+@MBIM_SMS_CDMA_ENCODING_LA5: 
+@MBIM_SMS_CDMA_ENCODING_UNICODE: 
+@MBIM_SMS_CDMA_ENCODING_SHIFT_JIS: 
+@MBIM_SMS_CDMA_ENCODING_KOREAN: 
+@MBIM_SMS_CDMA_ENCODING_LATIN_HEBREW: 
+@MBIM_SMS_CDMA_ENCODING_LATIN: 
+@MBIM_SMS_CDMA_ENCODING_GSM_7BIT: 
+
+<!-- ##### ENUM MbimSmsStatus ##### -->
+<para>
+
+</para>
+
+@MBIM_SMS_STATUS_NEW: 
+@MBIM_SMS_STATUS_OLD: 
+@MBIM_SMS_STATUS_DRAFT: 
+@MBIM_SMS_STATUS_SENT: 
+
+<!-- ##### ENUM MbimSmsStatusFlag ##### -->
+<para>
+
+</para>
+
+@MBIM_SMS_STATUS_FLAG_NONE: 
+@MBIM_SMS_STATUS_FLAG_MESSAGE_STORE_FULL: 
+@MBIM_SMS_STATUS_FLAG_NEW_MESSAGE: 
+
+<!-- ##### ENUM MbimUssdAction ##### -->
+<para>
+
+</para>
+
+@MBIM_USSD_ACTION_INITIATE: 
+@MBIM_USSD_ACTION_CONTINUE: 
+@MBIM_USSD_ACTION_CANCEL: 
+
+<!-- ##### ENUM MbimUssdResponse ##### -->
+<para>
+
+</para>
+
+@MBIM_USSD_RESPONSE_NO_ACTION_REQUIRED: 
+@MBIM_USSD_RESPONSE_ACTION_REQUIRED: 
+@MBIM_USSD_RESPONSE_TERMINATED_BY_NETWORK: 
+@MBIM_USSD_RESPONSE_OTHER_LOCAL_CLIENT: 
+@MBIM_USSD_RESPONSE_OPERATION_NOT_SUPPORTED: 
+@MBIM_USSD_RESPONSE_NETWORK_TIMEOUT: 
+
+<!-- ##### ENUM MbimUssdSessionState ##### -->
+<para>
+
+</para>
+
+@MBIM_USSD_SESSION_STATE_NEW_SESSION: 
+@MBIM_USSD_SESSION_STATE_EXISTING_SESSION: 
+
+<!-- ##### ENUM MbimPhonebookFlag ##### -->
+<para>
+
+</para>
+
+@MBIM_PHONEBOOK_FLAG_ALL: 
+@MBIM_PHONEBOOK_FLAG_INDEX: 
+
+<!-- ##### ENUM MbimPhonebookState ##### -->
+<para>
+
+</para>
+
+@MBIM_PHONEBOOK_STATE_NOT_INITIALIZED: 
+@MBIM_PHONEBOOK_STATE_INITIALIZED: 
+
+<!-- ##### ENUM MbimPhonebookWriteFlag ##### -->
+<para>
+
+</para>
+
+@MBIM_PHONEBOOK_WRITE_FLAG_SAVE_UNUSED: 
+@MBIM_PHONEBOOK_WRITE_FLAG_SAVE_INDEX: 
+
+<!-- ##### ENUM MbimStkPacProfile ##### -->
+<para>
+
+</para>
+
+@MBIM_STK_PAC_PROFILE_NOT_HANDLED_BY_FUNCTION_HANDLED_BY_HOST: 
+@MBIM_STK_PAC_PROFILE_NOT_HANDLED_BY_FUNCTION_MAY_BE_HANDLED_BY_HOST: 
+@MBIM_STK_PAC_PROFILE_HANDLED_BY_FUNCTION_ONLY_TRANSPARENT_TO_HOST: 
+@MBIM_STK_PAC_PROFILE_HANDLED_BY_FUNCTION_NOTIFICATION_TO_HOST_POSSIBLE: 
+@MBIM_STK_PAC_PROFILE_HANDLED_BY_FUNCTION_NOTIFICATIONS_TO_HOST_ENABLED: 
+@MBIM_STK_PAC_PROFILE_HANDLED_BY_FUNCTION_CAN_BE_OVERRIDEN_BY_HOST: 
+@MBIM_STK_PAC_PROFILE_HANDLED_BY_HOST_FUNCTION_NOT_ABLE_TO_HANDLE: 
+@MBIM_STK_PAC_PROFILE_HANDLED_BY_HOST_FUNCTION_ABLE_TO_HANDLE: 
+
+<!-- ##### ENUM MbimStkPacType ##### -->
+<para>
+
+</para>
+
+@MBIM_STK_PAC_TYPE_PROACTIVE_COMMAND: 
+@MBIM_STK_PAC_TYPE_NOTIFICATION: 
+
+<!-- ##### ENUM MbimNetworkIdleHintState ##### -->
+<para>
+
+</para>
+
+@MBIM_NETWORK_IDLE_HINT_STATE_DISABLED: 
+@MBIM_NETWORK_IDLE_HINT_STATE_ENABLED: 
+
+<!-- ##### ENUM MbimEmergencyModeState ##### -->
+<para>
+
+</para>
+
+@MBIM_EMERGENCY_MODE_STATE_OFF: 
+@MBIM_EMERGENCY_MODE_STATE_ON: 
+
+<!-- ##### ENUM MbimDssLinkState ##### -->
+<para>
+
+</para>
+
+@MBIM_DSS_LINK_STATE_DEACTIVATE: 
+@MBIM_DSS_LINK_STATE_ACTIVATE: 
+
+<!-- ##### FUNCTION mbim_device_type_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_cellular_class_build_string_from_mask ##### -->
+<para>
+
+</para>
+
+@mask: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_voice_class_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_sim_class_build_string_from_mask ##### -->
+<para>
+
+</para>
+
+@mask: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_data_class_build_string_from_mask ##### -->
+<para>
+
+</para>
+
+@mask: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_sms_caps_build_string_from_mask ##### -->
+<para>
+
+</para>
+
+@mask: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_ctrl_caps_build_string_from_mask ##### -->
+<para>
+
+</para>
+
+@mask: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_subscriber_ready_state_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_ready_info_flag_build_string_from_mask ##### -->
+<para>
+
+</para>
+
+@mask: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_radio_switch_state_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_pin_type_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_pin_state_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_pin_operation_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_pin_mode_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_pin_format_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_provider_state_build_string_from_mask ##### -->
+<para>
+
+</para>
+
+@mask: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_visible_providers_action_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_nw_error_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_register_action_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_register_state_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_register_mode_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_packet_service_action_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_packet_service_state_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_activation_command_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_compression_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_auth_protocol_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_context_ip_type_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_activation_state_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_voice_call_state_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_ip_configuration_available_flag_build_string_from_mask ##### -->
+<para>
+
+</para>
+
+@mask: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_sms_storage_state_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_sms_format_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_sms_flag_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_sms_cdma_lang_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_sms_cdma_encoding_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_sms_status_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_sms_status_flag_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_ussd_action_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_ussd_response_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_ussd_session_state_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_phonebook_flag_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_phonebook_state_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_phonebook_write_flag_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_stk_pac_profile_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_stk_pac_type_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_network_idle_hint_state_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_emergency_mode_state_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_dss_link_state_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+

@@ -2,650 +2,557 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Errors: libmbim-glib Reference Manual</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<title>Errors</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
 <link rel="home" href="index.html" title="libmbim-glib Reference Manual">
 <link rel="up" href="ch01.html" title="Core">
 <link rel="prev" href="libmbim-glib-Enumerations-and-Flags.html" title="Enumerations and Flags">
 <link rel="next" href="libmbim-glib-Common-utilities.html" title="Common utilities">
-<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
-<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
-<td width="100%" align="left" class="shortcuts">
-<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
-                  <a href="#libmbim-glib-Errors.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
-                  <a href="#libmbim-glib-Errors.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
-</td>
-<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
-<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
-<td><a accesskey="p" href="libmbim-glib-Enumerations-and-Flags.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
-<td><a accesskey="n" href="libmbim-glib-Common-utilities.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
-</tr></table>
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="libmbim-glib-Enumerations-and-Flags.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">libmbim-glib Reference Manual</th>
+<td><a accesskey="n" href="libmbim-glib-Common-utilities.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#libmbim-glib-Errors.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#libmbim-glib-Errors.description" class="shortcut">Description</a>
+                   | 
+                  <a href="#libmbim-glib-Errors.object-hierarchy" class="shortcut">Object Hierarchy</a>
+</td></tr>
+</table>
 <div class="refentry">
 <a name="libmbim-glib-Errors"></a><div class="titlepage"></div>
 <div class="refnamediv"><table width="100%"><tr>
 <td valign="top">
 <h2><span class="refentrytitle"><a name="libmbim-glib-Errors.top_of_page"></a>Errors</span></h2>
-<p>Errors — Common error types.</p>
+<p>Errors</p>
 </td>
-<td class="gallery_image" valign="top" align="right"></td>
+<td valign="top" align="right"></td>
 </tr></table></div>
-<div class="refsect1">
-<a name="libmbim-glib-Errors.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="functions_return">
-<col class="functions_name">
-</colgroup>
-<tbody>
-<tr>
-<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
-</td>
-<td class="function_name">
-<a class="link" href="libmbim-glib-Errors.html#mbim-core-error-get-string" title="mbim_core_error_get_string ()">mbim_core_error_get_string</a> <span class="c_punctuation">()</span>
-</td>
-</tr>
-<tr>
-<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
-</td>
-<td class="function_name">
-<a class="link" href="libmbim-glib-Errors.html#mbim-protocol-error-get-string" title="mbim_protocol_error_get_string ()">mbim_protocol_error_get_string</a> <span class="c_punctuation">()</span>
-</td>
-</tr>
-<tr>
-<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
-</td>
-<td class="function_name">
-<a class="link" href="libmbim-glib-Errors.html#mbim-status-error-get-string" title="mbim_status_error_get_string ()">mbim_status_error_get_string</a> <span class="c_punctuation">()</span>
-</td>
-</tr>
-</tbody>
-</table></div>
-</div>
-<div class="refsect1">
-<a name="libmbim-glib-Errors.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="name">
-<col class="description">
-</colgroup>
-<tbody>
-<tr>
-<td class="datatype_keyword">enum</td>
-<td class="function_name"><a class="link" href="libmbim-glib-Errors.html#MbimCoreError" title="enum MbimCoreError">MbimCoreError</a></td>
-</tr>
-<tr>
-<td class="datatype_keyword">enum</td>
-<td class="function_name"><a class="link" href="libmbim-glib-Errors.html#MbimProtocolError" title="enum MbimProtocolError">MbimProtocolError</a></td>
-</tr>
-<tr>
-<td class="datatype_keyword">enum</td>
-<td class="function_name"><a class="link" href="libmbim-glib-Errors.html#MbimStatusError" title="enum MbimStatusError">MbimStatusError</a></td>
-</tr>
-</tbody>
-</table></div>
+<div class="refsynopsisdiv">
+<a name="libmbim-glib-Errors.synopsis"></a><h2>Synopsis</h2>
+<a name="MbimCoreError"></a><a name="MbimProtocolError"></a><a name="MbimStatusError"></a><pre class="synopsis">enum                <a class="link" href="libmbim-glib-Errors.html#MbimCoreError-enum" title="enum MbimCoreError">MbimCoreError</a>;
+enum                <a class="link" href="libmbim-glib-Errors.html#MbimProtocolError-enum" title="enum MbimProtocolError">MbimProtocolError</a>;
+enum                <a class="link" href="libmbim-glib-Errors.html#MbimStatusError-enum" title="enum MbimStatusError">MbimStatusError</a>;
+
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libmbim-glib-Errors.html#mbim-core-error-get-string" title="mbim_core_error_get_string ()">mbim_core_error_get_string</a>          (<em class="parameter"><code><a class="link" href="libmbim-glib-Errors.html#MbimCoreError"><span class="type">MbimCoreError</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libmbim-glib-Errors.html#mbim-protocol-error-get-string" title="mbim_protocol_error_get_string ()">mbim_protocol_error_get_string</a>      (<em class="parameter"><code><a class="link" href="libmbim-glib-Errors.html#MbimProtocolError"><span class="type">MbimProtocolError</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libmbim-glib-Errors.html#mbim-status-error-get-string" title="mbim_status_error_get_string ()">mbim_status_error_get_string</a>        (<em class="parameter"><code><a class="link" href="libmbim-glib-Errors.html#MbimStatusError"><span class="type">MbimStatusError</span></a> val</code></em>);
+</pre>
 </div>
 <div class="refsect1">
 <a name="libmbim-glib-Errors.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-Enumeration-and-Flag-Types.html">GEnum</a>
-    <span class="lineart">├──</span> MbimCoreError
-    <span class="lineart">├──</span> MbimProtocolError
-    <span class="lineart">╰──</span> MbimStatusError
+<pre class="synopsis">
+  GEnum
+   +----MbimCoreError
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----MbimProtocolError
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----MbimStatusError
 </pre>
 </div>
 <div class="refsect1">
 <a name="libmbim-glib-Errors.description"></a><h2>Description</h2>
-<p>This section defines common error types used in the interface.</p>
+<p>
+This section defines common error types used in the interface.
+</p>
 </div>
 <div class="refsect1">
-<a name="libmbim-glib-Errors.functions_details"></a><h2>Functions</h2>
+<a name="libmbim-glib-Errors.details"></a><h2>Details</h2>
 <div class="refsect2">
-<a name="mbim-core-error-get-string"></a><h3>mbim_core_error_get_string ()</h3>
-<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
-mbim_core_error_get_string (<em class="parameter"><code><a class="link" href="libmbim-glib-Errors.html#MbimCoreError" title="enum MbimCoreError"><span class="type">MbimCoreError</span></a> val</code></em>);</pre>
-<p>Gets the nickname string for the <a class="link" href="libmbim-glib-Errors.html#MbimCoreError" title="enum MbimCoreError"><span class="type">MbimCoreError</span></a> specified at <em class="parameter"><code>val</code></em>
-.</p>
-<div class="refsect3">
-<a name="mbim-core-error-get-string.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<a name="MbimCoreError-enum"></a><h3>enum MbimCoreError</h3>
+<pre class="programlisting">typedef enum {
+ /*&lt; underscore_name=mbim_core_error &gt;*/
+    MBIM_CORE_ERROR_FAILED           = 0, /*&lt; nick=Failed &gt;*/
+    MBIM_CORE_ERROR_WRONG_STATE      = 1, /*&lt; nick=WrongState &gt;*/
+    MBIM_CORE_ERROR_TIMEOUT          = 2, /*&lt; nick=Timeout &gt;*/
+    MBIM_CORE_ERROR_INVALID_ARGS     = 3, /*&lt; nick=InvalidArgs &gt;*/
+    MBIM_CORE_ERROR_INVALID_MESSAGE  = 4, /*&lt; nick=InvalidMessage &gt;*/
+    MBIM_CORE_ERROR_UNSUPPORTED      = 5, /*&lt; nick=Unsupported &gt;*/
+    MBIM_CORE_ERROR_ABORTED          = 6  /*&lt; nick=Aborted &gt;*/
+} MbimCoreError;
+</pre>
+<p>
+Common errors that may be reported by libmbim-glib.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
 <colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>val</p></td>
-<td class="parameter_description"><p>a MbimCoreError.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="mbim-core-error-get-string.returns"></a><h4>Returns</h4>
-<p> a string with the nickname, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
-</div>
-</div>
-<hr>
-<div class="refsect2">
-<a name="mbim-protocol-error-get-string"></a><h3>mbim_protocol_error_get_string ()</h3>
-<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
-mbim_protocol_error_get_string (<em class="parameter"><code><a class="link" href="libmbim-glib-Errors.html#MbimProtocolError" title="enum MbimProtocolError"><span class="type">MbimProtocolError</span></a> val</code></em>);</pre>
-<p>Gets the nickname string for the <a class="link" href="libmbim-glib-Errors.html#MbimProtocolError" title="enum MbimProtocolError"><span class="type">MbimProtocolError</span></a> specified at <em class="parameter"><code>val</code></em>
-.</p>
-<div class="refsect3">
-<a name="mbim-protocol-error-get-string.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>val</p></td>
-<td class="parameter_description"><p>a MbimProtocolError.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="mbim-protocol-error-get-string.returns"></a><h4>Returns</h4>
-<p> a string with the nickname, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
-</div>
-</div>
-<hr>
-<div class="refsect2">
-<a name="mbim-status-error-get-string"></a><h3>mbim_status_error_get_string ()</h3>
-<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
-mbim_status_error_get_string (<em class="parameter"><code><a class="link" href="libmbim-glib-Errors.html#MbimStatusError" title="enum MbimStatusError"><span class="type">MbimStatusError</span></a> val</code></em>);</pre>
-<p>Gets the nickname string for the <a class="link" href="libmbim-glib-Errors.html#MbimStatusError" title="enum MbimStatusError"><span class="type">MbimStatusError</span></a> specified at <em class="parameter"><code>val</code></em>
-.</p>
-<div class="refsect3">
-<a name="mbim-status-error-get-string.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>val</p></td>
-<td class="parameter_description"><p>a MbimStatusError.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="mbim-status-error-get-string.returns"></a><h4>Returns</h4>
-<p> a string with the nickname, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
-</div>
-</div>
-</div>
-<div class="refsect1">
-<a name="libmbim-glib-Errors.other_details"></a><h2>Types and Values</h2>
-<div class="refsect2">
-<a name="MbimCoreError"></a><h3>enum MbimCoreError</h3>
-<p>Common errors that may be reported by libmbim-glib.</p>
-<div class="refsect3">
-<a name="MbimCoreError.members"></a><h4>Members</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="300px" class="enum_members_name">
-<col class="enum_members_description">
-<col width="200px" class="enum_members_annotations">
+<col align="left" valign="top">
+<col>
 </colgroup>
 <tbody>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-CORE-ERROR-FAILED:CAPS"></a>MBIM_CORE_ERROR_FAILED</p></td>
-<td class="enum_member_description">
-<p>Operation failed.</p>
+<td><p><a name="MBIM-CORE-ERROR-FAILED:CAPS"></a><span class="term"><code class="literal">MBIM_CORE_ERROR_FAILED</code></span></p></td>
+<td>Operation failed.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-CORE-ERROR-WRONG-STATE:CAPS"></a>MBIM_CORE_ERROR_WRONG_STATE</p></td>
-<td class="enum_member_description">
-<p>Operation cannot be executed in the current state.</p>
+<td><p><a name="MBIM-CORE-ERROR-WRONG-STATE:CAPS"></a><span class="term"><code class="literal">MBIM_CORE_ERROR_WRONG_STATE</code></span></p></td>
+<td>Operation cannot be executed in the current state.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-CORE-ERROR-TIMEOUT:CAPS"></a>MBIM_CORE_ERROR_TIMEOUT</p></td>
-<td class="enum_member_description">
-<p>Operation timed out.</p>
+<td><p><a name="MBIM-CORE-ERROR-TIMEOUT:CAPS"></a><span class="term"><code class="literal">MBIM_CORE_ERROR_TIMEOUT</code></span></p></td>
+<td>Operation timed out.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-CORE-ERROR-INVALID-ARGS:CAPS"></a>MBIM_CORE_ERROR_INVALID_ARGS</p></td>
-<td class="enum_member_description">
-<p>Invalid arguments given.</p>
+<td><p><a name="MBIM-CORE-ERROR-INVALID-ARGS:CAPS"></a><span class="term"><code class="literal">MBIM_CORE_ERROR_INVALID_ARGS</code></span></p></td>
+<td>Invalid arguments given.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-CORE-ERROR-INVALID-MESSAGE:CAPS"></a>MBIM_CORE_ERROR_INVALID_MESSAGE</p></td>
-<td class="enum_member_description">
-<p>MBIM message is invalid.</p>
+<td><p><a name="MBIM-CORE-ERROR-INVALID-MESSAGE:CAPS"></a><span class="term"><code class="literal">MBIM_CORE_ERROR_INVALID_MESSAGE</code></span></p></td>
+<td>MBIM message is invalid.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-CORE-ERROR-UNSUPPORTED:CAPS"></a>MBIM_CORE_ERROR_UNSUPPORTED</p></td>
-<td class="enum_member_description">
-<p>Not supported.</p>
+<td><p><a name="MBIM-CORE-ERROR-UNSUPPORTED:CAPS"></a><span class="term"><code class="literal">MBIM_CORE_ERROR_UNSUPPORTED</code></span></p></td>
+<td>Not supported.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-CORE-ERROR-ABORTED:CAPS"></a>MBIM_CORE_ERROR_ABORTED</p></td>
-<td class="enum_member_description">
-<p>Operation aborted..</p>
+<td><p><a name="MBIM-CORE-ERROR-ABORTED:CAPS"></a><span class="term"><code class="literal">MBIM_CORE_ERROR_ABORTED</code></span></p></td>
+<td>Operation aborted..
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 </tbody>
 </table></div>
 </div>
-</div>
 <hr>
 <div class="refsect2">
-<a name="MbimProtocolError"></a><h3>enum MbimProtocolError</h3>
-<p>MBIM protocol errors.</p>
-<div class="refsect3">
-<a name="MbimProtocolError.members"></a><h4>Members</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<a name="MbimProtocolError-enum"></a><h3>enum MbimProtocolError</h3>
+<pre class="programlisting">typedef enum {
+    MBIM_PROTOCOL_ERROR_INVALID                  = 0, /*&lt; nick=Invalid &gt;*/
+    MBIM_PROTOCOL_ERROR_TIMEOUT_FRAGMENT         = 1, /*&lt; nick=TimeoutFragment &gt;*/
+    MBIM_PROTOCOL_ERROR_FRAGMENT_OUT_OF_SEQUENCE = 2, /*&lt; nick=FragmentOutOfSequence &gt;*/
+    MBIM_PROTOCOL_ERROR_LENGTH_MISMATCH          = 3, /*&lt; nick=LengthMismatch &gt;*/
+    MBIM_PROTOCOL_ERROR_DUPLICATED_TID           = 4, /*&lt; nick=DuplicatedTid &gt;*/
+    MBIM_PROTOCOL_ERROR_NOT_OPENED               = 5, /*&lt; nick=NotOpened &gt;*/
+    MBIM_PROTOCOL_ERROR_UNKNOWN                  = 6, /*&lt; nick=Unknown &gt;*/
+    MBIM_PROTOCOL_ERROR_CANCEL                   = 7, /*&lt; nick=Cancel &gt;*/
+    MBIM_PROTOCOL_ERROR_MAX_TRANSFER             = 8  /*&lt; nick=MaxTransfer &gt;*/
+} MbimProtocolError;
+</pre>
+<p>
+MBIM protocol errors.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
 <colgroup>
-<col width="300px" class="enum_members_name">
-<col class="enum_members_description">
-<col width="200px" class="enum_members_annotations">
+<col align="left" valign="top">
+<col>
 </colgroup>
 <tbody>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-PROTOCOL-ERROR-INVALID:CAPS"></a>MBIM_PROTOCOL_ERROR_INVALID</p></td>
-<td class="enum_member_description">
-<p>Invalid MBIM error.</p>
+<td><p><a name="MBIM-PROTOCOL-ERROR-INVALID:CAPS"></a><span class="term"><code class="literal">MBIM_PROTOCOL_ERROR_INVALID</code></span></p></td>
+<td>Invalid MBIM error.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-PROTOCOL-ERROR-TIMEOUT-FRAGMENT:CAPS"></a>MBIM_PROTOCOL_ERROR_TIMEOUT_FRAGMENT</p></td>
-<td class="enum_member_description">
-<p>Timeout waiting for fragment.</p>
+<td><p><a name="MBIM-PROTOCOL-ERROR-TIMEOUT-FRAGMENT:CAPS"></a><span class="term"><code class="literal">MBIM_PROTOCOL_ERROR_TIMEOUT_FRAGMENT</code></span></p></td>
+<td>Timeout waiting for fragment.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-PROTOCOL-ERROR-FRAGMENT-OUT-OF-SEQUENCE:CAPS"></a>MBIM_PROTOCOL_ERROR_FRAGMENT_OUT_OF_SEQUENCE</p></td>
-<td class="enum_member_description">
-<p>Fragment received out of sequence.</p>
+<td><p><a name="MBIM-PROTOCOL-ERROR-FRAGMENT-OUT-OF-SEQUENCE:CAPS"></a><span class="term"><code class="literal">MBIM_PROTOCOL_ERROR_FRAGMENT_OUT_OF_SEQUENCE</code></span></p></td>
+<td>Fragment received out of sequence.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-PROTOCOL-ERROR-LENGTH-MISMATCH:CAPS"></a>MBIM_PROTOCOL_ERROR_LENGTH_MISMATCH</p></td>
-<td class="enum_member_description">
-<p>Length mismatch.</p>
+<td><p><a name="MBIM-PROTOCOL-ERROR-LENGTH-MISMATCH:CAPS"></a><span class="term"><code class="literal">MBIM_PROTOCOL_ERROR_LENGTH_MISMATCH</code></span></p></td>
+<td>Length mismatch.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-PROTOCOL-ERROR-DUPLICATED-TID:CAPS"></a>MBIM_PROTOCOL_ERROR_DUPLICATED_TID</p></td>
-<td class="enum_member_description">
-<p>Duplicated transaction ID.</p>
+<td><p><a name="MBIM-PROTOCOL-ERROR-DUPLICATED-TID:CAPS"></a><span class="term"><code class="literal">MBIM_PROTOCOL_ERROR_DUPLICATED_TID</code></span></p></td>
+<td>Duplicated transaction ID.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-PROTOCOL-ERROR-NOT-OPENED:CAPS"></a>MBIM_PROTOCOL_ERROR_NOT_OPENED</p></td>
-<td class="enum_member_description">
-<p>Not opened.</p>
+<td><p><a name="MBIM-PROTOCOL-ERROR-NOT-OPENED:CAPS"></a><span class="term"><code class="literal">MBIM_PROTOCOL_ERROR_NOT_OPENED</code></span></p></td>
+<td>Not opened.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-PROTOCOL-ERROR-UNKNOWN:CAPS"></a>MBIM_PROTOCOL_ERROR_UNKNOWN</p></td>
-<td class="enum_member_description">
-<p>Unknown error.</p>
+<td><p><a name="MBIM-PROTOCOL-ERROR-UNKNOWN:CAPS"></a><span class="term"><code class="literal">MBIM_PROTOCOL_ERROR_UNKNOWN</code></span></p></td>
+<td>Unknown error.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-PROTOCOL-ERROR-CANCEL:CAPS"></a>MBIM_PROTOCOL_ERROR_CANCEL</p></td>
-<td class="enum_member_description">
-<p>Cancel the operation.</p>
+<td><p><a name="MBIM-PROTOCOL-ERROR-CANCEL:CAPS"></a><span class="term"><code class="literal">MBIM_PROTOCOL_ERROR_CANCEL</code></span></p></td>
+<td>Cancel the operation.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-PROTOCOL-ERROR-MAX-TRANSFER:CAPS"></a>MBIM_PROTOCOL_ERROR_MAX_TRANSFER</p></td>
-<td class="enum_member_description">
-<p>Maximum control transfer not supported.</p>
+<td><p><a name="MBIM-PROTOCOL-ERROR-MAX-TRANSFER:CAPS"></a><span class="term"><code class="literal">MBIM_PROTOCOL_ERROR_MAX_TRANSFER</code></span></p></td>
+<td>Maximum control transfer not supported.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 </tbody>
 </table></div>
 </div>
-</div>
 <hr>
 <div class="refsect2">
-<a name="MbimStatusError"></a><h3>enum MbimStatusError</h3>
-<p>Status of the MBIM request.</p>
-<div class="refsect3">
-<a name="MbimStatusError.members"></a><h4>Members</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<a name="MbimStatusError-enum"></a><h3>enum MbimStatusError</h3>
+<pre class="programlisting">typedef enum {
+    MBIM_STATUS_ERROR_NONE                             = 0,  /*&lt; nick=None &gt;*/
+    MBIM_STATUS_ERROR_BUSY                             = 1,  /*&lt; nick=Busy &gt;*/
+    MBIM_STATUS_ERROR_FAILURE                          = 2,  /*&lt; nick=Failure &gt;*/
+    MBIM_STATUS_ERROR_SIM_NOT_INSERTED                 = 3,  /*&lt; nick=SimNotInserted &gt;*/
+    MBIM_STATUS_ERROR_BAD_SIM                          = 4,  /*&lt; nick=BadSim &gt;*/
+    MBIM_STATUS_ERROR_PIN_REQUIRED                     = 5,  /*&lt; nick=PinRequired &gt;*/
+    MBIM_STATUS_ERROR_PIN_DISABLED                     = 6,  /*&lt; nick=PinDisabled &gt;*/
+    MBIM_STATUS_ERROR_NOT_REGISTERED                   = 7,  /*&lt; nick=NotRegistered &gt;*/
+    MBIM_STATUS_ERROR_PROVIDERS_NOT_FOUND              = 8,  /*&lt; nick=ProvidersNotFound &gt;*/
+    MBIM_STATUS_ERROR_NO_DEVICE_SUPPORT                = 9,  /*&lt; nick=NoDeviceSupport &gt;*/
+    MBIM_STATUS_ERROR_PROVIDER_NOT_VISIBLE             = 10, /*&lt; nick=ProviderNotVisible &gt;*/
+    MBIM_STATUS_ERROR_DATA_CLASS_NOT_AVAILABLE         = 11, /*&lt; nick=DataClassNotAvailable &gt;*/
+    MBIM_STATUS_ERROR_PACKET_SERVICE_DETACHED          = 12, /*&lt; nick=PacketServiceDetached &gt;*/
+    MBIM_STATUS_ERROR_MAX_ACTIVATED_CONTEXTS           = 13, /*&lt; nick=MaxActivatedContexts &gt;*/
+    MBIM_STATUS_ERROR_NOT_INITIALIZED                  = 14, /*&lt; nick=NotInitialized &gt;*/
+    MBIM_STATUS_ERROR_VOICE_CALL_IN_PROGRESS           = 15, /*&lt; nick=VoiceCallInProgress &gt;*/
+    MBIM_STATUS_ERROR_CONTEXT_NOT_ACTIVATED            = 16, /*&lt; nick=ContextNotActivated &gt;*/
+    MBIM_STATUS_ERROR_SERVICE_NOT_ACTIVATED            = 17, /*&lt; nick=ServiceNotActivated &gt;*/
+    MBIM_STATUS_ERROR_INVALID_ACCESS_STRING            = 18, /*&lt; nick=InvalidAccessString &gt;*/
+    MBIM_STATUS_ERROR_INVALID_USER_NAME_PWD            = 19, /*&lt; nick=InvalidUserNamePwd &gt;*/
+    MBIM_STATUS_ERROR_RADIO_POWER_OFF                  = 20, /*&lt; nick=RadioPowerOff &gt;*/
+    MBIM_STATUS_ERROR_INVALID_PARAMETERS               = 21, /*&lt; nick=InvalidParameters &gt;*/
+    MBIM_STATUS_ERROR_READ_FAILURE                     = 22, /*&lt; nick=ReadFailure &gt;*/
+    MBIM_STATUS_ERROR_WRITE_FAILURE                    = 23, /*&lt; nick=WriteFailure &gt;*/
+    /* 24 = reserved */
+    MBIM_STATUS_ERROR_NO_PHONEBOOK                     = 25, /*&lt; nick=NoPhonebook &gt;*/
+    MBIM_STATUS_ERROR_PARAMETER_TOO_LONG               = 26, /*&lt; nick=ParameterTooLong &gt;*/
+    MBIM_STATUS_ERROR_STK_BUSY                         = 27, /*&lt; nick=StkBusy &gt;*/
+    MBIM_STATUS_ERROR_OPERATION_NOT_ALLOWED            = 28, /*&lt; nick=OperationNotAllowed &gt;*/
+    MBIM_STATUS_ERROR_MEMORY_FAILURE                   = 29, /*&lt; nick=MemoryFailure &gt;*/
+    MBIM_STATUS_ERROR_INVALID_MEMORY_INDEX             = 30, /*&lt; nick=InvalidMemoryIndex &gt;*/
+    MBIM_STATUS_ERROR_MEMORY_FULL                      = 31, /*&lt; nick=MemoryFull &gt;*/
+    MBIM_STATUS_ERROR_FILTER_NOT_SUPPORTED             = 32, /*&lt; nick=FilterNotSupported &gt;*/
+    MBIM_STATUS_ERROR_DSS_INSTANCE_LIMIT               = 33, /*&lt; nick=DssInstanceLimit &gt;*/
+    MBIM_STATUS_ERROR_INVALID_DEVICE_SERVICE_OPERATION = 34, /*&lt; nick=InvalidDeviceServiceOperation &gt;*/
+    MBIM_STATUS_ERROR_AUTH_INCORRECT_AUTN              = 35, /*&lt; nick=AuthIncorrectAuth &gt;*/
+    MBIM_STATUS_ERROR_AUTH_SYNC_FAILURE                = 36, /*&lt; nick=AuthSyncFailure &gt;*/
+    MBIM_STATUS_ERROR_AUTH_AMF_NOT_SET                 = 37, /*&lt; nick=AuthAmfNotSet &gt;*/
+    MBIM_STATUS_ERROR_SMS_UNKNOWN_SMSC_ADDRESS         = 100, /*&lt; nick=SmsUnknownSmscAddress &gt;*/
+    MBIM_STATUS_ERROR_SMS_NETWORK_TIMEOUT              = 101, /*&lt; nick=SmsNetworkTimeout &gt;*/
+    MBIM_STATUS_ERROR_SMS_LANG_NOT_SUPPORTED           = 102, /*&lt; nick=SmsLangNotSupported &gt;*/
+    MBIM_STATUS_ERROR_SMS_ENCODING_NOT_SUPPORTED       = 103, /*&lt; nick=SmsEncodingNotSupported &gt;*/
+    MBIM_STATUS_ERROR_SMS_FORMAT_NOT_SUPPORTED         = 104  /*&lt; nick=SmsFormatNotSupported &gt;*/
+} MbimStatusError;
+</pre>
+<p>
+Status of the MBIM request.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
 <colgroup>
-<col width="300px" class="enum_members_name">
-<col class="enum_members_description">
-<col width="200px" class="enum_members_annotations">
+<col align="left" valign="top">
+<col>
 </colgroup>
 <tbody>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-STATUS-ERROR-NONE:CAPS"></a>MBIM_STATUS_ERROR_NONE</p></td>
-<td class="enum_member_description">
-<p>Success, no error.</p>
+<td><p><a name="MBIM-STATUS-ERROR-NONE:CAPS"></a><span class="term"><code class="literal">MBIM_STATUS_ERROR_NONE</code></span></p></td>
+<td>Success, no error.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-STATUS-ERROR-BUSY:CAPS"></a>MBIM_STATUS_ERROR_BUSY</p></td>
-<td class="enum_member_description">
-<p>Busy.</p>
+<td><p><a name="MBIM-STATUS-ERROR-BUSY:CAPS"></a><span class="term"><code class="literal">MBIM_STATUS_ERROR_BUSY</code></span></p></td>
+<td>Busy.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-STATUS-ERROR-FAILURE:CAPS"></a>MBIM_STATUS_ERROR_FAILURE</p></td>
-<td class="enum_member_description">
-<p>Failure.</p>
+<td><p><a name="MBIM-STATUS-ERROR-FAILURE:CAPS"></a><span class="term"><code class="literal">MBIM_STATUS_ERROR_FAILURE</code></span></p></td>
+<td>Failure.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-STATUS-ERROR-SIM-NOT-INSERTED:CAPS"></a>MBIM_STATUS_ERROR_SIM_NOT_INSERTED</p></td>
-<td class="enum_member_description">
-<p>SIM not inserted.</p>
+<td><p><a name="MBIM-STATUS-ERROR-SIM-NOT-INSERTED:CAPS"></a><span class="term"><code class="literal">MBIM_STATUS_ERROR_SIM_NOT_INSERTED</code></span></p></td>
+<td>SIM not inserted.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-STATUS-ERROR-BAD-SIM:CAPS"></a>MBIM_STATUS_ERROR_BAD_SIM</p></td>
-<td class="enum_member_description">
-<p>Bad SIM.</p>
+<td><p><a name="MBIM-STATUS-ERROR-BAD-SIM:CAPS"></a><span class="term"><code class="literal">MBIM_STATUS_ERROR_BAD_SIM</code></span></p></td>
+<td>Bad SIM.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-STATUS-ERROR-PIN-REQUIRED:CAPS"></a>MBIM_STATUS_ERROR_PIN_REQUIRED</p></td>
-<td class="enum_member_description">
-<p>PIN required.</p>
+<td><p><a name="MBIM-STATUS-ERROR-PIN-REQUIRED:CAPS"></a><span class="term"><code class="literal">MBIM_STATUS_ERROR_PIN_REQUIRED</code></span></p></td>
+<td>PIN required.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-STATUS-ERROR-PIN-DISABLED:CAPS"></a>MBIM_STATUS_ERROR_PIN_DISABLED</p></td>
-<td class="enum_member_description">
-<p>PIN disabled.</p>
+<td><p><a name="MBIM-STATUS-ERROR-PIN-DISABLED:CAPS"></a><span class="term"><code class="literal">MBIM_STATUS_ERROR_PIN_DISABLED</code></span></p></td>
+<td>PIN disabled.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-STATUS-ERROR-NOT-REGISTERED:CAPS"></a>MBIM_STATUS_ERROR_NOT_REGISTERED</p></td>
-<td class="enum_member_description">
-<p>Not registered.</p>
+<td><p><a name="MBIM-STATUS-ERROR-NOT-REGISTERED:CAPS"></a><span class="term"><code class="literal">MBIM_STATUS_ERROR_NOT_REGISTERED</code></span></p></td>
+<td>Not registered.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-STATUS-ERROR-PROVIDERS-NOT-FOUND:CAPS"></a>MBIM_STATUS_ERROR_PROVIDERS_NOT_FOUND</p></td>
-<td class="enum_member_description">
-<p>Providers not found.</p>
+<td><p><a name="MBIM-STATUS-ERROR-PROVIDERS-NOT-FOUND:CAPS"></a><span class="term"><code class="literal">MBIM_STATUS_ERROR_PROVIDERS_NOT_FOUND</code></span></p></td>
+<td>Providers not found.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-STATUS-ERROR-NO-DEVICE-SUPPORT:CAPS"></a>MBIM_STATUS_ERROR_NO_DEVICE_SUPPORT</p></td>
-<td class="enum_member_description">
-<p>No device support.</p>
+<td><p><a name="MBIM-STATUS-ERROR-NO-DEVICE-SUPPORT:CAPS"></a><span class="term"><code class="literal">MBIM_STATUS_ERROR_NO_DEVICE_SUPPORT</code></span></p></td>
+<td>No device support.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-STATUS-ERROR-PROVIDER-NOT-VISIBLE:CAPS"></a>MBIM_STATUS_ERROR_PROVIDER_NOT_VISIBLE</p></td>
-<td class="enum_member_description">
-<p>Provider not visible.</p>
+<td><p><a name="MBIM-STATUS-ERROR-PROVIDER-NOT-VISIBLE:CAPS"></a><span class="term"><code class="literal">MBIM_STATUS_ERROR_PROVIDER_NOT_VISIBLE</code></span></p></td>
+<td>Provider not visible.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-STATUS-ERROR-DATA-CLASS-NOT-AVAILABLE:CAPS"></a>MBIM_STATUS_ERROR_DATA_CLASS_NOT_AVAILABLE</p></td>
-<td class="enum_member_description">
-<p>Data class not available.</p>
+<td><p><a name="MBIM-STATUS-ERROR-DATA-CLASS-NOT-AVAILABLE:CAPS"></a><span class="term"><code class="literal">MBIM_STATUS_ERROR_DATA_CLASS_NOT_AVAILABLE</code></span></p></td>
+<td>Data class not available.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-STATUS-ERROR-PACKET-SERVICE-DETACHED:CAPS"></a>MBIM_STATUS_ERROR_PACKET_SERVICE_DETACHED</p></td>
-<td class="enum_member_description">
-<p>Packet service detached.</p>
+<td><p><a name="MBIM-STATUS-ERROR-PACKET-SERVICE-DETACHED:CAPS"></a><span class="term"><code class="literal">MBIM_STATUS_ERROR_PACKET_SERVICE_DETACHED</code></span></p></td>
+<td>Packet service detached.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-STATUS-ERROR-MAX-ACTIVATED-CONTEXTS:CAPS"></a>MBIM_STATUS_ERROR_MAX_ACTIVATED_CONTEXTS</p></td>
-<td class="enum_member_description">
-<p>Max activated contexts.</p>
+<td><p><a name="MBIM-STATUS-ERROR-MAX-ACTIVATED-CONTEXTS:CAPS"></a><span class="term"><code class="literal">MBIM_STATUS_ERROR_MAX_ACTIVATED_CONTEXTS</code></span></p></td>
+<td>Max activated contexts.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-STATUS-ERROR-NOT-INITIALIZED:CAPS"></a>MBIM_STATUS_ERROR_NOT_INITIALIZED</p></td>
-<td class="enum_member_description">
-<p>Not initialized.</p>
+<td><p><a name="MBIM-STATUS-ERROR-NOT-INITIALIZED:CAPS"></a><span class="term"><code class="literal">MBIM_STATUS_ERROR_NOT_INITIALIZED</code></span></p></td>
+<td>Not initialized.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-STATUS-ERROR-VOICE-CALL-IN-PROGRESS:CAPS"></a>MBIM_STATUS_ERROR_VOICE_CALL_IN_PROGRESS</p></td>
-<td class="enum_member_description">
-<p>Voice call in progress.</p>
+<td><p><a name="MBIM-STATUS-ERROR-VOICE-CALL-IN-PROGRESS:CAPS"></a><span class="term"><code class="literal">MBIM_STATUS_ERROR_VOICE_CALL_IN_PROGRESS</code></span></p></td>
+<td>Voice call in progress.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-STATUS-ERROR-CONTEXT-NOT-ACTIVATED:CAPS"></a>MBIM_STATUS_ERROR_CONTEXT_NOT_ACTIVATED</p></td>
-<td class="enum_member_description">
-<p>Context not activated.</p>
+<td><p><a name="MBIM-STATUS-ERROR-CONTEXT-NOT-ACTIVATED:CAPS"></a><span class="term"><code class="literal">MBIM_STATUS_ERROR_CONTEXT_NOT_ACTIVATED</code></span></p></td>
+<td>Context not activated.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-STATUS-ERROR-SERVICE-NOT-ACTIVATED:CAPS"></a>MBIM_STATUS_ERROR_SERVICE_NOT_ACTIVATED</p></td>
-<td class="enum_member_description">
-<p>Service not activated.</p>
+<td><p><a name="MBIM-STATUS-ERROR-SERVICE-NOT-ACTIVATED:CAPS"></a><span class="term"><code class="literal">MBIM_STATUS_ERROR_SERVICE_NOT_ACTIVATED</code></span></p></td>
+<td>Service not activated.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-STATUS-ERROR-INVALID-ACCESS-STRING:CAPS"></a>MBIM_STATUS_ERROR_INVALID_ACCESS_STRING</p></td>
-<td class="enum_member_description">
-<p>Invalid access string.</p>
+<td><p><a name="MBIM-STATUS-ERROR-INVALID-ACCESS-STRING:CAPS"></a><span class="term"><code class="literal">MBIM_STATUS_ERROR_INVALID_ACCESS_STRING</code></span></p></td>
+<td>Invalid access string.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-STATUS-ERROR-INVALID-USER-NAME-PWD:CAPS"></a>MBIM_STATUS_ERROR_INVALID_USER_NAME_PWD</p></td>
-<td class="enum_member_description">
-<p>Invalid user name or password.</p>
+<td><p><a name="MBIM-STATUS-ERROR-INVALID-USER-NAME-PWD:CAPS"></a><span class="term"><code class="literal">MBIM_STATUS_ERROR_INVALID_USER_NAME_PWD</code></span></p></td>
+<td>Invalid user name or password.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-STATUS-ERROR-RADIO-POWER-OFF:CAPS"></a>MBIM_STATUS_ERROR_RADIO_POWER_OFF</p></td>
-<td class="enum_member_description">
-<p>Radio power off.</p>
+<td><p><a name="MBIM-STATUS-ERROR-RADIO-POWER-OFF:CAPS"></a><span class="term"><code class="literal">MBIM_STATUS_ERROR_RADIO_POWER_OFF</code></span></p></td>
+<td>Radio power off.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-STATUS-ERROR-INVALID-PARAMETERS:CAPS"></a>MBIM_STATUS_ERROR_INVALID_PARAMETERS</p></td>
-<td class="enum_member_description">
-<p>Invalid parameters.</p>
+<td><p><a name="MBIM-STATUS-ERROR-INVALID-PARAMETERS:CAPS"></a><span class="term"><code class="literal">MBIM_STATUS_ERROR_INVALID_PARAMETERS</code></span></p></td>
+<td>Invalid parameters.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-STATUS-ERROR-READ-FAILURE:CAPS"></a>MBIM_STATUS_ERROR_READ_FAILURE</p></td>
-<td class="enum_member_description">
-<p>Read failure.</p>
+<td><p><a name="MBIM-STATUS-ERROR-READ-FAILURE:CAPS"></a><span class="term"><code class="literal">MBIM_STATUS_ERROR_READ_FAILURE</code></span></p></td>
+<td>Read failure.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-STATUS-ERROR-WRITE-FAILURE:CAPS"></a>MBIM_STATUS_ERROR_WRITE_FAILURE</p></td>
-<td class="enum_member_description">
-<p>Write failure.</p>
+<td><p><a name="MBIM-STATUS-ERROR-WRITE-FAILURE:CAPS"></a><span class="term"><code class="literal">MBIM_STATUS_ERROR_WRITE_FAILURE</code></span></p></td>
+<td>Write failure.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-STATUS-ERROR-NO-PHONEBOOK:CAPS"></a>MBIM_STATUS_ERROR_NO_PHONEBOOK</p></td>
-<td class="enum_member_description">
-<p>No phonebook.</p>
+<td><p><a name="MBIM-STATUS-ERROR-NO-PHONEBOOK:CAPS"></a><span class="term"><code class="literal">MBIM_STATUS_ERROR_NO_PHONEBOOK</code></span></p></td>
+<td>No phonebook.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-STATUS-ERROR-PARAMETER-TOO-LONG:CAPS"></a>MBIM_STATUS_ERROR_PARAMETER_TOO_LONG</p></td>
-<td class="enum_member_description">
-<p>Parameter too long.</p>
+<td><p><a name="MBIM-STATUS-ERROR-PARAMETER-TOO-LONG:CAPS"></a><span class="term"><code class="literal">MBIM_STATUS_ERROR_PARAMETER_TOO_LONG</code></span></p></td>
+<td>Parameter too long.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-STATUS-ERROR-STK-BUSY:CAPS"></a>MBIM_STATUS_ERROR_STK_BUSY</p></td>
-<td class="enum_member_description">
-<p>SIM toolkit busy.</p>
+<td><p><a name="MBIM-STATUS-ERROR-STK-BUSY:CAPS"></a><span class="term"><code class="literal">MBIM_STATUS_ERROR_STK_BUSY</code></span></p></td>
+<td>SIM toolkit busy.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-STATUS-ERROR-OPERATION-NOT-ALLOWED:CAPS"></a>MBIM_STATUS_ERROR_OPERATION_NOT_ALLOWED</p></td>
-<td class="enum_member_description">
-<p>Operation not allowed.</p>
+<td><p><a name="MBIM-STATUS-ERROR-OPERATION-NOT-ALLOWED:CAPS"></a><span class="term"><code class="literal">MBIM_STATUS_ERROR_OPERATION_NOT_ALLOWED</code></span></p></td>
+<td>Operation not allowed.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-STATUS-ERROR-MEMORY-FAILURE:CAPS"></a>MBIM_STATUS_ERROR_MEMORY_FAILURE</p></td>
-<td class="enum_member_description">
-<p>Memory failure.</p>
+<td><p><a name="MBIM-STATUS-ERROR-MEMORY-FAILURE:CAPS"></a><span class="term"><code class="literal">MBIM_STATUS_ERROR_MEMORY_FAILURE</code></span></p></td>
+<td>Memory failure.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-STATUS-ERROR-INVALID-MEMORY-INDEX:CAPS"></a>MBIM_STATUS_ERROR_INVALID_MEMORY_INDEX</p></td>
-<td class="enum_member_description">
-<p>Invalid memory index.</p>
+<td><p><a name="MBIM-STATUS-ERROR-INVALID-MEMORY-INDEX:CAPS"></a><span class="term"><code class="literal">MBIM_STATUS_ERROR_INVALID_MEMORY_INDEX</code></span></p></td>
+<td>Invalid memory index.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-STATUS-ERROR-MEMORY-FULL:CAPS"></a>MBIM_STATUS_ERROR_MEMORY_FULL</p></td>
-<td class="enum_member_description">
-<p>Memory full.</p>
+<td><p><a name="MBIM-STATUS-ERROR-MEMORY-FULL:CAPS"></a><span class="term"><code class="literal">MBIM_STATUS_ERROR_MEMORY_FULL</code></span></p></td>
+<td>Memory full.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-STATUS-ERROR-FILTER-NOT-SUPPORTED:CAPS"></a>MBIM_STATUS_ERROR_FILTER_NOT_SUPPORTED</p></td>
-<td class="enum_member_description">
-<p>Filter not supported.</p>
+<td><p><a name="MBIM-STATUS-ERROR-FILTER-NOT-SUPPORTED:CAPS"></a><span class="term"><code class="literal">MBIM_STATUS_ERROR_FILTER_NOT_SUPPORTED</code></span></p></td>
+<td>Filter not supported.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-STATUS-ERROR-DSS-INSTANCE-LIMIT:CAPS"></a>MBIM_STATUS_ERROR_DSS_INSTANCE_LIMIT</p></td>
-<td class="enum_member_description">
-<p>DSS instance limit.</p>
+<td><p><a name="MBIM-STATUS-ERROR-DSS-INSTANCE-LIMIT:CAPS"></a><span class="term"><code class="literal">MBIM_STATUS_ERROR_DSS_INSTANCE_LIMIT</code></span></p></td>
+<td>DSS instance limit.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-STATUS-ERROR-INVALID-DEVICE-SERVICE-OPERATION:CAPS"></a>MBIM_STATUS_ERROR_INVALID_DEVICE_SERVICE_OPERATION</p></td>
-<td class="enum_member_description">
-<p>Invalid device service operation.</p>
+<td><p><a name="MBIM-STATUS-ERROR-INVALID-DEVICE-SERVICE-OPERATION:CAPS"></a><span class="term"><code class="literal">MBIM_STATUS_ERROR_INVALID_DEVICE_SERVICE_OPERATION</code></span></p></td>
+<td>Invalid device service operation.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-STATUS-ERROR-AUTH-INCORRECT-AUTN:CAPS"></a>MBIM_STATUS_ERROR_AUTH_INCORRECT_AUTN</p></td>
-<td class="enum_member_description">
-<p>Incorrect AUTN when sending authentication.</p>
+<td><p><a name="MBIM-STATUS-ERROR-AUTH-INCORRECT-AUTN:CAPS"></a><span class="term"><code class="literal">MBIM_STATUS_ERROR_AUTH_INCORRECT_AUTN</code></span></p></td>
+<td>Incorrect AUTN when sending authentication.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-STATUS-ERROR-AUTH-SYNC-FAILURE:CAPS"></a>MBIM_STATUS_ERROR_AUTH_SYNC_FAILURE</p></td>
-<td class="enum_member_description">
-<p>Synchronization failure during the authentication.</p>
+<td><p><a name="MBIM-STATUS-ERROR-AUTH-SYNC-FAILURE:CAPS"></a><span class="term"><code class="literal">MBIM_STATUS_ERROR_AUTH_SYNC_FAILURE</code></span></p></td>
+<td>Synchronization failure during the authentication.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-STATUS-ERROR-AUTH-AMF-NOT-SET:CAPS"></a>MBIM_STATUS_ERROR_AUTH_AMF_NOT_SET</p></td>
-<td class="enum_member_description">
-<p>AMF bit not set in the authentication.</p>
+<td><p><a name="MBIM-STATUS-ERROR-AUTH-AMF-NOT-SET:CAPS"></a><span class="term"><code class="literal">MBIM_STATUS_ERROR_AUTH_AMF_NOT_SET</code></span></p></td>
+<td>AMF bit not set in the authentication.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-STATUS-ERROR-SMS-UNKNOWN-SMSC-ADDRESS:CAPS"></a>MBIM_STATUS_ERROR_SMS_UNKNOWN_SMSC_ADDRESS</p></td>
-<td class="enum_member_description">
-<p>Unknown SMSC address.</p>
+<td><p><a name="MBIM-STATUS-ERROR-SMS-UNKNOWN-SMSC-ADDRESS:CAPS"></a><span class="term"><code class="literal">MBIM_STATUS_ERROR_SMS_UNKNOWN_SMSC_ADDRESS</code></span></p></td>
+<td>Unknown SMSC address.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-STATUS-ERROR-SMS-NETWORK-TIMEOUT:CAPS"></a>MBIM_STATUS_ERROR_SMS_NETWORK_TIMEOUT</p></td>
-<td class="enum_member_description">
-<p>Network timeout when sending SMS.</p>
+<td><p><a name="MBIM-STATUS-ERROR-SMS-NETWORK-TIMEOUT:CAPS"></a><span class="term"><code class="literal">MBIM_STATUS_ERROR_SMS_NETWORK_TIMEOUT</code></span></p></td>
+<td>Network timeout when sending SMS.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-STATUS-ERROR-SMS-LANG-NOT-SUPPORTED:CAPS"></a>MBIM_STATUS_ERROR_SMS_LANG_NOT_SUPPORTED</p></td>
-<td class="enum_member_description">
-<p>Language not supported in SMS.</p>
+<td><p><a name="MBIM-STATUS-ERROR-SMS-LANG-NOT-SUPPORTED:CAPS"></a><span class="term"><code class="literal">MBIM_STATUS_ERROR_SMS_LANG_NOT_SUPPORTED</code></span></p></td>
+<td>Language not supported in SMS.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-STATUS-ERROR-SMS-ENCODING-NOT-SUPPORTED:CAPS"></a>MBIM_STATUS_ERROR_SMS_ENCODING_NOT_SUPPORTED</p></td>
-<td class="enum_member_description">
-<p>Encoding not supported in SMS.</p>
+<td><p><a name="MBIM-STATUS-ERROR-SMS-ENCODING-NOT-SUPPORTED:CAPS"></a><span class="term"><code class="literal">MBIM_STATUS_ERROR_SMS_ENCODING_NOT_SUPPORTED</code></span></p></td>
+<td>Encoding not supported in SMS.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-STATUS-ERROR-SMS-FORMAT-NOT-SUPPORTED:CAPS"></a>MBIM_STATUS_ERROR_SMS_FORMAT_NOT_SUPPORTED</p></td>
-<td class="enum_member_description">
-<p>Format not supported in SMS.</p>
+<td><p><a name="MBIM-STATUS-ERROR-SMS-FORMAT-NOT-SUPPORTED:CAPS"></a><span class="term"><code class="literal">MBIM_STATUS_ERROR_SMS_FORMAT_NOT_SUPPORTED</code></span></p></td>
+<td>Format not supported in SMS.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 </tbody>
 </table></div>
 </div>
+<hr>
+<div class="refsect2">
+<a name="mbim-core-error-get-string"></a><h3>mbim_core_error_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       mbim_core_error_get_string          (<em class="parameter"><code><a class="link" href="libmbim-glib-Errors.html#MbimCoreError"><span class="type">MbimCoreError</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libmbim-glib-Errors.html#MbimCoreError"><span class="type">MbimCoreError</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a MbimCoreError.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mbim-protocol-error-get-string"></a><h3>mbim_protocol_error_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       mbim_protocol_error_get_string      (<em class="parameter"><code><a class="link" href="libmbim-glib-Errors.html#MbimProtocolError"><span class="type">MbimProtocolError</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libmbim-glib-Errors.html#MbimProtocolError"><span class="type">MbimProtocolError</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a MbimProtocolError.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mbim-status-error-get-string"></a><h3>mbim_status_error_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       mbim_status_error_get_string        (<em class="parameter"><code><a class="link" href="libmbim-glib-Errors.html#MbimStatusError"><span class="type">MbimStatusError</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libmbim-glib-Errors.html#MbimStatusError"><span class="type">MbimStatusError</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a MbimStatusError.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.25.1</div>
+<hr>
+          Generated by GTK-Doc V1.18</div>
 </body>
 </html>

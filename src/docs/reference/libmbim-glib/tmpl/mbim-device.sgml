@@ -1,0 +1,214 @@
+<!-- ##### SECTION Title ##### -->
+MbimDevice
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### STRUCT MbimDevice ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SIGNAL MbimDevice::device-error ##### -->
+<para>
+
+</para>
+
+@mbimdevice: the object which received the signal.
+@arg1: 
+
+<!-- ##### SIGNAL MbimDevice::device-indicate-status ##### -->
+<para>
+
+</para>
+
+@mbimdevice: the object which received the signal.
+@arg1: 
+
+<!-- ##### ARG MbimDevice:device-file ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG MbimDevice:device-in-session ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG MbimDevice:device-transaction-id ##### -->
+<para>
+
+</para>
+
+<!-- ##### FUNCTION mbim_device_new ##### -->
+<para>
+
+</para>
+
+@file: 
+@cancellable: 
+@callback: 
+@user_data: 
+
+
+<!-- ##### FUNCTION mbim_device_new_finish ##### -->
+<para>
+
+</para>
+
+@res: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_device_get_file ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_device_peek_file ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_device_get_path ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_device_get_path_display ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_device_is_open ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_device_open ##### -->
+<para>
+
+</para>
+
+@self: 
+@timeout: 
+@cancellable: 
+@callback: 
+@user_data: 
+
+
+<!-- ##### FUNCTION mbim_device_open_finish ##### -->
+<para>
+
+</para>
+
+@self: 
+@res: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_device_close ##### -->
+<para>
+
+</para>
+
+@self: 
+@timeout: 
+@cancellable: 
+@callback: 
+@user_data: 
+
+
+<!-- ##### FUNCTION mbim_device_close_finish ##### -->
+<para>
+
+</para>
+
+@self: 
+@res: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_device_close_force ##### -->
+<para>
+
+</para>
+
+@self: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_device_get_next_transaction_id ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_device_command ##### -->
+<para>
+
+</para>
+
+@self: 
+@message: 
+@timeout: 
+@cancellable: 
+@callback: 
+@user_data: 
+
+
+<!-- ##### FUNCTION mbim_device_command_finish ##### -->
+<para>
+
+</para>
+
+@self: 
+@res: 
+@error: 
+@Returns: 
+
+

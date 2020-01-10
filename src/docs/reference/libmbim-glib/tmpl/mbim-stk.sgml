@@ -1,0 +1,120 @@
+<!-- ##### SECTION Title ##### -->
+STK
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION mbim_message_stk_pac_query_new ##### -->
+<para>
+
+</para>
+
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_stk_pac_set_new ##### -->
+<para>
+
+</para>
+
+@pac_hostcontrol: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_stk_pac_response_parse ##### -->
+<para>
+
+</para>
+
+@message: 
+@pac_support: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_stk_pac_notification_parse ##### -->
+<para>
+
+</para>
+
+@message: 
+@pac_type: 
+@data_buffer_size: 
+@data_buffer: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_stk_terminal_response_set_new ##### -->
+<para>
+
+</para>
+
+@response_size: 
+@response: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_stk_terminal_response_response_parse ##### -->
+<para>
+
+</para>
+
+@message: 
+@result_data_size: 
+@result_data: 
+@status_words: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_stk_envelope_query_new ##### -->
+<para>
+
+</para>
+
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_stk_envelope_set_new ##### -->
+<para>
+
+</para>
+
+@data_size: 
+@data: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_stk_envelope_response_parse ##### -->
+<para>
+
+</para>
+
+@message: 
+@envelope_support: 
+@error: 
+@Returns: 
+
+

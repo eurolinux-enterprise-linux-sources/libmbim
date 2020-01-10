@@ -1,0 +1,213 @@
+<!-- ##### SECTION Title ##### -->
+mbim-cid
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### ENUM MbimCidBasicConnect ##### -->
+<para>
+
+</para>
+
+@MBIM_CID_BASIC_CONNECT_UNKNOWN: 
+@MBIM_CID_BASIC_CONNECT_DEVICE_CAPS: 
+@MBIM_CID_BASIC_CONNECT_SUBSCRIBER_READY_STATUS: 
+@MBIM_CID_BASIC_CONNECT_RADIO_STATE: 
+@MBIM_CID_BASIC_CONNECT_PIN: 
+@MBIM_CID_BASIC_CONNECT_PIN_LIST: 
+@MBIM_CID_BASIC_CONNECT_HOME_PROVIDER: 
+@MBIM_CID_BASIC_CONNECT_PREFERRED_PROVIDERS: 
+@MBIM_CID_BASIC_CONNECT_VISIBLE_PROVIDERS: 
+@MBIM_CID_BASIC_CONNECT_REGISTER_STATE: 
+@MBIM_CID_BASIC_CONNECT_PACKET_SERVICE: 
+@MBIM_CID_BASIC_CONNECT_SIGNAL_STATE: 
+@MBIM_CID_BASIC_CONNECT_CONNECT: 
+@MBIM_CID_BASIC_CONNECT_PROVISIONED_CONTEXTS: 
+@MBIM_CID_BASIC_CONNECT_SERVICE_ACTIVATION: 
+@MBIM_CID_BASIC_CONNECT_IP_CONFIGURATION: 
+@MBIM_CID_BASIC_CONNECT_DEVICE_SERVICES: 
+@MBIM_CID_BASIC_CONNECT_DEVICE_SERVICE_SUBSCRIBER_LIST: 
+@MBIM_CID_BASIC_CONNECT_PACKET_STATISTICS: 
+@MBIM_CID_BASIC_CONNECT_NETWORK_IDLE_HINT: 
+@MBIM_CID_BASIC_CONNECT_EMERGENCY_MODE: 
+@MBIM_CID_BASIC_CONNECT_IP_PACKET_FILTERS: 
+@MBIM_CID_BASIC_CONNECT_MULTICARRIER_PROVIDERS: 
+
+<!-- ##### ENUM MbimCidSms ##### -->
+<para>
+
+</para>
+
+@MBIM_CID_SMS_UNKNOWN: 
+@MBIM_CID_SMS_CONFIGURATION: 
+@MBIM_CID_SMS_READ: 
+@MBIM_CID_SMS_SEND: 
+@MBIM_CID_SMS_DELETE: 
+@MBIM_CID_SMS_MESSAGE_STORE_STATUS: 
+
+<!-- ##### ENUM MbimCidUssd ##### -->
+<para>
+
+</para>
+
+@MBIM_CID_USSD_UNKNOWN: 
+@MBIM_CID_USSD: 
+
+<!-- ##### ENUM MbimCidPhonebook ##### -->
+<para>
+
+</para>
+
+@MBIM_CID_PHONEBOOK_UNKNOWN: 
+@MBIM_CID_PHONEBOOK_CONFIGURATION: 
+@MBIM_CID_PHONEBOOK_READ: 
+@MBIM_CID_PHONEBOOK_DELETE: 
+@MBIM_CID_PHONEBOOK_WRITE: 
+
+<!-- ##### ENUM MbimCidStk ##### -->
+<para>
+
+</para>
+
+@MBIM_CID_STK_UNKNOWN: 
+@MBIM_CID_STK_PAC: 
+@MBIM_CID_STK_TERMINAL_RESPONSE: 
+@MBIM_CID_STK_ENVELOPE: 
+
+<!-- ##### ENUM MbimCidAuth ##### -->
+<para>
+
+</para>
+
+@MBIM_CID_AUTH_UNKNOWN: 
+@MBIM_CID_AUTH_AKA: 
+@MBIM_CID_AUTH_AKAP: 
+@MBIM_CID_AUTH_SIM: 
+
+<!-- ##### ENUM MbimCidDss ##### -->
+<para>
+
+</para>
+
+@MBIM_CID_DSS_UNKNOWN: 
+@MBIM_CID_DSS_CONNECT: 
+
+<!-- ##### FUNCTION mbim_cid_can_set ##### -->
+<para>
+
+</para>
+
+@service: 
+@cid: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_cid_can_query ##### -->
+<para>
+
+</para>
+
+@service: 
+@cid: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_cid_can_notify ##### -->
+<para>
+
+</para>
+
+@service: 
+@cid: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_cid_get_printable ##### -->
+<para>
+
+</para>
+
+@service: 
+@cid: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_cid_basic_connect_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_cid_sms_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_cid_ussd_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_cid_phonebook_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_cid_stk_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_cid_auth_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_cid_dss_get_string ##### -->
+<para>
+
+</para>
+
+@val: 
+@Returns: 
+
+

@@ -5,11 +5,7 @@ mbim_cellular_class_get_type
 mbim_cid_auth_get_type
 mbim_cid_basic_connect_get_type
 mbim_cid_dss_get_type
-mbim_cid_ms_firmware_id_get_type
-mbim_cid_ms_host_shutdown_get_type
 mbim_cid_phonebook_get_type
-mbim_cid_proxy_control_get_type
-mbim_cid_qmi_get_type
 mbim_cid_sms_get_type
 mbim_cid_stk_get_type
 mbim_cid_ussd_get_type
@@ -41,7 +37,6 @@ mbim_pin_state_get_type
 mbim_pin_type_get_type
 mbim_protocol_error_get_type
 mbim_provider_state_get_type
-mbim_proxy_get_type
 mbim_radio_switch_state_get_type
 mbim_ready_info_flag_get_type
 mbim_register_action_get_type

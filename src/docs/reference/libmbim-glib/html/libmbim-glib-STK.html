@@ -2,26 +2,30 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>STK: libmbim-glib Reference Manual</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<title>STK</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
 <link rel="home" href="index.html" title="libmbim-glib Reference Manual">
-<link rel="up" href="ch02.html" title="Generic Services">
+<link rel="up" href="ch02.html" title="Services">
 <link rel="prev" href="libmbim-glib-Phonebook.html" title="Phonebook">
 <link rel="next" href="libmbim-glib-DSS.html" title="DSS">
-<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
-<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
-<td width="100%" align="left" class="shortcuts">
-<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
-                  <a href="#libmbim-glib-STK.description" class="shortcut">Description</a></span>
-</td>
-<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
-<td><a accesskey="u" href="ch02.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
-<td><a accesskey="p" href="libmbim-glib-Phonebook.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
-<td><a accesskey="n" href="libmbim-glib-DSS.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
-</tr></table>
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="libmbim-glib-Phonebook.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch02.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">libmbim-glib Reference Manual</th>
+<td><a accesskey="n" href="libmbim-glib-DSS.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#libmbim-glib-STK.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#libmbim-glib-STK.description" class="shortcut">Description</a>
+</td></tr>
+</table>
 <div class="refentry">
 <a name="libmbim-glib-STK"></a><div class="titlepage"></div>
 <div class="refnamediv"><table width="100%"><tr>
@@ -29,463 +33,363 @@
 <h2><span class="refentrytitle"><a name="libmbim-glib-STK.top_of_page"></a>STK</span></h2>
 <p>STK</p>
 </td>
-<td class="gallery_image" valign="top" align="right"></td>
+<td valign="top" align="right"></td>
 </tr></table></div>
-<div class="refsect1">
-<a name="libmbim-glib-STK.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="functions_return">
-<col class="functions_name">
-</colgroup>
-<tbody>
-<tr>
-<td class="function_type">
-<a class="link" href="MbimMessage.html" title="MbimMessage"><span class="returnvalue">MbimMessage</span></a> *
-</td>
-<td class="function_name">
-<a class="link" href="libmbim-glib-STK.html#mbim-message-stk-pac-query-new" title="mbim_message_stk_pac_query_new ()">mbim_message_stk_pac_query_new</a> <span class="c_punctuation">()</span>
-</td>
-</tr>
-<tr>
-<td class="function_type">
-<a class="link" href="MbimMessage.html" title="MbimMessage"><span class="returnvalue">MbimMessage</span></a> *
-</td>
-<td class="function_name">
-<a class="link" href="libmbim-glib-STK.html#mbim-message-stk-pac-set-new" title="mbim_message_stk_pac_set_new ()">mbim_message_stk_pac_set_new</a> <span class="c_punctuation">()</span>
-</td>
-</tr>
-<tr>
-<td class="function_type">
-<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
-</td>
-<td class="function_name">
-<a class="link" href="libmbim-glib-STK.html#mbim-message-stk-pac-response-parse" title="mbim_message_stk_pac_response_parse ()">mbim_message_stk_pac_response_parse</a> <span class="c_punctuation">()</span>
-</td>
-</tr>
-<tr>
-<td class="function_type">
-<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
-</td>
-<td class="function_name">
-<a class="link" href="libmbim-glib-STK.html#mbim-message-stk-pac-notification-parse" title="mbim_message_stk_pac_notification_parse ()">mbim_message_stk_pac_notification_parse</a> <span class="c_punctuation">()</span>
-</td>
-</tr>
-<tr>
-<td class="function_type">
-<a class="link" href="MbimMessage.html" title="MbimMessage"><span class="returnvalue">MbimMessage</span></a> *
-</td>
-<td class="function_name">
-<a class="link" href="libmbim-glib-STK.html#mbim-message-stk-terminal-response-set-new" title="mbim_message_stk_terminal_response_set_new ()">mbim_message_stk_terminal_response_set_new</a> <span class="c_punctuation">()</span>
-</td>
-</tr>
-<tr>
-<td class="function_type">
-<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
-</td>
-<td class="function_name">
-<a class="link" href="libmbim-glib-STK.html#mbim-message-stk-terminal-response-response-parse" title="mbim_message_stk_terminal_response_response_parse ()">mbim_message_stk_terminal_response_response_parse</a> <span class="c_punctuation">()</span>
-</td>
-</tr>
-<tr>
-<td class="function_type">
-<a class="link" href="MbimMessage.html" title="MbimMessage"><span class="returnvalue">MbimMessage</span></a> *
-</td>
-<td class="function_name">
-<a class="link" href="libmbim-glib-STK.html#mbim-message-stk-envelope-query-new" title="mbim_message_stk_envelope_query_new ()">mbim_message_stk_envelope_query_new</a> <span class="c_punctuation">()</span>
-</td>
-</tr>
-<tr>
-<td class="function_type">
-<a class="link" href="MbimMessage.html" title="MbimMessage"><span class="returnvalue">MbimMessage</span></a> *
-</td>
-<td class="function_name">
-<a class="link" href="libmbim-glib-STK.html#mbim-message-stk-envelope-set-new" title="mbim_message_stk_envelope_set_new ()">mbim_message_stk_envelope_set_new</a> <span class="c_punctuation">()</span>
-</td>
-</tr>
-<tr>
-<td class="function_type">
-<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
-</td>
-<td class="function_name">
-<a class="link" href="libmbim-glib-STK.html#mbim-message-stk-envelope-response-parse" title="mbim_message_stk_envelope_response_parse ()">mbim_message_stk_envelope_response_parse</a> <span class="c_punctuation">()</span>
-</td>
-</tr>
-</tbody>
-</table></div>
+<div class="refsynopsisdiv">
+<a name="libmbim-glib-STK.synopsis"></a><h2>Synopsis</h2>
+<pre class="synopsis"><a class="link" href="MbimMessage.html" title="MbimMessage"><span class="returnvalue">MbimMessage</span></a> *       <a class="link" href="libmbim-glib-STK.html#mbim-message-stk-pac-query-new" title="mbim_message_stk_pac_query_new ()">mbim_message_stk_pac_query_new</a>      (<em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
+<a class="link" href="MbimMessage.html" title="MbimMessage"><span class="returnvalue">MbimMessage</span></a> *       <a class="link" href="libmbim-glib-STK.html#mbim-message-stk-pac-set-new" title="mbim_message_stk_pac_set_new ()">mbim_message_stk_pac_set_new</a>        (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> *pac_hostcontrol</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="libmbim-glib-STK.html#mbim-message-stk-pac-response-parse" title="mbim_message_stk_pac_response_parse ()">mbim_message_stk_pac_response_parse</a> (<em class="parameter"><code>const <a class="link" href="MbimMessage.html" title="MbimMessage"><span class="type">MbimMessage</span></a> *message</code></em>,
+                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> **pac_support</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="libmbim-glib-STK.html#mbim-message-stk-pac-notification-parse" title="mbim_message_stk_pac_notification_parse ()">mbim_message_stk_pac_notification_parse</a>
+                                                        (<em class="parameter"><code>const <a class="link" href="MbimMessage.html" title="MbimMessage"><span class="type">MbimMessage</span></a> *message</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="libmbim-glib-Enumerations-and-Flags.html#MbimStkPacType"><span class="type">MbimStkPacType</span></a> *pac_type</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> *data_buffer_size</code></em>,
+                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> **data_buffer</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
+
+<a class="link" href="MbimMessage.html" title="MbimMessage"><span class="returnvalue">MbimMessage</span></a> *       <a class="link" href="libmbim-glib-STK.html#mbim-message-stk-terminal-response-set-new" title="mbim_message_stk_terminal_response_set_new ()">mbim_message_stk_terminal_response_set_new</a>
+                                                        (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> response_size</code></em>,
+                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> *response</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="libmbim-glib-STK.html#mbim-message-stk-terminal-response-response-parse" title="mbim_message_stk_terminal_response_response_parse ()">mbim_message_stk_terminal_response_response_parse</a>
+                                                        (<em class="parameter"><code>const <a class="link" href="MbimMessage.html" title="MbimMessage"><span class="type">MbimMessage</span></a> *message</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> *result_data_size</code></em>,
+                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> **result_data</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> *status_words</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
+
+<a class="link" href="MbimMessage.html" title="MbimMessage"><span class="returnvalue">MbimMessage</span></a> *       <a class="link" href="libmbim-glib-STK.html#mbim-message-stk-envelope-query-new" title="mbim_message_stk_envelope_query_new ()">mbim_message_stk_envelope_query_new</a> (<em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
+<a class="link" href="MbimMessage.html" title="MbimMessage"><span class="returnvalue">MbimMessage</span></a> *       <a class="link" href="libmbim-glib-STK.html#mbim-message-stk-envelope-set-new" title="mbim_message_stk_envelope_set_new ()">mbim_message_stk_envelope_set_new</a>   (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> data_size</code></em>,
+                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> *data</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="libmbim-glib-STK.html#mbim-message-stk-envelope-response-parse" title="mbim_message_stk_envelope_response_parse ()">mbim_message_stk_envelope_response_parse</a>
+                                                        (<em class="parameter"><code>const <a class="link" href="MbimMessage.html" title="MbimMessage"><span class="type">MbimMessage</span></a> *message</code></em>,
+                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> **envelope_support</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
+</pre>
 </div>
 <div class="refsect1">
 <a name="libmbim-glib-STK.description"></a><h2>Description</h2>
+<p>
+</p>
 </div>
 <div class="refsect1">
-<a name="libmbim-glib-STK.functions_details"></a><h2>Functions</h2>
+<a name="libmbim-glib-STK.details"></a><h2>Details</h2>
 <div class="refsect2">
-<a name="mbim-message-stk-pac-query-new"></a><h3>mbim_message_stk_pac_query_new ()</h3>
-<pre class="programlisting"><a class="link" href="MbimMessage.html" title="MbimMessage"><span class="returnvalue">MbimMessage</span></a> *
-mbim_message_stk_pac_query_new (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
-<p>Create a new request for the 'Pac' query command in the 'STK' service.</p>
-<div class="refsect3">
-<a name="mbim-message-stk-pac-query-new.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<a name="mbim-message-stk-pac-query-new"></a><h3>mbim_message_stk_pac_query_new ()</h3>
+<pre class="programlisting"><a class="link" href="MbimMessage.html" title="MbimMessage"><span class="returnvalue">MbimMessage</span></a> *       mbim_message_stk_pac_query_new      (<em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>
+Create a new request for the 'Pac' query command in the 'STK' service.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
 <colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>return location for error or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="mbim-message-stk-pac-query-new.returns"></a><h4>Returns</h4>
-<p> a newly allocated <a class="link" href="MbimMessage.html" title="MbimMessage"><span class="type">MbimMessage</span></a>, which should be freed with <a class="link" href="MbimMessage.html#mbim-message-unref" title="mbim_message_unref ()"><code class="function">mbim_message_unref()</code></a>.</p>
-</div>
-</div>
-<hr>
-<div class="refsect2">
-<a name="mbim-message-stk-pac-set-new"></a><h3>mbim_message_stk_pac_set_new ()</h3>
-<pre class="programlisting"><a class="link" href="MbimMessage.html" title="MbimMessage"><span class="returnvalue">MbimMessage</span></a> *
-mbim_message_stk_pac_set_new (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> *pac_host_control</code></em>,
-                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
-<p>Create a new request for the 'Pac' set command in the 'STK' service.</p>
-<div class="refsect3">
-<a name="mbim-message-stk-pac-set-new.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
+<col align="left" valign="top">
+<col>
 </colgroup>
 <tbody>
 <tr>
-<td class="parameter_name"><p>pac_host_control</p></td>
-<td class="parameter_description"><p>the 'PacHostControl' field, given as an array of 32 <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> values.</p></td>
-<td class="parameter_annotations"> </td>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>return location for error or <a href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS"><code class="literal">NULL</code></a>.</td>
 </tr>
 <tr>
-<td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>return location for error or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
-<td class="parameter_annotations"> </td>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a newly allocated <a class="link" href="MbimMessage.html" title="MbimMessage"><span class="type">MbimMessage</span></a>, which should be freed with <a class="link" href="MbimMessage.html#mbim-message-unref" title="mbim_message_unref ()"><code class="function">mbim_message_unref()</code></a>.</td>
 </tr>
 </tbody>
 </table></div>
 </div>
-<div class="refsect3">
-<a name="mbim-message-stk-pac-set-new.returns"></a><h4>Returns</h4>
-<p> a newly allocated <a class="link" href="MbimMessage.html" title="MbimMessage"><span class="type">MbimMessage</span></a>, which should be freed with <a class="link" href="MbimMessage.html#mbim-message-unref" title="mbim_message_unref ()"><code class="function">mbim_message_unref()</code></a>.</p>
-</div>
-</div>
 <hr>
 <div class="refsect2">
-<a name="mbim-message-stk-pac-response-parse"></a><h3>mbim_message_stk_pac_response_parse ()</h3>
-<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
-mbim_message_stk_pac_response_parse (<em class="parameter"><code>const <a class="link" href="MbimMessage.html" title="MbimMessage"><span class="type">MbimMessage</span></a> *message</code></em>,
-                                     <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> **pac_support</code></em>,
-                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
-<p>Create a new request for the 'PacSupport' response command in the 'STK' service.</p>
-<div class="refsect3">
-<a name="mbim-message-stk-pac-response-parse.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<a name="mbim-message-stk-pac-set-new"></a><h3>mbim_message_stk_pac_set_new ()</h3>
+<pre class="programlisting"><a class="link" href="MbimMessage.html" title="MbimMessage"><span class="returnvalue">MbimMessage</span></a> *       mbim_message_stk_pac_set_new        (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> *pac_hostcontrol</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>
+Create a new request for the 'Pac' set command in the 'STK' service.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
 <colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
+<col align="left" valign="top">
+<col>
 </colgroup>
 <tbody>
 <tr>
-<td class="parameter_name"><p>message</p></td>
-<td class="parameter_description"><p>the <a class="link" href="MbimMessage.html" title="MbimMessage"><span class="type">MbimMessage</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
+<td><p><span class="term"><em class="parameter"><code>pac_hostcontrol</code></em> :</span></p></td>
+<td>the 'PacHostcontrol' field, given as an array of 32 <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> values.</td>
 </tr>
 <tr>
-<td class="parameter_name"><p>pac_support</p></td>
-<td class="parameter_description"><p>return location for an array of 256 <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> values. Do not free the returned value, it is owned by <em class="parameter"><code>message</code></em>
-.</p></td>
-<td class="parameter_annotations"> </td>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>return location for error or <a href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS"><code class="literal">NULL</code></a>.</td>
 </tr>
 <tr>
-<td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>return location for error or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
-<td class="parameter_annotations"> </td>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a newly allocated <a class="link" href="MbimMessage.html" title="MbimMessage"><span class="type">MbimMessage</span></a>, which should be freed with <a class="link" href="MbimMessage.html#mbim-message-unref" title="mbim_message_unref ()"><code class="function">mbim_message_unref()</code></a>.</td>
 </tr>
 </tbody>
 </table></div>
 </div>
-<div class="refsect3">
-<a name="mbim-message-stk-pac-response-parse.returns"></a><h4>Returns</h4>
-<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the message was correctly parsed, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if <em class="parameter"><code>error</code></em>
-is set.</p>
-</div>
-</div>
 <hr>
 <div class="refsect2">
-<a name="mbim-message-stk-pac-notification-parse"></a><h3>mbim_message_stk_pac_notification_parse ()</h3>
-<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
-mbim_message_stk_pac_notification_parse
-                               (<em class="parameter"><code>const <a class="link" href="MbimMessage.html" title="MbimMessage"><span class="type">MbimMessage</span></a> *message</code></em>,
-                                <em class="parameter"><code><a class="link" href="libmbim-glib-Enumerations-and-Flags.html#MbimStkPacType" title="enum MbimStkPacType"><span class="type">MbimStkPacType</span></a> *pac_type</code></em>,
-                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> *data_buffer_size</code></em>,
-                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> **data_buffer</code></em>,
-                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
-<p>Create a new request for the 'DataBuffer' notification command in the 'STK' service.</p>
-<div class="refsect3">
-<a name="mbim-message-stk-pac-notification-parse.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<a name="mbim-message-stk-pac-response-parse"></a><h3>mbim_message_stk_pac_response_parse ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            mbim_message_stk_pac_response_parse (<em class="parameter"><code>const <a class="link" href="MbimMessage.html" title="MbimMessage"><span class="type">MbimMessage</span></a> *message</code></em>,
+                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> **pac_support</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>
+Create a new request for the 'PacSupport' response command in the 'STK' service.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
 <colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
+<col align="left" valign="top">
+<col>
 </colgroup>
 <tbody>
 <tr>
-<td class="parameter_name"><p>message</p></td>
-<td class="parameter_description"><p>the <a class="link" href="MbimMessage.html" title="MbimMessage"><span class="type">MbimMessage</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
+<td><p><span class="term"><em class="parameter"><code>message</code></em> :</span></p></td>
+<td>the <a class="link" href="MbimMessage.html" title="MbimMessage"><span class="type">MbimMessage</span></a>.</td>
 </tr>
 <tr>
-<td class="parameter_name"><p>pac_type</p></td>
-<td class="parameter_description"><p>return location for a <a class="link" href="libmbim-glib-Enumerations-and-Flags.html#MbimStkPacType" title="enum MbimStkPacType"><span class="type">MbimStkPacType</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the 'PacType' field is not needed.</p></td>
-<td class="parameter_annotations"> </td>
+<td><p><span class="term"><em class="parameter"><code>pac_support</code></em> :</span></p></td>
+<td>return location for an array of 256 <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> values. Do not free the returned value, it is owned by <em class="parameter"><code>message</code></em>.</td>
 </tr>
 <tr>
-<td class="parameter_name"><p>data_buffer_size</p></td>
-<td class="parameter_description"><p>return location for the size of the data_buffer array.</p></td>
-<td class="parameter_annotations"> </td>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>return location for error or <a href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS"><code class="literal">NULL</code></a>.</td>
 </tr>
 <tr>
-<td class="parameter_name"><p>data_buffer</p></td>
-<td class="parameter_description"><p>return location for an array of <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> values. Do not free the returned value, it is owned by <em class="parameter"><code>message</code></em>
-.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>return location for error or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
-<td class="parameter_annotations"> </td>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the message was correctly parsed, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if <em class="parameter"><code>error</code></em> is set.</td>
 </tr>
 </tbody>
 </table></div>
 </div>
-<div class="refsect3">
-<a name="mbim-message-stk-pac-notification-parse.returns"></a><h4>Returns</h4>
-<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the message was correctly parsed, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if <em class="parameter"><code>error</code></em>
-is set.</p>
-</div>
-</div>
 <hr>
 <div class="refsect2">
-<a name="mbim-message-stk-terminal-response-set-new"></a><h3>mbim_message_stk_terminal_response_set_new ()</h3>
-<pre class="programlisting"><a class="link" href="MbimMessage.html" title="MbimMessage"><span class="returnvalue">MbimMessage</span></a> *
-mbim_message_stk_terminal_response_set_new
-                               (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> response_size</code></em>,
-                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> *response</code></em>,
-                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
-<p>Create a new request for the 'Terminal Response' set command in the 'STK' service.</p>
-<div class="refsect3">
-<a name="mbim-message-stk-terminal-response-set-new.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<a name="mbim-message-stk-pac-notification-parse"></a><h3>mbim_message_stk_pac_notification_parse ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            mbim_message_stk_pac_notification_parse
+                                                        (<em class="parameter"><code>const <a class="link" href="MbimMessage.html" title="MbimMessage"><span class="type">MbimMessage</span></a> *message</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="libmbim-glib-Enumerations-and-Flags.html#MbimStkPacType"><span class="type">MbimStkPacType</span></a> *pac_type</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> *data_buffer_size</code></em>,
+                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> **data_buffer</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>
+Create a new request for the 'DataBuffer' notification command in the 'STK' service.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
 <colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
+<col align="left" valign="top">
+<col>
 </colgroup>
 <tbody>
 <tr>
-<td class="parameter_name"><p>response_size</p></td>
-<td class="parameter_description"><p>size of the response array.</p></td>
-<td class="parameter_annotations"> </td>
+<td><p><span class="term"><em class="parameter"><code>message</code></em> :</span></p></td>
+<td>the <a class="link" href="MbimMessage.html" title="MbimMessage"><span class="type">MbimMessage</span></a>.</td>
 </tr>
 <tr>
-<td class="parameter_name"><p>response</p></td>
-<td class="parameter_description"><p>the 'Response' field, given as an array of <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> values.</p></td>
-<td class="parameter_annotations"> </td>
+<td><p><span class="term"><em class="parameter"><code>pac_type</code></em> :</span></p></td>
+<td>return location for a <a class="link" href="libmbim-glib-Enumerations-and-Flags.html#MbimStkPacType"><span class="type">MbimStkPacType</span></a>, or <a href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS"><code class="literal">NULL</code></a> if the 'PacType' field is not needed.</td>
 </tr>
 <tr>
-<td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>return location for error or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
-<td class="parameter_annotations"> </td>
+<td><p><span class="term"><em class="parameter"><code>data_buffer_size</code></em> :</span></p></td>
+<td>return location for the size of the data_buffer array.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>data_buffer</code></em> :</span></p></td>
+<td>return location for an array of <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> values. Do not free the returned value, it is owned by <em class="parameter"><code>message</code></em>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>return location for error or <a href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS"><code class="literal">NULL</code></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the message was correctly parsed, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if <em class="parameter"><code>error</code></em> is set.</td>
 </tr>
 </tbody>
 </table></div>
 </div>
-<div class="refsect3">
-<a name="mbim-message-stk-terminal-response-set-new.returns"></a><h4>Returns</h4>
-<p> a newly allocated <a class="link" href="MbimMessage.html" title="MbimMessage"><span class="type">MbimMessage</span></a>, which should be freed with <a class="link" href="MbimMessage.html#mbim-message-unref" title="mbim_message_unref ()"><code class="function">mbim_message_unref()</code></a>.</p>
-</div>
-</div>
 <hr>
 <div class="refsect2">
-<a name="mbim-message-stk-terminal-response-response-parse"></a><h3>mbim_message_stk_terminal_response_response_parse ()</h3>
-<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
-mbim_message_stk_terminal_response_response_parse
-                               (<em class="parameter"><code>const <a class="link" href="MbimMessage.html" title="MbimMessage"><span class="type">MbimMessage</span></a> *message</code></em>,
-                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> *result_data_size</code></em>,
-                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> **result_data</code></em>,
-                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> *status_words</code></em>,
-                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
-<p>Create a new request for the 'StatusWords' response command in the 'STK' service.</p>
-<div class="refsect3">
-<a name="mbim-message-stk-terminal-response-response-parse.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<a name="mbim-message-stk-terminal-response-set-new"></a><h3>mbim_message_stk_terminal_response_set_new ()</h3>
+<pre class="programlisting"><a class="link" href="MbimMessage.html" title="MbimMessage"><span class="returnvalue">MbimMessage</span></a> *       mbim_message_stk_terminal_response_set_new
+                                                        (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> response_size</code></em>,
+                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> *response</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>
+Create a new request for the 'Terminal Response' set command in the 'STK' service.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
 <colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
+<col align="left" valign="top">
+<col>
 </colgroup>
 <tbody>
 <tr>
-<td class="parameter_name"><p>message</p></td>
-<td class="parameter_description"><p>the <a class="link" href="MbimMessage.html" title="MbimMessage"><span class="type">MbimMessage</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
+<td><p><span class="term"><em class="parameter"><code>response_size</code></em> :</span></p></td>
+<td>size of the response array.</td>
 </tr>
 <tr>
-<td class="parameter_name"><p>result_data_size</p></td>
-<td class="parameter_description"><p>return location for the size of the result_data array.</p></td>
-<td class="parameter_annotations"> </td>
+<td><p><span class="term"><em class="parameter"><code>response</code></em> :</span></p></td>
+<td>the 'Response' field, given as an array of <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> values.</td>
 </tr>
 <tr>
-<td class="parameter_name"><p>result_data</p></td>
-<td class="parameter_description"><p>return location for an array of <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> values. Do not free the returned value, it is owned by <em class="parameter"><code>message</code></em>
-.</p></td>
-<td class="parameter_annotations"> </td>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>return location for error or <a href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS"><code class="literal">NULL</code></a>.</td>
 </tr>
 <tr>
-<td class="parameter_name"><p>status_words</p></td>
-<td class="parameter_description"><p>return location for a <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the 'StatusWords' field is not needed.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>return location for error or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
-<td class="parameter_annotations"> </td>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a newly allocated <a class="link" href="MbimMessage.html" title="MbimMessage"><span class="type">MbimMessage</span></a>, which should be freed with <a class="link" href="MbimMessage.html#mbim-message-unref" title="mbim_message_unref ()"><code class="function">mbim_message_unref()</code></a>.</td>
 </tr>
 </tbody>
 </table></div>
 </div>
-<div class="refsect3">
-<a name="mbim-message-stk-terminal-response-response-parse.returns"></a><h4>Returns</h4>
-<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the message was correctly parsed, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if <em class="parameter"><code>error</code></em>
-is set.</p>
-</div>
-</div>
 <hr>
 <div class="refsect2">
-<a name="mbim-message-stk-envelope-query-new"></a><h3>mbim_message_stk_envelope_query_new ()</h3>
-<pre class="programlisting"><a class="link" href="MbimMessage.html" title="MbimMessage"><span class="returnvalue">MbimMessage</span></a> *
-mbim_message_stk_envelope_query_new (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
-<p>Create a new request for the 'Envelope' query command in the 'STK' service.</p>
-<div class="refsect3">
-<a name="mbim-message-stk-envelope-query-new.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<a name="mbim-message-stk-terminal-response-response-parse"></a><h3>mbim_message_stk_terminal_response_response_parse ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            mbim_message_stk_terminal_response_response_parse
+                                                        (<em class="parameter"><code>const <a class="link" href="MbimMessage.html" title="MbimMessage"><span class="type">MbimMessage</span></a> *message</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> *result_data_size</code></em>,
+                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> **result_data</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> *status_words</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>
+Create a new request for the 'StatusWords' response command in the 'STK' service.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
 <colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>return location for error or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="mbim-message-stk-envelope-query-new.returns"></a><h4>Returns</h4>
-<p> a newly allocated <a class="link" href="MbimMessage.html" title="MbimMessage"><span class="type">MbimMessage</span></a>, which should be freed with <a class="link" href="MbimMessage.html#mbim-message-unref" title="mbim_message_unref ()"><code class="function">mbim_message_unref()</code></a>.</p>
-</div>
-</div>
-<hr>
-<div class="refsect2">
-<a name="mbim-message-stk-envelope-set-new"></a><h3>mbim_message_stk_envelope_set_new ()</h3>
-<pre class="programlisting"><a class="link" href="MbimMessage.html" title="MbimMessage"><span class="returnvalue">MbimMessage</span></a> *
-mbim_message_stk_envelope_set_new (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> data_size</code></em>,
-                                   <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> *data</code></em>,
-                                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
-<p>Create a new request for the 'Envelope' set command in the 'STK' service.</p>
-<div class="refsect3">
-<a name="mbim-message-stk-envelope-set-new.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
+<col align="left" valign="top">
+<col>
 </colgroup>
 <tbody>
 <tr>
-<td class="parameter_name"><p>data_size</p></td>
-<td class="parameter_description"><p>size of the data array.</p></td>
-<td class="parameter_annotations"> </td>
+<td><p><span class="term"><em class="parameter"><code>message</code></em> :</span></p></td>
+<td>the <a class="link" href="MbimMessage.html" title="MbimMessage"><span class="type">MbimMessage</span></a>.</td>
 </tr>
 <tr>
-<td class="parameter_name"><p>data</p></td>
-<td class="parameter_description"><p>the 'Data' field, given as an array of <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> values.</p></td>
-<td class="parameter_annotations"> </td>
+<td><p><span class="term"><em class="parameter"><code>result_data_size</code></em> :</span></p></td>
+<td>return location for the size of the result_data array.</td>
 </tr>
 <tr>
-<td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>return location for error or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
-<td class="parameter_annotations"> </td>
+<td><p><span class="term"><em class="parameter"><code>result_data</code></em> :</span></p></td>
+<td>return location for an array of <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> values. Do not free the returned value, it is owned by <em class="parameter"><code>message</code></em>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>status_words</code></em> :</span></p></td>
+<td>return location for a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a>, or <a href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS"><code class="literal">NULL</code></a> if the 'StatusWords' field is not needed.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>return location for error or <a href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS"><code class="literal">NULL</code></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the message was correctly parsed, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if <em class="parameter"><code>error</code></em> is set.</td>
 </tr>
 </tbody>
 </table></div>
 </div>
-<div class="refsect3">
-<a name="mbim-message-stk-envelope-set-new.returns"></a><h4>Returns</h4>
-<p> a newly allocated <a class="link" href="MbimMessage.html" title="MbimMessage"><span class="type">MbimMessage</span></a>, which should be freed with <a class="link" href="MbimMessage.html#mbim-message-unref" title="mbim_message_unref ()"><code class="function">mbim_message_unref()</code></a>.</p>
-</div>
-</div>
 <hr>
 <div class="refsect2">
-<a name="mbim-message-stk-envelope-response-parse"></a><h3>mbim_message_stk_envelope_response_parse ()</h3>
-<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
-mbim_message_stk_envelope_response_parse
-                               (<em class="parameter"><code>const <a class="link" href="MbimMessage.html" title="MbimMessage"><span class="type">MbimMessage</span></a> *message</code></em>,
-                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> **envelope_support</code></em>,
-                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
-<p>Create a new request for the 'EnvelopeSupport' response command in the 'STK' service.</p>
-<div class="refsect3">
-<a name="mbim-message-stk-envelope-response-parse.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<a name="mbim-message-stk-envelope-query-new"></a><h3>mbim_message_stk_envelope_query_new ()</h3>
+<pre class="programlisting"><a class="link" href="MbimMessage.html" title="MbimMessage"><span class="returnvalue">MbimMessage</span></a> *       mbim_message_stk_envelope_query_new (<em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>
+Create a new request for the 'Envelope' query command in the 'STK' service.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
 <colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
+<col align="left" valign="top">
+<col>
 </colgroup>
 <tbody>
 <tr>
-<td class="parameter_name"><p>message</p></td>
-<td class="parameter_description"><p>the <a class="link" href="MbimMessage.html" title="MbimMessage"><span class="type">MbimMessage</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>return location for error or <a href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS"><code class="literal">NULL</code></a>.</td>
 </tr>
 <tr>
-<td class="parameter_name"><p>envelope_support</p></td>
-<td class="parameter_description"><p>return location for an array of 32 <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> values. Do not free the returned value, it is owned by <em class="parameter"><code>message</code></em>
-.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>return location for error or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
-<td class="parameter_annotations"> </td>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a newly allocated <a class="link" href="MbimMessage.html" title="MbimMessage"><span class="type">MbimMessage</span></a>, which should be freed with <a class="link" href="MbimMessage.html#mbim-message-unref" title="mbim_message_unref ()"><code class="function">mbim_message_unref()</code></a>.</td>
 </tr>
 </tbody>
 </table></div>
 </div>
-<div class="refsect3">
-<a name="mbim-message-stk-envelope-response-parse.returns"></a><h4>Returns</h4>
-<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the message was correctly parsed, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if <em class="parameter"><code>error</code></em>
-is set.</p>
+<hr>
+<div class="refsect2">
+<a name="mbim-message-stk-envelope-set-new"></a><h3>mbim_message_stk_envelope_set_new ()</h3>
+<pre class="programlisting"><a class="link" href="MbimMessage.html" title="MbimMessage"><span class="returnvalue">MbimMessage</span></a> *       mbim_message_stk_envelope_set_new   (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> data_size</code></em>,
+                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> *data</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>
+Create a new request for the 'Envelope' set command in the 'STK' service.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>data_size</code></em> :</span></p></td>
+<td>size of the data array.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>data</code></em> :</span></p></td>
+<td>the 'Data' field, given as an array of <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> values.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>return location for error or <a href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS"><code class="literal">NULL</code></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a newly allocated <a class="link" href="MbimMessage.html" title="MbimMessage"><span class="type">MbimMessage</span></a>, which should be freed with <a class="link" href="MbimMessage.html#mbim-message-unref" title="mbim_message_unref ()"><code class="function">mbim_message_unref()</code></a>.</td>
+</tr>
+</tbody>
+</table></div>
 </div>
+<hr>
+<div class="refsect2">
+<a name="mbim-message-stk-envelope-response-parse"></a><h3>mbim_message_stk_envelope_response_parse ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            mbim_message_stk_envelope_response_parse
+                                                        (<em class="parameter"><code>const <a class="link" href="MbimMessage.html" title="MbimMessage"><span class="type">MbimMessage</span></a> *message</code></em>,
+                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> **envelope_support</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>
+Create a new request for the 'EnvelopeSupport' response command in the 'STK' service.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>message</code></em> :</span></p></td>
+<td>the <a class="link" href="MbimMessage.html" title="MbimMessage"><span class="type">MbimMessage</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>envelope_support</code></em> :</span></p></td>
+<td>return location for an array of 32 <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> values. Do not free the returned value, it is owned by <em class="parameter"><code>message</code></em>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>return location for error or <a href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS"><code class="literal">NULL</code></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the message was correctly parsed, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if <em class="parameter"><code>error</code></em> is set.</td>
+</tr>
+</tbody>
+</table></div>
 </div>
-</div>
-<div class="refsect1">
-<a name="libmbim-glib-STK.other_details"></a><h2>Types and Values</h2>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.25.1</div>
+<hr>
+          Generated by GTK-Doc V1.18</div>
 </body>
 </html>

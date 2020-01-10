@@ -3,8 +3,8 @@ AC_PREREQ([2.68])
 
 dnl The libmbim version number
 m4_define([mbim_major_version], [1])
-m4_define([mbim_minor_version], [14])
-m4_define([mbim_micro_version], [2])
+m4_define([mbim_minor_version], [5])
+m4_define([mbim_micro_version], [0])
 m4_define([mbim_version],
           [mbim_major_version.mbim_minor_version.mbim_micro_version])
 
@@ -16,7 +16,7 @@ dnl        If the interface has grown (that is, the new library is compatible
 dnl            with old code), increment a.
 dnl        If the interface has changed in an incompatible way (that is,
 dnl            functions have changed or been removed), then zero a.
-m4_define([mbim_glib_lt_current],  [6])
+m4_define([mbim_glib_lt_current],  [2])
 m4_define([mbim_glib_lt_revision], [0])
 m4_define([mbim_glib_lt_age],      [2])
 
@@ -69,7 +69,7 @@ PKG_CHECK_MODULES(LIBMBIM_GLIB,
                   glib-2.0 >= 2.32
                   gobject-2.0
                   gio-2.0
-                  gio-unix-2.0)
+                  gudev-1.0 >= 147)
 AC_SUBST(LIBMBIM_GLIB_CFLAGS)
 AC_SUBST(LIBMBIM_GLIB_LIBS)
 
@@ -81,80 +81,11 @@ PKG_CHECK_MODULES(MBIMCLI,
 AC_SUBST(MBIMCLI_CFLAGS)
 AC_SUBST(MBIMCLI_LIBS)
 
-dnl General dependencies for mbim-proxy
-PKG_CHECK_MODULES(MBIMPROXY,
-                  glib-2.0 >= 2.32
-                  gobject-2.0
-                  gio-2.0)
-AC_SUBST(MBIMPROXY_CFLAGS)
-AC_SUBST(MBIMPROXY_LIBS)
-
 GLIB_MKENUMS=`$PKG_CONFIG --variable=glib_mkenums glib-2.0`
 AC_SUBST(GLIB_MKENUMS)
 
 dnl Documentation
 GTK_DOC_CHECK(1.0)
-
-# MBIM username
-MBIM_USERNAME="root"
-AC_ARG_ENABLE(mbim-username,
-              AS_HELP_STRING([--enable-mbim-username=<username>], [user allowed to access MBIM devices]))
-if test -n "$enable_mbim_username" ; then
-    MBIM_USERNAME_ENABLED=yes
-    AC_DEFINE(MBIM_USERNAME_ENABLED, 1, [Define if we enable MBIM username])
-    MBIM_USERNAME="$enable_mbim_username"
-    AC_SUBST(MBIM_USERNAME)
-    AC_DEFINE_UNQUOTED(MBIM_USERNAME, "$MBIM_USERNAME", [Define the MBIM username])
-else
-    MBIM_USERNAME_ENABLED=no
-fi
-
-AM_CONDITIONAL([MBIM_USERNAME_ENABLED], [test "x$MBIM_USERNAME_ENABLED" = "xyes"])
-
-# udev support (auto)
-GUDEV_VERSION=147
-
-PKG_CHECK_MODULES(GUDEV, [gudev-1.0 >= $GUDEV_VERSION], [have_gudev=yes],[have_gudev=no])
-
-AC_ARG_WITH(udev,
-            AS_HELP_STRING([--with-udev], [Build with udev support [[default=auto]]]),, [with_udev=auto])
-
-if test "x$with_udev" = "xauto"; then
-   if test "x$have_gudev" = "xno"; then
-       with_udev="no"
-   else
-       with_udev="yes"
-   fi
-fi
-
-case $with_udev in
-    yes)
-        if test "x$have_gudev" = "xno"; then
-            AC_MSG_ERROR([Couldn't find gudev >= $GUDEV_VERSION. Install it, or otherwise configure using --without-udev to disable udev support.])
-        else
-            AC_DEFINE(WITH_UDEV, 1, [Define if you want udev support])
-            AC_SUBST(GUDEV_CFLAGS)
-            AC_SUBST(GUDEV_LIBS)
-        fi
-        ;;
-    *)
-        AC_DEFINE(WITH_UDEV, 0, [Define if you want udev support])
-        with_udev=no
-        ;;
-esac
-
-# udev base directory
-AC_ARG_WITH(udev-base-dir, AS_HELP_STRING([--with-udev-base-dir=DIR], [where udev base directory is]))
-if test -n "$with_udev_base_dir" ; then
-    UDEV_BASE_DIR="$with_udev_base_dir"
-else
-    UDEV_BASE_DIR="/lib/udev"
-fi
-AC_SUBST(UDEV_BASE_DIR)
-
-dnl Man page
-AC_PATH_PROG(HELP2MAN, help2man, false)
-AM_CONDITIONAL(BUILDOPT_MAN, test x$HELP2MAN != xfalse)
 
 AC_CONFIG_FILES([Makefile
                  build-aux/Makefile
@@ -163,42 +94,24 @@ AC_CONFIG_FILES([Makefile
                  data/Makefile
                  data/pkg-config/Makefile
                  data/pkg-config/mbim-glib.pc
-                 src/Makefile
-                 src/libmbim-glib/Makefile
-                 src/libmbim-glib/mbim-version.h
-                 src/libmbim-glib/generated/Makefile
-                 src/libmbim-glib/test/Makefile
-                 src/mbimcli/Makefile
-                 src/mbim-proxy/Makefile
+                 libmbim-glib/Makefile
+                 libmbim-glib/mbim-version.h
+                 libmbim-glib/generated/Makefile
+                 libmbim-glib/test/Makefile
+                 cli/Makefile
                  utils/Makefile
                  docs/Makefile
                  docs/reference/Makefile
                  docs/reference/libmbim-glib/Makefile
-                 docs/reference/libmbim-glib/version.xml
-                 docs/man/Makefile])
-
-if test "x$MBIM_USERNAME_ENABLED" = "xyes"; then
-    AC_CONFIG_FILES([src/mbim-proxy/76-mbim-proxy-device-ownership.rules])
-fi
-
+                 docs/reference/libmbim-glib/version.xml])
 AC_OUTPUT
 
 echo "
     libmbim $VERSION
     ==============================================
 
-    Build:
-      compiler:             ${CC}
-      cflags:               ${CFLAGS}
-      ldflags:              ${LDFLAGS}
-      Maintainer mode:      ${USE_MAINTAINER_MODE}
-      Documentation:        ${enable_gtk_doc}
-
-    System paths:
-      prefix:               ${prefix}
-      udev base directory:  ${UDEV_BASE_DIR}
-
-    Features:
-      udev support:         ${with_udev}
-      MBIM username:        ${MBIM_USERNAME_ENABLED} (${MBIM_USERNAME})
+    compiler:                ${CC}
+    cflags:                  ${CFLAGS}
+    Maintainer mode:         ${USE_MAINTAINER_MODE}
+    Documentation:           ${enable_gtk_doc}
 "

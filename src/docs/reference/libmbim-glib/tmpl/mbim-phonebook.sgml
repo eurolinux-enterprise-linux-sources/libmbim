@@ -1,0 +1,145 @@
+<!-- ##### SECTION Title ##### -->
+Phonebook
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### STRUCT MbimPhonebookEntry ##### -->
+<para>
+
+</para>
+
+@entry_index: 
+@number: 
+@name: 
+
+<!-- ##### FUNCTION mbim_phonebook_entry_array_free ##### -->
+<para>
+
+</para>
+
+@array: 
+
+
+<!-- ##### FUNCTION mbim_message_phonebook_configuration_query_new ##### -->
+<para>
+
+</para>
+
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_phonebook_configuration_response_parse ##### -->
+<para>
+
+</para>
+
+@message: 
+@state: 
+@number_of_entries: 
+@used_entries: 
+@max_number_length: 
+@max_name: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_phonebook_configuration_notification_parse ##### -->
+<para>
+
+</para>
+
+@message: 
+@state: 
+@number_of_entries: 
+@used_entries: 
+@max_number_length: 
+@max_name: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_phonebook_read_query_new ##### -->
+<para>
+
+</para>
+
+@filter_flag: 
+@filter_message_index: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_phonebook_read_response_parse ##### -->
+<para>
+
+</para>
+
+@message: 
+@entry_count: 
+@entries: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_phonebook_delete_set_new ##### -->
+<para>
+
+</para>
+
+@filter_flag: 
+@filter_message_index: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_phonebook_delete_response_parse ##### -->
+<para>
+
+</para>
+
+@message: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_phonebook_write_set_new ##### -->
+<para>
+
+</para>
+
+@save_flag: 
+@save_index: 
+@number: 
+@name: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_message_phonebook_write_response_parse ##### -->
+<para>
+
+</para>
+
+@message: 
+@error: 
+@Returns: 
+
+

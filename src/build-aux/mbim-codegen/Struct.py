@@ -15,7 +15,7 @@
 # with this program; if not, write to the Free Software Foundation, Inc., 51
 # Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 #
-# Copyright (C) 2013 - 2014 Aleksander Morgado <aleksander@aleksander.es>
+# Copyright (C) 2013 Aleksander Morgado <aleksander@gnu.org>
 #
 
 import string
@@ -494,19 +494,18 @@ class Struct:
             translations['field'] = utils.build_underscore_name_from_camelcase(field['name'])
             translations['array_size'] = field['array-size'] if 'array-size' in field else ''
             translations['array_size_field'] = utils.build_underscore_name_from_camelcase(field['array-size-field']) if 'array-size-field' in field else ''
-            translations['pad_array'] = field['pad-array'] if 'pad-array' in field else 'TRUE'
 
             if field['format'] == 'uuid':
                 inner_template = ('    _mbim_struct_builder_append_uuid (builder, &(value->${field}));\n')
             elif field['format'] == 'byte-array':
-                inner_template = ('    _mbim_struct_builder_append_byte_array (builder, FALSE, FALSE, ${pad_array}, value->${field}, ${array_size});\n')
+                inner_template = ('    _mbim_struct_builder_append_byte_array (builder, FALSE, FALSE, value->${field}, ${array_size});\n')
             elif field['format'] == 'unsized-byte-array':
-                inner_template = ('    _mbim_struct_builder_append_byte_array (builder, FALSE, FALSE, ${pad_array}, value->${field}, value->${field}_size);\n')
+                inner_template = ('    _mbim_struct_builder_append_byte_array (builder, FALSE, FALSE, value->${field}, value->${field}_size);\n')
             elif field['format'] == 'ref-byte-array':
                 if 'array-size-field' in field:
-                    inner_template = ('    _mbim_struct_builder_append_byte_array (builder, TRUE, FALSE, ${pad_array}, value->${field}, value->${array_size_field});\n')
+                    inner_template = ('    _mbim_struct_builder_append_byte_array (builder, TRUE, FALSE, value->${field}, value->${array_size_field});\n')
                 else:
-                    inner_template = ('    _mbim_struct_builder_append_byte_array (builder, TRUE, TRUE, ${pad_array}, value->${field}, value->${field}_size);\n')
+                    inner_template = ('    _mbim_struct_builder_append_byte_array (builder, TRUE, TRUE, value->${field}, value->${field}_size);\n')
             elif field['format'] == 'guint32':
                 inner_template = ('    _mbim_struct_builder_append_guint32 (builder, value->${field});\n')
             elif field['format'] == 'guint32-array':

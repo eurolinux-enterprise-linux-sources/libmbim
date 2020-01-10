@@ -1,0 +1,39 @@
+<!-- ##### SECTION Title ##### -->
+mbim-utils
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION mbim_utils_get_traces_enabled ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION mbim_utils_set_traces_enabled ##### -->
+<para>
+
+</para>
+
+@enabled: 
+
+

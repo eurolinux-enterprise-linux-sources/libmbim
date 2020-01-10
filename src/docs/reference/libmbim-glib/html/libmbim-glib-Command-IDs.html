@@ -2,1249 +2,809 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Command IDs: libmbim-glib Reference Manual</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<title>Command IDs</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
 <link rel="home" href="index.html" title="libmbim-glib Reference Manual">
 <link rel="up" href="ch01.html" title="Core">
 <link rel="prev" href="libmbim-glib-UUIDs.html" title="UUIDs">
 <link rel="next" href="MbimMessage.html" title="MbimMessage">
-<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
-<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
-<td width="100%" align="left" class="shortcuts">
-<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
-                  <a href="#libmbim-glib-Command-IDs.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
-                  <a href="#libmbim-glib-Command-IDs.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
-</td>
-<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
-<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
-<td><a accesskey="p" href="libmbim-glib-UUIDs.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
-<td><a accesskey="n" href="MbimMessage.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
-</tr></table>
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="libmbim-glib-UUIDs.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">libmbim-glib Reference Manual</th>
+<td><a accesskey="n" href="MbimMessage.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#libmbim-glib-Command-IDs.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#libmbim-glib-Command-IDs.description" class="shortcut">Description</a>
+                   | 
+                  <a href="#libmbim-glib-Command-IDs.object-hierarchy" class="shortcut">Object Hierarchy</a>
+</td></tr>
+</table>
 <div class="refentry">
 <a name="libmbim-glib-Command-IDs"></a><div class="titlepage"></div>
 <div class="refnamediv"><table width="100%"><tr>
 <td valign="top">
 <h2><span class="refentrytitle"><a name="libmbim-glib-Command-IDs.top_of_page"></a>Command IDs</span></h2>
-<p>Command IDs — Generic command handling routines.</p>
+<p>Command IDs</p>
 </td>
-<td class="gallery_image" valign="top" align="right"></td>
+<td valign="top" align="right"></td>
 </tr></table></div>
-<div class="refsect1">
-<a name="libmbim-glib-Command-IDs.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="functions_return">
-<col class="functions_name">
-</colgroup>
-<tbody>
-<tr>
-<td class="function_type">
-<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
-</td>
-<td class="function_name">
-<a class="link" href="libmbim-glib-Command-IDs.html#mbim-cid-can-set" title="mbim_cid_can_set ()">mbim_cid_can_set</a> <span class="c_punctuation">()</span>
-</td>
-</tr>
-<tr>
-<td class="function_type">
-<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
-</td>
-<td class="function_name">
-<a class="link" href="libmbim-glib-Command-IDs.html#mbim-cid-can-query" title="mbim_cid_can_query ()">mbim_cid_can_query</a> <span class="c_punctuation">()</span>
-</td>
-</tr>
-<tr>
-<td class="function_type">
-<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
-</td>
-<td class="function_name">
-<a class="link" href="libmbim-glib-Command-IDs.html#mbim-cid-can-notify" title="mbim_cid_can_notify ()">mbim_cid_can_notify</a> <span class="c_punctuation">()</span>
-</td>
-</tr>
-<tr>
-<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
-</td>
-<td class="function_name">
-<a class="link" href="libmbim-glib-Command-IDs.html#mbim-cid-get-printable" title="mbim_cid_get_printable ()">mbim_cid_get_printable</a> <span class="c_punctuation">()</span>
-</td>
-</tr>
-<tr>
-<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
-</td>
-<td class="function_name">
-<a class="link" href="libmbim-glib-Command-IDs.html#mbim-cid-basic-connect-get-string" title="mbim_cid_basic_connect_get_string ()">mbim_cid_basic_connect_get_string</a> <span class="c_punctuation">()</span>
-</td>
-</tr>
-<tr>
-<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
-</td>
-<td class="function_name">
-<a class="link" href="libmbim-glib-Command-IDs.html#mbim-cid-sms-get-string" title="mbim_cid_sms_get_string ()">mbim_cid_sms_get_string</a> <span class="c_punctuation">()</span>
-</td>
-</tr>
-<tr>
-<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
-</td>
-<td class="function_name">
-<a class="link" href="libmbim-glib-Command-IDs.html#mbim-cid-ussd-get-string" title="mbim_cid_ussd_get_string ()">mbim_cid_ussd_get_string</a> <span class="c_punctuation">()</span>
-</td>
-</tr>
-<tr>
-<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
-</td>
-<td class="function_name">
-<a class="link" href="libmbim-glib-Command-IDs.html#mbim-cid-phonebook-get-string" title="mbim_cid_phonebook_get_string ()">mbim_cid_phonebook_get_string</a> <span class="c_punctuation">()</span>
-</td>
-</tr>
-<tr>
-<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
-</td>
-<td class="function_name">
-<a class="link" href="libmbim-glib-Command-IDs.html#mbim-cid-stk-get-string" title="mbim_cid_stk_get_string ()">mbim_cid_stk_get_string</a> <span class="c_punctuation">()</span>
-</td>
-</tr>
-<tr>
-<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
-</td>
-<td class="function_name">
-<a class="link" href="libmbim-glib-Command-IDs.html#mbim-cid-auth-get-string" title="mbim_cid_auth_get_string ()">mbim_cid_auth_get_string</a> <span class="c_punctuation">()</span>
-</td>
-</tr>
-<tr>
-<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
-</td>
-<td class="function_name">
-<a class="link" href="libmbim-glib-Command-IDs.html#mbim-cid-dss-get-string" title="mbim_cid_dss_get_string ()">mbim_cid_dss_get_string</a> <span class="c_punctuation">()</span>
-</td>
-</tr>
-<tr>
-<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
-</td>
-<td class="function_name">
-<a class="link" href="libmbim-glib-Command-IDs.html#mbim-cid-ms-firmware-id-get-string" title="mbim_cid_ms_firmware_id_get_string ()">mbim_cid_ms_firmware_id_get_string</a> <span class="c_punctuation">()</span>
-</td>
-</tr>
-<tr>
-<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
-</td>
-<td class="function_name">
-<a class="link" href="libmbim-glib-Command-IDs.html#mbim-cid-ms-host-shutdown-get-string" title="mbim_cid_ms_host_shutdown_get_string ()">mbim_cid_ms_host_shutdown_get_string</a> <span class="c_punctuation">()</span>
-</td>
-</tr>
-<tr>
-<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
-</td>
-<td class="function_name">
-<a class="link" href="libmbim-glib-Command-IDs.html#mbim-cid-proxy-control-get-string" title="mbim_cid_proxy_control_get_string ()">mbim_cid_proxy_control_get_string</a> <span class="c_punctuation">()</span>
-</td>
-</tr>
-<tr>
-<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
-</td>
-<td class="function_name">
-<a class="link" href="libmbim-glib-Command-IDs.html#mbim-cid-qmi-get-string" title="mbim_cid_qmi_get_string ()">mbim_cid_qmi_get_string</a> <span class="c_punctuation">()</span>
-</td>
-</tr>
-</tbody>
-</table></div>
-</div>
-<div class="refsect1">
-<a name="libmbim-glib-Command-IDs.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="name">
-<col class="description">
-</colgroup>
-<tbody>
-<tr>
-<td class="datatype_keyword">enum</td>
-<td class="function_name"><a class="link" href="libmbim-glib-Command-IDs.html#MbimCidBasicConnect" title="enum MbimCidBasicConnect">MbimCidBasicConnect</a></td>
-</tr>
-<tr>
-<td class="datatype_keyword">enum</td>
-<td class="function_name"><a class="link" href="libmbim-glib-Command-IDs.html#MbimCidSms" title="enum MbimCidSms">MbimCidSms</a></td>
-</tr>
-<tr>
-<td class="datatype_keyword">enum</td>
-<td class="function_name"><a class="link" href="libmbim-glib-Command-IDs.html#MbimCidUssd" title="enum MbimCidUssd">MbimCidUssd</a></td>
-</tr>
-<tr>
-<td class="datatype_keyword">enum</td>
-<td class="function_name"><a class="link" href="libmbim-glib-Command-IDs.html#MbimCidPhonebook" title="enum MbimCidPhonebook">MbimCidPhonebook</a></td>
-</tr>
-<tr>
-<td class="datatype_keyword">enum</td>
-<td class="function_name"><a class="link" href="libmbim-glib-Command-IDs.html#MbimCidStk" title="enum MbimCidStk">MbimCidStk</a></td>
-</tr>
-<tr>
-<td class="datatype_keyword">enum</td>
-<td class="function_name"><a class="link" href="libmbim-glib-Command-IDs.html#MbimCidAuth" title="enum MbimCidAuth">MbimCidAuth</a></td>
-</tr>
-<tr>
-<td class="datatype_keyword">enum</td>
-<td class="function_name"><a class="link" href="libmbim-glib-Command-IDs.html#MbimCidDss" title="enum MbimCidDss">MbimCidDss</a></td>
-</tr>
-<tr>
-<td class="datatype_keyword">enum</td>
-<td class="function_name"><a class="link" href="libmbim-glib-Command-IDs.html#MbimCidMsFirmwareId" title="enum MbimCidMsFirmwareId">MbimCidMsFirmwareId</a></td>
-</tr>
-<tr>
-<td class="datatype_keyword">enum</td>
-<td class="function_name"><a class="link" href="libmbim-glib-Command-IDs.html#MbimCidMsHostShutdown" title="enum MbimCidMsHostShutdown">MbimCidMsHostShutdown</a></td>
-</tr>
-<tr>
-<td class="datatype_keyword">enum</td>
-<td class="function_name"><a class="link" href="libmbim-glib-Command-IDs.html#MbimCidProxyControl" title="enum MbimCidProxyControl">MbimCidProxyControl</a></td>
-</tr>
-<tr>
-<td class="datatype_keyword">enum</td>
-<td class="function_name"><a class="link" href="libmbim-glib-Command-IDs.html#MbimCidQmi" title="enum MbimCidQmi">MbimCidQmi</a></td>
-</tr>
-</tbody>
-</table></div>
+<div class="refsynopsisdiv">
+<a name="libmbim-glib-Command-IDs.synopsis"></a><h2>Synopsis</h2>
+<a name="MbimCidBasicConnect"></a><a name="MbimCidSms"></a><a name="MbimCidUssd"></a><a name="MbimCidPhonebook"></a><a name="MbimCidStk"></a><a name="MbimCidAuth"></a><a name="MbimCidDss"></a><pre class="synopsis">enum                <a class="link" href="libmbim-glib-Command-IDs.html#MbimCidBasicConnect-enum" title="enum MbimCidBasicConnect">MbimCidBasicConnect</a>;
+enum                <a class="link" href="libmbim-glib-Command-IDs.html#MbimCidSms-enum" title="enum MbimCidSms">MbimCidSms</a>;
+enum                <a class="link" href="libmbim-glib-Command-IDs.html#MbimCidUssd-enum" title="enum MbimCidUssd">MbimCidUssd</a>;
+enum                <a class="link" href="libmbim-glib-Command-IDs.html#MbimCidPhonebook-enum" title="enum MbimCidPhonebook">MbimCidPhonebook</a>;
+enum                <a class="link" href="libmbim-glib-Command-IDs.html#MbimCidStk-enum" title="enum MbimCidStk">MbimCidStk</a>;
+enum                <a class="link" href="libmbim-glib-Command-IDs.html#MbimCidAuth-enum" title="enum MbimCidAuth">MbimCidAuth</a>;
+enum                <a class="link" href="libmbim-glib-Command-IDs.html#MbimCidDss-enum" title="enum MbimCidDss">MbimCidDss</a>;
+
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="libmbim-glib-Command-IDs.html#mbim-cid-can-set" title="mbim_cid_can_set ()">mbim_cid_can_set</a>                    (<em class="parameter"><code><a class="link" href="libmbim-glib-UUIDs.html#MbimService"><span class="type">MbimService</span></a> service</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> cid</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="libmbim-glib-Command-IDs.html#mbim-cid-can-query" title="mbim_cid_can_query ()">mbim_cid_can_query</a>                  (<em class="parameter"><code><a class="link" href="libmbim-glib-UUIDs.html#MbimService"><span class="type">MbimService</span></a> service</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> cid</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="libmbim-glib-Command-IDs.html#mbim-cid-can-notify" title="mbim_cid_can_notify ()">mbim_cid_can_notify</a>                 (<em class="parameter"><code><a class="link" href="libmbim-glib-UUIDs.html#MbimService"><span class="type">MbimService</span></a> service</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> cid</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libmbim-glib-Command-IDs.html#mbim-cid-get-printable" title="mbim_cid_get_printable ()">mbim_cid_get_printable</a>              (<em class="parameter"><code><a class="link" href="libmbim-glib-UUIDs.html#MbimService"><span class="type">MbimService</span></a> service</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> cid</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libmbim-glib-Command-IDs.html#mbim-cid-basic-connect-get-string" title="mbim_cid_basic_connect_get_string ()">mbim_cid_basic_connect_get_string</a>   (<em class="parameter"><code><a class="link" href="libmbim-glib-Command-IDs.html#MbimCidBasicConnect"><span class="type">MbimCidBasicConnect</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libmbim-glib-Command-IDs.html#mbim-cid-sms-get-string" title="mbim_cid_sms_get_string ()">mbim_cid_sms_get_string</a>             (<em class="parameter"><code><a class="link" href="libmbim-glib-Command-IDs.html#MbimCidSms"><span class="type">MbimCidSms</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libmbim-glib-Command-IDs.html#mbim-cid-ussd-get-string" title="mbim_cid_ussd_get_string ()">mbim_cid_ussd_get_string</a>            (<em class="parameter"><code><a class="link" href="libmbim-glib-Command-IDs.html#MbimCidUssd"><span class="type">MbimCidUssd</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libmbim-glib-Command-IDs.html#mbim-cid-phonebook-get-string" title="mbim_cid_phonebook_get_string ()">mbim_cid_phonebook_get_string</a>       (<em class="parameter"><code><a class="link" href="libmbim-glib-Command-IDs.html#MbimCidPhonebook"><span class="type">MbimCidPhonebook</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libmbim-glib-Command-IDs.html#mbim-cid-stk-get-string" title="mbim_cid_stk_get_string ()">mbim_cid_stk_get_string</a>             (<em class="parameter"><code><a class="link" href="libmbim-glib-Command-IDs.html#MbimCidStk"><span class="type">MbimCidStk</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libmbim-glib-Command-IDs.html#mbim-cid-auth-get-string" title="mbim_cid_auth_get_string ()">mbim_cid_auth_get_string</a>            (<em class="parameter"><code><a class="link" href="libmbim-glib-Command-IDs.html#MbimCidAuth"><span class="type">MbimCidAuth</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libmbim-glib-Command-IDs.html#mbim-cid-dss-get-string" title="mbim_cid_dss_get_string ()">mbim_cid_dss_get_string</a>             (<em class="parameter"><code><a class="link" href="libmbim-glib-Command-IDs.html#MbimCidDss"><span class="type">MbimCidDss</span></a> val</code></em>);
+</pre>
 </div>
 <div class="refsect1">
 <a name="libmbim-glib-Command-IDs.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-Enumeration-and-Flag-Types.html">GEnum</a>
-    <span class="lineart">├──</span> MbimCidAuth
-    <span class="lineart">├──</span> MbimCidBasicConnect
-    <span class="lineart">├──</span> MbimCidDss
-    <span class="lineart">├──</span> MbimCidMsFirmwareId
-    <span class="lineart">├──</span> MbimCidMsHostShutdown
-    <span class="lineart">├──</span> MbimCidPhonebook
-    <span class="lineart">├──</span> MbimCidProxyControl
-    <span class="lineart">├──</span> MbimCidQmi
-    <span class="lineart">├──</span> MbimCidSms
-    <span class="lineart">├──</span> MbimCidStk
-    <span class="lineart">╰──</span> MbimCidUssd
+<pre class="synopsis">
+  GEnum
+   +----MbimCidBasicConnect
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----MbimCidSms
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----MbimCidUssd
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----MbimCidPhonebook
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----MbimCidStk
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----MbimCidAuth
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----MbimCidDss
 </pre>
 </div>
 <div class="refsect1">
 <a name="libmbim-glib-Command-IDs.description"></a><h2>Description</h2>
-<p>This section defines the interface of the known command IDs.</p>
+<p>
+This section defines the interface of the known command IDs.
+</p>
 </div>
 <div class="refsect1">
-<a name="libmbim-glib-Command-IDs.functions_details"></a><h2>Functions</h2>
+<a name="libmbim-glib-Command-IDs.details"></a><h2>Details</h2>
 <div class="refsect2">
-<a name="mbim-cid-can-set"></a><h3>mbim_cid_can_set ()</h3>
-<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
-mbim_cid_can_set (<em class="parameter"><code><a class="link" href="libmbim-glib-UUIDs.html#MbimService" title="enum MbimService"><span class="type">MbimService</span></a> service</code></em>,
-                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> cid</code></em>);</pre>
-<p>Checks whether the given command allows setting.</p>
-<div class="refsect3">
-<a name="mbim-cid-can-set.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<a name="MbimCidBasicConnect-enum"></a><h3>enum MbimCidBasicConnect</h3>
+<pre class="programlisting">typedef enum {
+    MBIM_CID_BASIC_CONNECT_UNKNOWN                        = 0,
+    MBIM_CID_BASIC_CONNECT_DEVICE_CAPS                    = 1,
+    MBIM_CID_BASIC_CONNECT_SUBSCRIBER_READY_STATUS        = 2,
+    MBIM_CID_BASIC_CONNECT_RADIO_STATE                    = 3,
+    MBIM_CID_BASIC_CONNECT_PIN                            = 4,
+    MBIM_CID_BASIC_CONNECT_PIN_LIST                       = 5,
+    MBIM_CID_BASIC_CONNECT_HOME_PROVIDER                  = 6,
+    MBIM_CID_BASIC_CONNECT_PREFERRED_PROVIDERS            = 7,
+    MBIM_CID_BASIC_CONNECT_VISIBLE_PROVIDERS              = 8,
+    MBIM_CID_BASIC_CONNECT_REGISTER_STATE                 = 9,
+    MBIM_CID_BASIC_CONNECT_PACKET_SERVICE                 = 10,
+    MBIM_CID_BASIC_CONNECT_SIGNAL_STATE                   = 11,
+    MBIM_CID_BASIC_CONNECT_CONNECT                        = 12,
+    MBIM_CID_BASIC_CONNECT_PROVISIONED_CONTEXTS           = 13,
+    MBIM_CID_BASIC_CONNECT_SERVICE_ACTIVATION             = 14,
+    MBIM_CID_BASIC_CONNECT_IP_CONFIGURATION               = 15,
+    MBIM_CID_BASIC_CONNECT_DEVICE_SERVICES                = 16,
+    /* 17, 18 reserved */
+    MBIM_CID_BASIC_CONNECT_DEVICE_SERVICE_SUBSCRIBER_LIST = 19,
+    MBIM_CID_BASIC_CONNECT_PACKET_STATISTICS              = 20,
+    MBIM_CID_BASIC_CONNECT_NETWORK_IDLE_HINT              = 21,
+    MBIM_CID_BASIC_CONNECT_EMERGENCY_MODE                 = 22,
+    MBIM_CID_BASIC_CONNECT_IP_PACKET_FILTERS              = 23,
+    MBIM_CID_BASIC_CONNECT_MULTICARRIER_PROVIDERS         = 24,
+} MbimCidBasicConnect;
+</pre>
+<p>
+MBIM commands in the <a class="link" href="libmbim-glib-UUIDs.html#MBIM-SERVICE-BASIC-CONNECT:CAPS"><code class="literal">MBIM_SERVICE_BASIC_CONNECT</code></a> service.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
 <colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
+<col align="left" valign="top">
+<col>
 </colgroup>
 <tbody>
 <tr>
-<td class="parameter_name"><p>service</p></td>
-<td class="parameter_description"><p>a <a class="link" href="libmbim-glib-UUIDs.html#MbimService" title="enum MbimService"><span class="type">MbimService</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
+<td><p><a name="MBIM-CID-BASIC-CONNECT-UNKNOWN:CAPS"></a><span class="term"><code class="literal">MBIM_CID_BASIC_CONNECT_UNKNOWN</code></span></p></td>
+<td>Unknown command.
+</td>
 </tr>
 <tr>
-<td class="parameter_name"><p>cid</p></td>
-<td class="parameter_description"><p>a command ID.</p></td>
-<td class="parameter_annotations"> </td>
+<td><p><a name="MBIM-CID-BASIC-CONNECT-DEVICE-CAPS"></a><span class="term"><code class="literal">MBIM_CID_BASIC_CONNECT_DEVICE_CAPS</code></span></p></td>
+<td>Device capabilities.
+</td>
+</tr>
+<tr>
+<td><p><a name="MBIM-CID-BASIC-CONNECT-SUBSCRIBER-READY-STATUS:CAPS"></a><span class="term"><code class="literal">MBIM_CID_BASIC_CONNECT_SUBSCRIBER_READY_STATUS</code></span></p></td>
+<td>Subscriber ready status.
+</td>
+</tr>
+<tr>
+<td><p><a name="MBIM-CID-BASIC-CONNECT-RADIO-STATE:CAPS"></a><span class="term"><code class="literal">MBIM_CID_BASIC_CONNECT_RADIO_STATE</code></span></p></td>
+<td>Radio state.
+</td>
+</tr>
+<tr>
+<td><p><a name="MBIM-CID-BASIC-CONNECT-PIN:CAPS"></a><span class="term"><code class="literal">MBIM_CID_BASIC_CONNECT_PIN</code></span></p></td>
+<td>PIN.
+</td>
+</tr>
+<tr>
+<td><p><a name="MBIM-CID-BASIC-CONNECT-PIN-LIST:CAPS"></a><span class="term"><code class="literal">MBIM_CID_BASIC_CONNECT_PIN_LIST</code></span></p></td>
+<td>PIN list.
+</td>
+</tr>
+<tr>
+<td><p><a name="MBIM-CID-BASIC-CONNECT-HOME-PROVIDER:CAPS"></a><span class="term"><code class="literal">MBIM_CID_BASIC_CONNECT_HOME_PROVIDER</code></span></p></td>
+<td>Home provider.
+</td>
+</tr>
+<tr>
+<td><p><a name="MBIM-CID-BASIC-CONNECT-PREFERRED-PROVIDERS:CAPS"></a><span class="term"><code class="literal">MBIM_CID_BASIC_CONNECT_PREFERRED_PROVIDERS</code></span></p></td>
+<td>Preferred providers.
+</td>
+</tr>
+<tr>
+<td><p><a name="MBIM-CID-BASIC-CONNECT-VISIBLE-PROVIDERS:CAPS"></a><span class="term"><code class="literal">MBIM_CID_BASIC_CONNECT_VISIBLE_PROVIDERS</code></span></p></td>
+<td>Visible providers.
+</td>
+</tr>
+<tr>
+<td><p><a name="MBIM-CID-BASIC-CONNECT-REGISTER-STATE:CAPS"></a><span class="term"><code class="literal">MBIM_CID_BASIC_CONNECT_REGISTER_STATE</code></span></p></td>
+<td>Register state.
+</td>
+</tr>
+<tr>
+<td><p><a name="MBIM-CID-BASIC-CONNECT-PACKET-SERVICE:CAPS"></a><span class="term"><code class="literal">MBIM_CID_BASIC_CONNECT_PACKET_SERVICE</code></span></p></td>
+<td>Packet service.
+</td>
+</tr>
+<tr>
+<td><p><a name="MBIM-CID-BASIC-CONNECT-SIGNAL-STATE:CAPS"></a><span class="term"><code class="literal">MBIM_CID_BASIC_CONNECT_SIGNAL_STATE</code></span></p></td>
+<td>Signal state.
+</td>
+</tr>
+<tr>
+<td><p><a name="MBIM-CID-BASIC-CONNECT-CONNECT:CAPS"></a><span class="term"><code class="literal">MBIM_CID_BASIC_CONNECT_CONNECT</code></span></p></td>
+<td>Connect.
+</td>
+</tr>
+<tr>
+<td><p><a name="MBIM-CID-BASIC-CONNECT-PROVISIONED-CONTEXTS:CAPS"></a><span class="term"><code class="literal">MBIM_CID_BASIC_CONNECT_PROVISIONED_CONTEXTS</code></span></p></td>
+<td>Provisioned contexts.
+</td>
+</tr>
+<tr>
+<td><p><a name="MBIM-CID-BASIC-CONNECT-SERVICE-ACTIVATION:CAPS"></a><span class="term"><code class="literal">MBIM_CID_BASIC_CONNECT_SERVICE_ACTIVATION</code></span></p></td>
+<td>Service activation.
+</td>
+</tr>
+<tr>
+<td><p><a name="MBIM-CID-BASIC-CONNECT-IP-CONFIGURATION:CAPS"></a><span class="term"><code class="literal">MBIM_CID_BASIC_CONNECT_IP_CONFIGURATION</code></span></p></td>
+<td>IP configuration.
+</td>
+</tr>
+<tr>
+<td><p><a name="MBIM-CID-BASIC-CONNECT-DEVICE-SERVICES:CAPS"></a><span class="term"><code class="literal">MBIM_CID_BASIC_CONNECT_DEVICE_SERVICES</code></span></p></td>
+<td>Device services.
+</td>
+</tr>
+<tr>
+<td><p><a name="MBIM-CID-BASIC-CONNECT-DEVICE-SERVICE-SUBSCRIBER-LIST:CAPS"></a><span class="term"><code class="literal">MBIM_CID_BASIC_CONNECT_DEVICE_SERVICE_SUBSCRIBER_LIST</code></span></p></td>
+<td>Device service subscriber list.
+</td>
+</tr>
+<tr>
+<td><p><a name="MBIM-CID-BASIC-CONNECT-PACKET-STATISTICS:CAPS"></a><span class="term"><code class="literal">MBIM_CID_BASIC_CONNECT_PACKET_STATISTICS</code></span></p></td>
+<td>Packet statistics.
+</td>
+</tr>
+<tr>
+<td><p><a name="MBIM-CID-BASIC-CONNECT-NETWORK-IDLE-HINT:CAPS"></a><span class="term"><code class="literal">MBIM_CID_BASIC_CONNECT_NETWORK_IDLE_HINT</code></span></p></td>
+<td>Network idle hint.
+</td>
+</tr>
+<tr>
+<td><p><a name="MBIM-CID-BASIC-CONNECT-EMERGENCY-MODE:CAPS"></a><span class="term"><code class="literal">MBIM_CID_BASIC_CONNECT_EMERGENCY_MODE</code></span></p></td>
+<td>Emergency mode.
+</td>
+</tr>
+<tr>
+<td><p><a name="MBIM-CID-BASIC-CONNECT-IP-PACKET-FILTERS:CAPS"></a><span class="term"><code class="literal">MBIM_CID_BASIC_CONNECT_IP_PACKET_FILTERS</code></span></p></td>
+<td>IP packet filters.
+</td>
+</tr>
+<tr>
+<td><p><a name="MBIM-CID-BASIC-CONNECT-MULTICARRIER-PROVIDERS:CAPS"></a><span class="term"><code class="literal">MBIM_CID_BASIC_CONNECT_MULTICARRIER_PROVIDERS</code></span></p></td>
+<td>Multicarrier providers.
+</td>
 </tr>
 </tbody>
 </table></div>
 </div>
-<div class="refsect3">
-<a name="mbim-cid-can-set.returns"></a><h4>Returns</h4>
-<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the command allows setting, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
-</div>
-</div>
 <hr>
 <div class="refsect2">
-<a name="mbim-cid-can-query"></a><h3>mbim_cid_can_query ()</h3>
-<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
-mbim_cid_can_query (<em class="parameter"><code><a class="link" href="libmbim-glib-UUIDs.html#MbimService" title="enum MbimService"><span class="type">MbimService</span></a> service</code></em>,
-                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> cid</code></em>);</pre>
-<p>Checks whether the given command allows querying.</p>
-<div class="refsect3">
-<a name="mbim-cid-can-query.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<a name="MbimCidSms-enum"></a><h3>enum MbimCidSms</h3>
+<pre class="programlisting">typedef enum {
+    MBIM_CID_SMS_UNKNOWN              = 0,
+    MBIM_CID_SMS_CONFIGURATION        = 1,
+    MBIM_CID_SMS_READ                 = 2,
+    MBIM_CID_SMS_SEND                 = 3,
+    MBIM_CID_SMS_DELETE               = 4,
+    MBIM_CID_SMS_MESSAGE_STORE_STATUS = 5,
+} MbimCidSms;
+</pre>
+<p>
+MBIM commands in the <a class="link" href="libmbim-glib-UUIDs.html#MBIM-SERVICE-SMS:CAPS"><code class="literal">MBIM_SERVICE_SMS</code></a> service.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
 <colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
+<col align="left" valign="top">
+<col>
 </colgroup>
 <tbody>
 <tr>
-<td class="parameter_name"><p>service</p></td>
-<td class="parameter_description"><p>a <a class="link" href="libmbim-glib-UUIDs.html#MbimService" title="enum MbimService"><span class="type">MbimService</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
+<td><p><a name="MBIM-CID-SMS-UNKNOWN:CAPS"></a><span class="term"><code class="literal">MBIM_CID_SMS_UNKNOWN</code></span></p></td>
+<td>Unknown command.
+</td>
 </tr>
 <tr>
-<td class="parameter_name"><p>cid</p></td>
-<td class="parameter_description"><p>a command ID.</p></td>
-<td class="parameter_annotations"> </td>
+<td><p><a name="MBIM-CID-SMS-CONFIGURATION:CAPS"></a><span class="term"><code class="literal">MBIM_CID_SMS_CONFIGURATION</code></span></p></td>
+<td>SMS configuration.
+</td>
+</tr>
+<tr>
+<td><p><a name="MBIM-CID-SMS-READ:CAPS"></a><span class="term"><code class="literal">MBIM_CID_SMS_READ</code></span></p></td>
+<td>Read.
+</td>
+</tr>
+<tr>
+<td><p><a name="MBIM-CID-SMS-SEND:CAPS"></a><span class="term"><code class="literal">MBIM_CID_SMS_SEND</code></span></p></td>
+<td>Send.
+</td>
+</tr>
+<tr>
+<td><p><a name="MBIM-CID-SMS-DELETE:CAPS"></a><span class="term"><code class="literal">MBIM_CID_SMS_DELETE</code></span></p></td>
+<td>Delete.
+</td>
+</tr>
+<tr>
+<td><p><a name="MBIM-CID-SMS-MESSAGE-STORE-STATUS:CAPS"></a><span class="term"><code class="literal">MBIM_CID_SMS_MESSAGE_STORE_STATUS</code></span></p></td>
+<td>Store message status.
+</td>
 </tr>
 </tbody>
 </table></div>
 </div>
-<div class="refsect3">
-<a name="mbim-cid-can-query.returns"></a><h4>Returns</h4>
-<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the command allows querying, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
-</div>
-</div>
 <hr>
 <div class="refsect2">
-<a name="mbim-cid-can-notify"></a><h3>mbim_cid_can_notify ()</h3>
-<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
-mbim_cid_can_notify (<em class="parameter"><code><a class="link" href="libmbim-glib-UUIDs.html#MbimService" title="enum MbimService"><span class="type">MbimService</span></a> service</code></em>,
-                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> cid</code></em>);</pre>
-<p>Checks whether the given command allows notifying.</p>
-<div class="refsect3">
-<a name="mbim-cid-can-notify.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<a name="MbimCidUssd-enum"></a><h3>enum MbimCidUssd</h3>
+<pre class="programlisting">typedef enum {
+    MBIM_CID_USSD_UNKNOWN = 0,
+    MBIM_CID_USSD         = 1,
+} MbimCidUssd;
+</pre>
+<p>
+MBIM commands in the <a class="link" href="libmbim-glib-UUIDs.html#MBIM-SERVICE-USSD:CAPS"><code class="literal">MBIM_SERVICE_USSD</code></a> service.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
 <colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
+<col align="left" valign="top">
+<col>
 </colgroup>
 <tbody>
 <tr>
-<td class="parameter_name"><p>service</p></td>
-<td class="parameter_description"><p>a <a class="link" href="libmbim-glib-UUIDs.html#MbimService" title="enum MbimService"><span class="type">MbimService</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
+<td><p><a name="MBIM-CID-USSD-UNKNOWN:CAPS"></a><span class="term"><code class="literal">MBIM_CID_USSD_UNKNOWN</code></span></p></td>
+<td>Unknown command.
+</td>
 </tr>
 <tr>
-<td class="parameter_name"><p>cid</p></td>
-<td class="parameter_description"><p>a command ID.</p></td>
-<td class="parameter_annotations"> </td>
+<td><p><a name="MBIM-CID-USSD:CAPS"></a><span class="term"><code class="literal">MBIM_CID_USSD</code></span></p></td>
+<td>USSD operation.
+</td>
 </tr>
 </tbody>
 </table></div>
 </div>
-<div class="refsect3">
-<a name="mbim-cid-can-notify.returns"></a><h4>Returns</h4>
-<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the command allows notifying, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
-</div>
-</div>
 <hr>
 <div class="refsect2">
-<a name="mbim-cid-get-printable"></a><h3>mbim_cid_get_printable ()</h3>
-<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
-mbim_cid_get_printable (<em class="parameter"><code><a class="link" href="libmbim-glib-UUIDs.html#MbimService" title="enum MbimService"><span class="type">MbimService</span></a> service</code></em>,
-                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> cid</code></em>);</pre>
-<p>Gets a printable string for the command specified by the <em class="parameter"><code>service</code></em>
- and the
-<em class="parameter"><code>cid</code></em>
-.</p>
-<div class="refsect3">
-<a name="mbim-cid-get-printable.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<a name="MbimCidPhonebook-enum"></a><h3>enum MbimCidPhonebook</h3>
+<pre class="programlisting">typedef enum {
+    MBIM_CID_PHONEBOOK_UNKNOWN       = 0,
+    MBIM_CID_PHONEBOOK_CONFIGURATION = 1,
+    MBIM_CID_PHONEBOOK_READ          = 2,
+    MBIM_CID_PHONEBOOK_DELETE        = 3,
+    MBIM_CID_PHONEBOOK_WRITE         = 4,
+} MbimCidPhonebook;
+</pre>
+<p>
+MBIM commands in the <a class="link" href="libmbim-glib-UUIDs.html#MBIM-SERVICE-PHONEBOOK:CAPS"><code class="literal">MBIM_SERVICE_PHONEBOOK</code></a> service.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
 <colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
+<col align="left" valign="top">
+<col>
 </colgroup>
 <tbody>
 <tr>
-<td class="parameter_name"><p>service</p></td>
-<td class="parameter_description"><p>a <a class="link" href="libmbim-glib-UUIDs.html#MbimService" title="enum MbimService"><span class="type">MbimService</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
+<td><p><a name="MBIM-CID-PHONEBOOK-UNKNOWN:CAPS"></a><span class="term"><code class="literal">MBIM_CID_PHONEBOOK_UNKNOWN</code></span></p></td>
+<td>Unknown command.
+</td>
 </tr>
 <tr>
-<td class="parameter_name"><p>cid</p></td>
-<td class="parameter_description"><p>a command ID.</p></td>
-<td class="parameter_annotations"> </td>
+<td><p><a name="MBIM-CID-PHONEBOOK-CONFIGURATION:CAPS"></a><span class="term"><code class="literal">MBIM_CID_PHONEBOOK_CONFIGURATION</code></span></p></td>
+<td>Configuration.
+</td>
+</tr>
+<tr>
+<td><p><a name="MBIM-CID-PHONEBOOK-READ:CAPS"></a><span class="term"><code class="literal">MBIM_CID_PHONEBOOK_READ</code></span></p></td>
+<td>Read.
+</td>
+</tr>
+<tr>
+<td><p><a name="MBIM-CID-PHONEBOOK-DELETE:CAPS"></a><span class="term"><code class="literal">MBIM_CID_PHONEBOOK_DELETE</code></span></p></td>
+<td>Delete.
+</td>
+</tr>
+<tr>
+<td><p><a name="MBIM-CID-PHONEBOOK-WRITE:CAPS"></a><span class="term"><code class="literal">MBIM_CID_PHONEBOOK_WRITE</code></span></p></td>
+<td>Write.
+</td>
 </tr>
 </tbody>
 </table></div>
 </div>
-<div class="refsect3">
-<a name="mbim-cid-get-printable.returns"></a><h4>Returns</h4>
-<p> a constant string. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
-</div>
-</div>
 <hr>
 <div class="refsect2">
-<a name="mbim-cid-basic-connect-get-string"></a><h3>mbim_cid_basic_connect_get_string ()</h3>
-<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
-mbim_cid_basic_connect_get_string (<em class="parameter"><code><a class="link" href="libmbim-glib-Command-IDs.html#MbimCidBasicConnect" title="enum MbimCidBasicConnect"><span class="type">MbimCidBasicConnect</span></a> val</code></em>);</pre>
-<p>Gets the nickname string for the <a class="link" href="libmbim-glib-Command-IDs.html#MbimCidBasicConnect" title="enum MbimCidBasicConnect"><span class="type">MbimCidBasicConnect</span></a> specified at <em class="parameter"><code>val</code></em>
-.</p>
-<div class="refsect3">
-<a name="mbim-cid-basic-connect-get-string.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<a name="MbimCidStk-enum"></a><h3>enum MbimCidStk</h3>
+<pre class="programlisting">typedef enum {
+    MBIM_CID_STK_UNKNOWN           = 0,
+    MBIM_CID_STK_PAC               = 1,
+    MBIM_CID_STK_TERMINAL_RESPONSE = 2,
+    MBIM_CID_STK_ENVELOPE          = 3,
+} MbimCidStk;
+</pre>
+<p>
+MBIM commands in the <a class="link" href="libmbim-glib-UUIDs.html#MBIM-SERVICE-STK:CAPS"><code class="literal">MBIM_SERVICE_STK</code></a> service.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
 <colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>val</p></td>
-<td class="parameter_description"><p>a MbimCidBasicConnect.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="mbim-cid-basic-connect-get-string.returns"></a><h4>Returns</h4>
-<p> a string with the nickname, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
-</div>
-</div>
-<hr>
-<div class="refsect2">
-<a name="mbim-cid-sms-get-string"></a><h3>mbim_cid_sms_get_string ()</h3>
-<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
-mbim_cid_sms_get_string (<em class="parameter"><code><a class="link" href="libmbim-glib-Command-IDs.html#MbimCidSms" title="enum MbimCidSms"><span class="type">MbimCidSms</span></a> val</code></em>);</pre>
-<p>Gets the nickname string for the <a class="link" href="libmbim-glib-Command-IDs.html#MbimCidSms" title="enum MbimCidSms"><span class="type">MbimCidSms</span></a> specified at <em class="parameter"><code>val</code></em>
-.</p>
-<div class="refsect3">
-<a name="mbim-cid-sms-get-string.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>val</p></td>
-<td class="parameter_description"><p>a MbimCidSms.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="mbim-cid-sms-get-string.returns"></a><h4>Returns</h4>
-<p> a string with the nickname, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
-</div>
-</div>
-<hr>
-<div class="refsect2">
-<a name="mbim-cid-ussd-get-string"></a><h3>mbim_cid_ussd_get_string ()</h3>
-<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
-mbim_cid_ussd_get_string (<em class="parameter"><code><a class="link" href="libmbim-glib-Command-IDs.html#MbimCidUssd" title="enum MbimCidUssd"><span class="type">MbimCidUssd</span></a> val</code></em>);</pre>
-<p>Gets the nickname string for the <a class="link" href="libmbim-glib-Command-IDs.html#MbimCidUssd" title="enum MbimCidUssd"><span class="type">MbimCidUssd</span></a> specified at <em class="parameter"><code>val</code></em>
-.</p>
-<div class="refsect3">
-<a name="mbim-cid-ussd-get-string.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>val</p></td>
-<td class="parameter_description"><p>a MbimCidUssd.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="mbim-cid-ussd-get-string.returns"></a><h4>Returns</h4>
-<p> a string with the nickname, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
-</div>
-</div>
-<hr>
-<div class="refsect2">
-<a name="mbim-cid-phonebook-get-string"></a><h3>mbim_cid_phonebook_get_string ()</h3>
-<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
-mbim_cid_phonebook_get_string (<em class="parameter"><code><a class="link" href="libmbim-glib-Command-IDs.html#MbimCidPhonebook" title="enum MbimCidPhonebook"><span class="type">MbimCidPhonebook</span></a> val</code></em>);</pre>
-<p>Gets the nickname string for the <a class="link" href="libmbim-glib-Command-IDs.html#MbimCidPhonebook" title="enum MbimCidPhonebook"><span class="type">MbimCidPhonebook</span></a> specified at <em class="parameter"><code>val</code></em>
-.</p>
-<div class="refsect3">
-<a name="mbim-cid-phonebook-get-string.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>val</p></td>
-<td class="parameter_description"><p>a MbimCidPhonebook.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="mbim-cid-phonebook-get-string.returns"></a><h4>Returns</h4>
-<p> a string with the nickname, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
-</div>
-</div>
-<hr>
-<div class="refsect2">
-<a name="mbim-cid-stk-get-string"></a><h3>mbim_cid_stk_get_string ()</h3>
-<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
-mbim_cid_stk_get_string (<em class="parameter"><code><a class="link" href="libmbim-glib-Command-IDs.html#MbimCidStk" title="enum MbimCidStk"><span class="type">MbimCidStk</span></a> val</code></em>);</pre>
-<p>Gets the nickname string for the <a class="link" href="libmbim-glib-Command-IDs.html#MbimCidStk" title="enum MbimCidStk"><span class="type">MbimCidStk</span></a> specified at <em class="parameter"><code>val</code></em>
-.</p>
-<div class="refsect3">
-<a name="mbim-cid-stk-get-string.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>val</p></td>
-<td class="parameter_description"><p>a MbimCidStk.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="mbim-cid-stk-get-string.returns"></a><h4>Returns</h4>
-<p> a string with the nickname, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
-</div>
-</div>
-<hr>
-<div class="refsect2">
-<a name="mbim-cid-auth-get-string"></a><h3>mbim_cid_auth_get_string ()</h3>
-<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
-mbim_cid_auth_get_string (<em class="parameter"><code><a class="link" href="libmbim-glib-Command-IDs.html#MbimCidAuth" title="enum MbimCidAuth"><span class="type">MbimCidAuth</span></a> val</code></em>);</pre>
-<p>Gets the nickname string for the <a class="link" href="libmbim-glib-Command-IDs.html#MbimCidAuth" title="enum MbimCidAuth"><span class="type">MbimCidAuth</span></a> specified at <em class="parameter"><code>val</code></em>
-.</p>
-<div class="refsect3">
-<a name="mbim-cid-auth-get-string.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>val</p></td>
-<td class="parameter_description"><p>a MbimCidAuth.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="mbim-cid-auth-get-string.returns"></a><h4>Returns</h4>
-<p> a string with the nickname, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
-</div>
-</div>
-<hr>
-<div class="refsect2">
-<a name="mbim-cid-dss-get-string"></a><h3>mbim_cid_dss_get_string ()</h3>
-<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
-mbim_cid_dss_get_string (<em class="parameter"><code><a class="link" href="libmbim-glib-Command-IDs.html#MbimCidDss" title="enum MbimCidDss"><span class="type">MbimCidDss</span></a> val</code></em>);</pre>
-<p>Gets the nickname string for the <a class="link" href="libmbim-glib-Command-IDs.html#MbimCidDss" title="enum MbimCidDss"><span class="type">MbimCidDss</span></a> specified at <em class="parameter"><code>val</code></em>
-.</p>
-<div class="refsect3">
-<a name="mbim-cid-dss-get-string.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>val</p></td>
-<td class="parameter_description"><p>a MbimCidDss.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="mbim-cid-dss-get-string.returns"></a><h4>Returns</h4>
-<p> a string with the nickname, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
-</div>
-</div>
-<hr>
-<div class="refsect2">
-<a name="mbim-cid-ms-firmware-id-get-string"></a><h3>mbim_cid_ms_firmware_id_get_string ()</h3>
-<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
-mbim_cid_ms_firmware_id_get_string (<em class="parameter"><code><a class="link" href="libmbim-glib-Command-IDs.html#MbimCidMsFirmwareId" title="enum MbimCidMsFirmwareId"><span class="type">MbimCidMsFirmwareId</span></a> val</code></em>);</pre>
-<p>Gets the nickname string for the <a class="link" href="libmbim-glib-Command-IDs.html#MbimCidMsFirmwareId" title="enum MbimCidMsFirmwareId"><span class="type">MbimCidMsFirmwareId</span></a> specified at <em class="parameter"><code>val</code></em>
-.</p>
-<div class="refsect3">
-<a name="mbim-cid-ms-firmware-id-get-string.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>val</p></td>
-<td class="parameter_description"><p>a MbimCidMsFirmwareId.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="mbim-cid-ms-firmware-id-get-string.returns"></a><h4>Returns</h4>
-<p> a string with the nickname, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
-</div>
-</div>
-<hr>
-<div class="refsect2">
-<a name="mbim-cid-ms-host-shutdown-get-string"></a><h3>mbim_cid_ms_host_shutdown_get_string ()</h3>
-<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
-mbim_cid_ms_host_shutdown_get_string (<em class="parameter"><code><a class="link" href="libmbim-glib-Command-IDs.html#MbimCidMsHostShutdown" title="enum MbimCidMsHostShutdown"><span class="type">MbimCidMsHostShutdown</span></a> val</code></em>);</pre>
-<p>Gets the nickname string for the <a class="link" href="libmbim-glib-Command-IDs.html#MbimCidMsHostShutdown" title="enum MbimCidMsHostShutdown"><span class="type">MbimCidMsHostShutdown</span></a> specified at <em class="parameter"><code>val</code></em>
-.</p>
-<div class="refsect3">
-<a name="mbim-cid-ms-host-shutdown-get-string.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>val</p></td>
-<td class="parameter_description"><p>a MbimCidMsHostShutdown.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="mbim-cid-ms-host-shutdown-get-string.returns"></a><h4>Returns</h4>
-<p> a string with the nickname, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
-</div>
-</div>
-<hr>
-<div class="refsect2">
-<a name="mbim-cid-proxy-control-get-string"></a><h3>mbim_cid_proxy_control_get_string ()</h3>
-<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
-mbim_cid_proxy_control_get_string (<em class="parameter"><code><a class="link" href="libmbim-glib-Command-IDs.html#MbimCidProxyControl" title="enum MbimCidProxyControl"><span class="type">MbimCidProxyControl</span></a> val</code></em>);</pre>
-<p>Gets the nickname string for the <a class="link" href="libmbim-glib-Command-IDs.html#MbimCidProxyControl" title="enum MbimCidProxyControl"><span class="type">MbimCidProxyControl</span></a> specified at <em class="parameter"><code>val</code></em>
-.</p>
-<div class="refsect3">
-<a name="mbim-cid-proxy-control-get-string.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>val</p></td>
-<td class="parameter_description"><p>a MbimCidProxyControl.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="mbim-cid-proxy-control-get-string.returns"></a><h4>Returns</h4>
-<p> a string with the nickname, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
-</div>
-</div>
-<hr>
-<div class="refsect2">
-<a name="mbim-cid-qmi-get-string"></a><h3>mbim_cid_qmi_get_string ()</h3>
-<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
-mbim_cid_qmi_get_string (<em class="parameter"><code><a class="link" href="libmbim-glib-Command-IDs.html#MbimCidQmi" title="enum MbimCidQmi"><span class="type">MbimCidQmi</span></a> val</code></em>);</pre>
-<p>Gets the nickname string for the <a class="link" href="libmbim-glib-Command-IDs.html#MbimCidQmi" title="enum MbimCidQmi"><span class="type">MbimCidQmi</span></a> specified at <em class="parameter"><code>val</code></em>
-.</p>
-<div class="refsect3">
-<a name="mbim-cid-qmi-get-string.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>val</p></td>
-<td class="parameter_description"><p>a MbimCidQmi.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="mbim-cid-qmi-get-string.returns"></a><h4>Returns</h4>
-<p> a string with the nickname, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
-</div>
-</div>
-</div>
-<div class="refsect1">
-<a name="libmbim-glib-Command-IDs.other_details"></a><h2>Types and Values</h2>
-<div class="refsect2">
-<a name="MbimCidBasicConnect"></a><h3>enum MbimCidBasicConnect</h3>
-<p>MBIM commands in the <a class="link" href="libmbim-glib-UUIDs.html#MBIM-SERVICE-BASIC-CONNECT:CAPS"><code class="literal">MBIM_SERVICE_BASIC_CONNECT</code></a> service.</p>
-<div class="refsect3">
-<a name="MbimCidBasicConnect.members"></a><h4>Members</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="300px" class="enum_members_name">
-<col class="enum_members_description">
-<col width="200px" class="enum_members_annotations">
+<col align="left" valign="top">
+<col>
 </colgroup>
 <tbody>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-BASIC-CONNECT-UNKNOWN:CAPS"></a>MBIM_CID_BASIC_CONNECT_UNKNOWN</p></td>
-<td class="enum_member_description">
-<p>Unknown command.</p>
+<td><p><a name="MBIM-CID-STK-UNKNOWN:CAPS"></a><span class="term"><code class="literal">MBIM_CID_STK_UNKNOWN</code></span></p></td>
+<td>Unknown command.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-BASIC-CONNECT-DEVICE-CAPS"></a>MBIM_CID_BASIC_CONNECT_DEVICE_CAPS</p></td>
-<td class="enum_member_description">
-<p>Device capabilities.</p>
+<td><p><a name="MBIM-CID-STK-PAC:CAPS"></a><span class="term"><code class="literal">MBIM_CID_STK_PAC</code></span></p></td>
+<td>PAC.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-BASIC-CONNECT-SUBSCRIBER-READY-STATUS:CAPS"></a>MBIM_CID_BASIC_CONNECT_SUBSCRIBER_READY_STATUS</p></td>
-<td class="enum_member_description">
-<p>Subscriber ready status.</p>
+<td><p><a name="MBIM-CID-STK-TERMINAL-RESPONSE:CAPS"></a><span class="term"><code class="literal">MBIM_CID_STK_TERMINAL_RESPONSE</code></span></p></td>
+<td>Terminal response.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-BASIC-CONNECT-RADIO-STATE:CAPS"></a>MBIM_CID_BASIC_CONNECT_RADIO_STATE</p></td>
-<td class="enum_member_description">
-<p>Radio state.</p>
+<td><p><a name="MBIM-CID-STK-ENVELOPE:CAPS"></a><span class="term"><code class="literal">MBIM_CID_STK_ENVELOPE</code></span></p></td>
+<td>Envelope.
 </td>
-<td class="enum_member_annotations"> </td>
-</tr>
-<tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-BASIC-CONNECT-PIN:CAPS"></a>MBIM_CID_BASIC_CONNECT_PIN</p></td>
-<td class="enum_member_description">
-<p>PIN.</p>
-</td>
-<td class="enum_member_annotations"> </td>
-</tr>
-<tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-BASIC-CONNECT-PIN-LIST:CAPS"></a>MBIM_CID_BASIC_CONNECT_PIN_LIST</p></td>
-<td class="enum_member_description">
-<p>PIN list.</p>
-</td>
-<td class="enum_member_annotations"> </td>
-</tr>
-<tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-BASIC-CONNECT-HOME-PROVIDER:CAPS"></a>MBIM_CID_BASIC_CONNECT_HOME_PROVIDER</p></td>
-<td class="enum_member_description">
-<p>Home provider.</p>
-</td>
-<td class="enum_member_annotations"> </td>
-</tr>
-<tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-BASIC-CONNECT-PREFERRED-PROVIDERS:CAPS"></a>MBIM_CID_BASIC_CONNECT_PREFERRED_PROVIDERS</p></td>
-<td class="enum_member_description">
-<p>Preferred providers.</p>
-</td>
-<td class="enum_member_annotations"> </td>
-</tr>
-<tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-BASIC-CONNECT-VISIBLE-PROVIDERS:CAPS"></a>MBIM_CID_BASIC_CONNECT_VISIBLE_PROVIDERS</p></td>
-<td class="enum_member_description">
-<p>Visible providers.</p>
-</td>
-<td class="enum_member_annotations"> </td>
-</tr>
-<tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-BASIC-CONNECT-REGISTER-STATE:CAPS"></a>MBIM_CID_BASIC_CONNECT_REGISTER_STATE</p></td>
-<td class="enum_member_description">
-<p>Register state.</p>
-</td>
-<td class="enum_member_annotations"> </td>
-</tr>
-<tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-BASIC-CONNECT-PACKET-SERVICE:CAPS"></a>MBIM_CID_BASIC_CONNECT_PACKET_SERVICE</p></td>
-<td class="enum_member_description">
-<p>Packet service.</p>
-</td>
-<td class="enum_member_annotations"> </td>
-</tr>
-<tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-BASIC-CONNECT-SIGNAL-STATE:CAPS"></a>MBIM_CID_BASIC_CONNECT_SIGNAL_STATE</p></td>
-<td class="enum_member_description">
-<p>Signal state.</p>
-</td>
-<td class="enum_member_annotations"> </td>
-</tr>
-<tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-BASIC-CONNECT-CONNECT:CAPS"></a>MBIM_CID_BASIC_CONNECT_CONNECT</p></td>
-<td class="enum_member_description">
-<p>Connect.</p>
-</td>
-<td class="enum_member_annotations"> </td>
-</tr>
-<tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-BASIC-CONNECT-PROVISIONED-CONTEXTS:CAPS"></a>MBIM_CID_BASIC_CONNECT_PROVISIONED_CONTEXTS</p></td>
-<td class="enum_member_description">
-<p>Provisioned contexts.</p>
-</td>
-<td class="enum_member_annotations"> </td>
-</tr>
-<tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-BASIC-CONNECT-SERVICE-ACTIVATION:CAPS"></a>MBIM_CID_BASIC_CONNECT_SERVICE_ACTIVATION</p></td>
-<td class="enum_member_description">
-<p>Service activation.</p>
-</td>
-<td class="enum_member_annotations"> </td>
-</tr>
-<tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-BASIC-CONNECT-IP-CONFIGURATION:CAPS"></a>MBIM_CID_BASIC_CONNECT_IP_CONFIGURATION</p></td>
-<td class="enum_member_description">
-<p>IP configuration.</p>
-</td>
-<td class="enum_member_annotations"> </td>
-</tr>
-<tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-BASIC-CONNECT-DEVICE-SERVICES:CAPS"></a>MBIM_CID_BASIC_CONNECT_DEVICE_SERVICES</p></td>
-<td class="enum_member_description">
-<p>Device services.</p>
-</td>
-<td class="enum_member_annotations"> </td>
-</tr>
-<tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-BASIC-CONNECT-DEVICE-SERVICE-SUBSCRIBE-LIST:CAPS"></a>MBIM_CID_BASIC_CONNECT_DEVICE_SERVICE_SUBSCRIBE_LIST</p></td>
-<td class="enum_member_description">
-<p>Device service subscribe list.</p>
-</td>
-<td class="enum_member_annotations"> </td>
-</tr>
-<tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-BASIC-CONNECT-PACKET-STATISTICS:CAPS"></a>MBIM_CID_BASIC_CONNECT_PACKET_STATISTICS</p></td>
-<td class="enum_member_description">
-<p>Packet statistics.</p>
-</td>
-<td class="enum_member_annotations"> </td>
-</tr>
-<tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-BASIC-CONNECT-NETWORK-IDLE-HINT:CAPS"></a>MBIM_CID_BASIC_CONNECT_NETWORK_IDLE_HINT</p></td>
-<td class="enum_member_description">
-<p>Network idle hint.</p>
-</td>
-<td class="enum_member_annotations"> </td>
-</tr>
-<tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-BASIC-CONNECT-EMERGENCY-MODE:CAPS"></a>MBIM_CID_BASIC_CONNECT_EMERGENCY_MODE</p></td>
-<td class="enum_member_description">
-<p>Emergency mode.</p>
-</td>
-<td class="enum_member_annotations"> </td>
-</tr>
-<tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-BASIC-CONNECT-IP-PACKET-FILTERS:CAPS"></a>MBIM_CID_BASIC_CONNECT_IP_PACKET_FILTERS</p></td>
-<td class="enum_member_description">
-<p>IP packet filters.</p>
-</td>
-<td class="enum_member_annotations"> </td>
-</tr>
-<tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-BASIC-CONNECT-MULTICARRIER-PROVIDERS:CAPS"></a>MBIM_CID_BASIC_CONNECT_MULTICARRIER_PROVIDERS</p></td>
-<td class="enum_member_description">
-<p>Multicarrier providers.</p>
-</td>
-<td class="enum_member_annotations"> </td>
 </tr>
 </tbody>
 </table></div>
 </div>
-</div>
 <hr>
 <div class="refsect2">
-<a name="MbimCidSms"></a><h3>enum MbimCidSms</h3>
-<p>MBIM commands in the <a class="link" href="libmbim-glib-UUIDs.html#MBIM-SERVICE-SMS:CAPS"><code class="literal">MBIM_SERVICE_SMS</code></a> service.</p>
-<div class="refsect3">
-<a name="MbimCidSms.members"></a><h4>Members</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<a name="MbimCidAuth-enum"></a><h3>enum MbimCidAuth</h3>
+<pre class="programlisting">typedef enum {
+    MBIM_CID_AUTH_UNKNOWN = 0,
+    MBIM_CID_AUTH_AKA     = 1,
+    MBIM_CID_AUTH_AKAP    = 2,
+    MBIM_CID_AUTH_SIM     = 3,
+} MbimCidAuth;
+</pre>
+<p>
+MBIM commands in the <a class="link" href="libmbim-glib-UUIDs.html#MBIM-SERVICE-AUTH:CAPS"><code class="literal">MBIM_SERVICE_AUTH</code></a> service.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
 <colgroup>
-<col width="300px" class="enum_members_name">
-<col class="enum_members_description">
-<col width="200px" class="enum_members_annotations">
+<col align="left" valign="top">
+<col>
 </colgroup>
 <tbody>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-SMS-UNKNOWN:CAPS"></a>MBIM_CID_SMS_UNKNOWN</p></td>
-<td class="enum_member_description">
-<p>Unknown command.</p>
+<td><p><a name="MBIM-CID-AUTH-UNKNOWN:CAPS"></a><span class="term"><code class="literal">MBIM_CID_AUTH_UNKNOWN</code></span></p></td>
+<td>Unknow command
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-SMS-CONFIGURATION:CAPS"></a>MBIM_CID_SMS_CONFIGURATION</p></td>
-<td class="enum_member_description">
-<p>SMS configuration.</p>
+<td><p><a name="MBIM-CID-AUTH-AKA:CAPS"></a><span class="term"><code class="literal">MBIM_CID_AUTH_AKA</code></span></p></td>
+<td>AKA.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-SMS-READ:CAPS"></a>MBIM_CID_SMS_READ</p></td>
-<td class="enum_member_description">
-<p>Read.</p>
+<td><p><a name="MBIM-CID-AUTH-AKAP:CAPS"></a><span class="term"><code class="literal">MBIM_CID_AUTH_AKAP</code></span></p></td>
+<td>AKAP.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-SMS-SEND:CAPS"></a>MBIM_CID_SMS_SEND</p></td>
-<td class="enum_member_description">
-<p>Send.</p>
+<td><p><a name="MBIM-CID-AUTH-SIM:CAPS"></a><span class="term"><code class="literal">MBIM_CID_AUTH_SIM</code></span></p></td>
+<td>SIM.
 </td>
-<td class="enum_member_annotations"> </td>
-</tr>
-<tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-SMS-DELETE:CAPS"></a>MBIM_CID_SMS_DELETE</p></td>
-<td class="enum_member_description">
-<p>Delete.</p>
-</td>
-<td class="enum_member_annotations"> </td>
-</tr>
-<tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-SMS-MESSAGE-STORE-STATUS:CAPS"></a>MBIM_CID_SMS_MESSAGE_STORE_STATUS</p></td>
-<td class="enum_member_description">
-<p>Store message status.</p>
-</td>
-<td class="enum_member_annotations"> </td>
 </tr>
 </tbody>
 </table></div>
 </div>
-</div>
 <hr>
 <div class="refsect2">
-<a name="MbimCidUssd"></a><h3>enum MbimCidUssd</h3>
-<p>MBIM commands in the <a class="link" href="libmbim-glib-UUIDs.html#MBIM-SERVICE-USSD:CAPS"><code class="literal">MBIM_SERVICE_USSD</code></a> service.</p>
-<div class="refsect3">
-<a name="MbimCidUssd.members"></a><h4>Members</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<a name="MbimCidDss-enum"></a><h3>enum MbimCidDss</h3>
+<pre class="programlisting">typedef enum {
+    MBIM_CID_DSS_UNKNOWN = 0,
+    MBIM_CID_DSS_CONNECT = 1
+} MbimCidDss;
+</pre>
+<p>
+MBIM commands in the <a class="link" href="libmbim-glib-UUIDs.html#MBIM-SERVICE-DSS:CAPS"><code class="literal">MBIM_SERVICE_DSS</code></a> service.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
 <colgroup>
-<col width="300px" class="enum_members_name">
-<col class="enum_members_description">
-<col width="200px" class="enum_members_annotations">
+<col align="left" valign="top">
+<col>
 </colgroup>
 <tbody>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-USSD-UNKNOWN:CAPS"></a>MBIM_CID_USSD_UNKNOWN</p></td>
-<td class="enum_member_description">
-<p>Unknown command.</p>
+<td><p><a name="MBIM-CID-DSS-UNKNOWN:CAPS"></a><span class="term"><code class="literal">MBIM_CID_DSS_UNKNOWN</code></span></p></td>
+<td>Unknown command.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-USSD:CAPS"></a>MBIM_CID_USSD</p></td>
-<td class="enum_member_description">
-<p>USSD operation.</p>
+<td><p><a name="MBIM-CID-DSS-CONNECT:CAPS"></a><span class="term"><code class="literal">MBIM_CID_DSS_CONNECT</code></span></p></td>
+<td>Connect.
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 </tbody>
 </table></div>
 </div>
-</div>
 <hr>
 <div class="refsect2">
-<a name="MbimCidPhonebook"></a><h3>enum MbimCidPhonebook</h3>
-<p>MBIM commands in the <a class="link" href="libmbim-glib-UUIDs.html#MBIM-SERVICE-PHONEBOOK:CAPS"><code class="literal">MBIM_SERVICE_PHONEBOOK</code></a> service.</p>
-<div class="refsect3">
-<a name="MbimCidPhonebook.members"></a><h4>Members</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<a name="mbim-cid-can-set"></a><h3>mbim_cid_can_set ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            mbim_cid_can_set                    (<em class="parameter"><code><a class="link" href="libmbim-glib-UUIDs.html#MbimService"><span class="type">MbimService</span></a> service</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> cid</code></em>);</pre>
+<p>
+Checks whether the given command allows setting.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
 <colgroup>
-<col width="300px" class="enum_members_name">
-<col class="enum_members_description">
-<col width="200px" class="enum_members_annotations">
+<col align="left" valign="top">
+<col>
 </colgroup>
 <tbody>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-PHONEBOOK-UNKNOWN:CAPS"></a>MBIM_CID_PHONEBOOK_UNKNOWN</p></td>
-<td class="enum_member_description">
-<p>Unknown command.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td><p><span class="term"><em class="parameter"><code>service</code></em> :</span></p></td>
+<td>a <a class="link" href="libmbim-glib-UUIDs.html#MbimService"><span class="type">MbimService</span></a>.</td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-PHONEBOOK-CONFIGURATION:CAPS"></a>MBIM_CID_PHONEBOOK_CONFIGURATION</p></td>
-<td class="enum_member_description">
-<p>Configuration.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td><p><span class="term"><em class="parameter"><code>cid</code></em> :</span></p></td>
+<td>a command ID.</td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-PHONEBOOK-READ:CAPS"></a>MBIM_CID_PHONEBOOK_READ</p></td>
-<td class="enum_member_description">
-<p>Read.</p>
-</td>
-<td class="enum_member_annotations"> </td>
-</tr>
-<tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-PHONEBOOK-DELETE:CAPS"></a>MBIM_CID_PHONEBOOK_DELETE</p></td>
-<td class="enum_member_description">
-<p>Delete.</p>
-</td>
-<td class="enum_member_annotations"> </td>
-</tr>
-<tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-PHONEBOOK-WRITE:CAPS"></a>MBIM_CID_PHONEBOOK_WRITE</p></td>
-<td class="enum_member_description">
-<p>Write.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the command allows setting, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</td>
 </tr>
 </tbody>
 </table></div>
 </div>
-</div>
 <hr>
 <div class="refsect2">
-<a name="MbimCidStk"></a><h3>enum MbimCidStk</h3>
-<p>MBIM commands in the <a class="link" href="libmbim-glib-UUIDs.html#MBIM-SERVICE-STK:CAPS"><code class="literal">MBIM_SERVICE_STK</code></a> service.</p>
-<div class="refsect3">
-<a name="MbimCidStk.members"></a><h4>Members</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<a name="mbim-cid-can-query"></a><h3>mbim_cid_can_query ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            mbim_cid_can_query                  (<em class="parameter"><code><a class="link" href="libmbim-glib-UUIDs.html#MbimService"><span class="type">MbimService</span></a> service</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> cid</code></em>);</pre>
+<p>
+Checks whether the given command allows querying.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
 <colgroup>
-<col width="300px" class="enum_members_name">
-<col class="enum_members_description">
-<col width="200px" class="enum_members_annotations">
+<col align="left" valign="top">
+<col>
 </colgroup>
 <tbody>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-STK-UNKNOWN:CAPS"></a>MBIM_CID_STK_UNKNOWN</p></td>
-<td class="enum_member_description">
-<p>Unknown command.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td><p><span class="term"><em class="parameter"><code>service</code></em> :</span></p></td>
+<td>a <a class="link" href="libmbim-glib-UUIDs.html#MbimService"><span class="type">MbimService</span></a>.</td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-STK-PAC:CAPS"></a>MBIM_CID_STK_PAC</p></td>
-<td class="enum_member_description">
-<p>PAC.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td><p><span class="term"><em class="parameter"><code>cid</code></em> :</span></p></td>
+<td>a command ID.</td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-STK-TERMINAL-RESPONSE:CAPS"></a>MBIM_CID_STK_TERMINAL_RESPONSE</p></td>
-<td class="enum_member_description">
-<p>Terminal response.</p>
-</td>
-<td class="enum_member_annotations"> </td>
-</tr>
-<tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-STK-ENVELOPE:CAPS"></a>MBIM_CID_STK_ENVELOPE</p></td>
-<td class="enum_member_description">
-<p>Envelope.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the command allows querying, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</td>
 </tr>
 </tbody>
 </table></div>
 </div>
-</div>
 <hr>
 <div class="refsect2">
-<a name="MbimCidAuth"></a><h3>enum MbimCidAuth</h3>
-<p>MBIM commands in the <a class="link" href="libmbim-glib-UUIDs.html#MBIM-SERVICE-AUTH:CAPS"><code class="literal">MBIM_SERVICE_AUTH</code></a> service.</p>
-<div class="refsect3">
-<a name="MbimCidAuth.members"></a><h4>Members</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<a name="mbim-cid-can-notify"></a><h3>mbim_cid_can_notify ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            mbim_cid_can_notify                 (<em class="parameter"><code><a class="link" href="libmbim-glib-UUIDs.html#MbimService"><span class="type">MbimService</span></a> service</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> cid</code></em>);</pre>
+<p>
+Checks whether the given command allows notifying.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
 <colgroup>
-<col width="300px" class="enum_members_name">
-<col class="enum_members_description">
-<col width="200px" class="enum_members_annotations">
+<col align="left" valign="top">
+<col>
 </colgroup>
 <tbody>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-AUTH-UNKNOWN:CAPS"></a>MBIM_CID_AUTH_UNKNOWN</p></td>
-<td class="enum_member_description">
-<p>Unknow command</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td><p><span class="term"><em class="parameter"><code>service</code></em> :</span></p></td>
+<td>a <a class="link" href="libmbim-glib-UUIDs.html#MbimService"><span class="type">MbimService</span></a>.</td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-AUTH-AKA:CAPS"></a>MBIM_CID_AUTH_AKA</p></td>
-<td class="enum_member_description">
-<p>AKA.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td><p><span class="term"><em class="parameter"><code>cid</code></em> :</span></p></td>
+<td>a command ID.</td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-AUTH-AKAP:CAPS"></a>MBIM_CID_AUTH_AKAP</p></td>
-<td class="enum_member_description">
-<p>AKAP.</p>
-</td>
-<td class="enum_member_annotations"> </td>
-</tr>
-<tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-AUTH-SIM:CAPS"></a>MBIM_CID_AUTH_SIM</p></td>
-<td class="enum_member_description">
-<p>SIM.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the command allows notifying, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</td>
 </tr>
 </tbody>
 </table></div>
 </div>
-</div>
 <hr>
 <div class="refsect2">
-<a name="MbimCidDss"></a><h3>enum MbimCidDss</h3>
-<p>MBIM commands in the <a class="link" href="libmbim-glib-UUIDs.html#MBIM-SERVICE-DSS:CAPS"><code class="literal">MBIM_SERVICE_DSS</code></a> service.</p>
-<div class="refsect3">
-<a name="MbimCidDss.members"></a><h4>Members</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<a name="mbim-cid-get-printable"></a><h3>mbim_cid_get_printable ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       mbim_cid_get_printable              (<em class="parameter"><code><a class="link" href="libmbim-glib-UUIDs.html#MbimService"><span class="type">MbimService</span></a> service</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> cid</code></em>);</pre>
+<p>
+Gets a printable string for the command specified by the <em class="parameter"><code>service</code></em> and the
+<em class="parameter"><code>cid</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
 <colgroup>
-<col width="300px" class="enum_members_name">
-<col class="enum_members_description">
-<col width="200px" class="enum_members_annotations">
+<col align="left" valign="top">
+<col>
 </colgroup>
 <tbody>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-DSS-UNKNOWN:CAPS"></a>MBIM_CID_DSS_UNKNOWN</p></td>
-<td class="enum_member_description">
-<p>Unknown command.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td><p><span class="term"><em class="parameter"><code>service</code></em> :</span></p></td>
+<td>a <a class="link" href="libmbim-glib-UUIDs.html#MbimService"><span class="type">MbimService</span></a>.</td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-DSS-CONNECT:CAPS"></a>MBIM_CID_DSS_CONNECT</p></td>
-<td class="enum_member_description">
-<p>Connect.</p>
+<td><p><span class="term"><em class="parameter"><code>cid</code></em> :</span></p></td>
+<td>a command ID.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a constant string. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 </tbody>
 </table></div>
 </div>
-</div>
 <hr>
 <div class="refsect2">
-<a name="MbimCidMsFirmwareId"></a><h3>enum MbimCidMsFirmwareId</h3>
-<p>MBIM commands in the <a class="link" href="libmbim-glib-UUIDs.html#MBIM-SERVICE-MS-FIRMWARE-ID:CAPS"><code class="literal">MBIM_SERVICE_MS_FIRMWARE_ID</code></a> service.</p>
-<div class="refsect3">
-<a name="MbimCidMsFirmwareId.members"></a><h4>Members</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<a name="mbim-cid-basic-connect-get-string"></a><h3>mbim_cid_basic_connect_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       mbim_cid_basic_connect_get_string   (<em class="parameter"><code><a class="link" href="libmbim-glib-Command-IDs.html#MbimCidBasicConnect"><span class="type">MbimCidBasicConnect</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libmbim-glib-Command-IDs.html#MbimCidBasicConnect"><span class="type">MbimCidBasicConnect</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
 <colgroup>
-<col width="300px" class="enum_members_name">
-<col class="enum_members_description">
-<col width="200px" class="enum_members_annotations">
+<col align="left" valign="top">
+<col>
 </colgroup>
 <tbody>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-MS-FIRMWARE-ID-UNKNOWN:CAPS"></a>MBIM_CID_MS_FIRMWARE_ID_UNKNOWN</p></td>
-<td class="enum_member_description">
-<p>Unknown command.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a MbimCidBasicConnect.</td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-MS-FIRMWARE-ID-GET:CAPS"></a>MBIM_CID_MS_FIRMWARE_ID_GET</p></td>
-<td class="enum_member_description">
-<p>Get Firmware ID.</p>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 </tbody>
 </table></div>
 </div>
-</div>
 <hr>
 <div class="refsect2">
-<a name="MbimCidMsHostShutdown"></a><h3>enum MbimCidMsHostShutdown</h3>
-<p>MBIM commands in the <a class="link" href="libmbim-glib-UUIDs.html#MBIM-SERVICE-MS-HOST-SHUTDOWN:CAPS"><code class="literal">MBIM_SERVICE_MS_HOST_SHUTDOWN</code></a> service.</p>
-<div class="refsect3">
-<a name="MbimCidMsHostShutdown.members"></a><h4>Members</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<a name="mbim-cid-sms-get-string"></a><h3>mbim_cid_sms_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       mbim_cid_sms_get_string             (<em class="parameter"><code><a class="link" href="libmbim-glib-Command-IDs.html#MbimCidSms"><span class="type">MbimCidSms</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libmbim-glib-Command-IDs.html#MbimCidSms"><span class="type">MbimCidSms</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
 <colgroup>
-<col width="300px" class="enum_members_name">
-<col class="enum_members_description">
-<col width="200px" class="enum_members_annotations">
+<col align="left" valign="top">
+<col>
 </colgroup>
 <tbody>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-MS-HOST-SHUTDOWN-UNKNOWN:CAPS"></a>MBIM_CID_MS_HOST_SHUTDOWN_UNKNOWN</p></td>
-<td class="enum_member_description">
-<p>Unknown command.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a MbimCidSms.</td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-MS-HOST-SHUTDOWN-NOTIFY:CAPS"></a>MBIM_CID_MS_HOST_SHUTDOWN_NOTIFY</p></td>
-<td class="enum_member_description">
-<p>Notify that the host is shutting down.</p>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 </tbody>
 </table></div>
 </div>
-</div>
 <hr>
 <div class="refsect2">
-<a name="MbimCidProxyControl"></a><h3>enum MbimCidProxyControl</h3>
-<p>MBIM commands in the <a class="link" href="libmbim-glib-UUIDs.html#MBIM-SERVICE-PROXY-CONTROL:CAPS"><code class="literal">MBIM_SERVICE_PROXY_CONTROL</code></a> service.</p>
-<div class="refsect3">
-<a name="MbimCidProxyControl.members"></a><h4>Members</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<a name="mbim-cid-ussd-get-string"></a><h3>mbim_cid_ussd_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       mbim_cid_ussd_get_string            (<em class="parameter"><code><a class="link" href="libmbim-glib-Command-IDs.html#MbimCidUssd"><span class="type">MbimCidUssd</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libmbim-glib-Command-IDs.html#MbimCidUssd"><span class="type">MbimCidUssd</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
 <colgroup>
-<col width="300px" class="enum_members_name">
-<col class="enum_members_description">
-<col width="200px" class="enum_members_annotations">
+<col align="left" valign="top">
+<col>
 </colgroup>
 <tbody>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-PROXY-CONTROL-UNKNOWN:CAPS"></a>MBIM_CID_PROXY_CONTROL_UNKNOWN</p></td>
-<td class="enum_member_description">
-<p>Unknown command.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a MbimCidUssd.</td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-PROXY-CONTROL-CONFIGURATION:CAPS"></a>MBIM_CID_PROXY_CONTROL_CONFIGURATION</p></td>
-<td class="enum_member_description">
-<p>Configuration.</p>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 </tbody>
 </table></div>
 </div>
-</div>
 <hr>
 <div class="refsect2">
-<a name="MbimCidQmi"></a><h3>enum MbimCidQmi</h3>
-<p>MBIM commands in the <a class="link" href="libmbim-glib-UUIDs.html#MBIM-SERVICE-QMI:CAPS"><code class="literal">MBIM_SERVICE_QMI</code></a> service.</p>
-<div class="refsect3">
-<a name="MbimCidQmi.members"></a><h4>Members</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<a name="mbim-cid-phonebook-get-string"></a><h3>mbim_cid_phonebook_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       mbim_cid_phonebook_get_string       (<em class="parameter"><code><a class="link" href="libmbim-glib-Command-IDs.html#MbimCidPhonebook"><span class="type">MbimCidPhonebook</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libmbim-glib-Command-IDs.html#MbimCidPhonebook"><span class="type">MbimCidPhonebook</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
 <colgroup>
-<col width="300px" class="enum_members_name">
-<col class="enum_members_description">
-<col width="200px" class="enum_members_annotations">
+<col align="left" valign="top">
+<col>
 </colgroup>
 <tbody>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-QMI-UNKNOWN:CAPS"></a>MBIM_CID_QMI_UNKNOWN</p></td>
-<td class="enum_member_description">
-<p>Unknown command.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a MbimCidPhonebook.</td>
 </tr>
 <tr>
-<td class="enum_member_name"><p><a name="MBIM-CID-QMI-MSG:CAPS"></a>MBIM_CID_QMI_MSG</p></td>
-<td class="enum_member_description">
-<p>Configuration.</p>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
 </td>
-<td class="enum_member_annotations"> </td>
 </tr>
 </tbody>
 </table></div>
 </div>
+<hr>
+<div class="refsect2">
+<a name="mbim-cid-stk-get-string"></a><h3>mbim_cid_stk_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       mbim_cid_stk_get_string             (<em class="parameter"><code><a class="link" href="libmbim-glib-Command-IDs.html#MbimCidStk"><span class="type">MbimCidStk</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libmbim-glib-Command-IDs.html#MbimCidStk"><span class="type">MbimCidStk</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a MbimCidStk.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mbim-cid-auth-get-string"></a><h3>mbim_cid_auth_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       mbim_cid_auth_get_string            (<em class="parameter"><code><a class="link" href="libmbim-glib-Command-IDs.html#MbimCidAuth"><span class="type">MbimCidAuth</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libmbim-glib-Command-IDs.html#MbimCidAuth"><span class="type">MbimCidAuth</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a MbimCidAuth.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mbim-cid-dss-get-string"></a><h3>mbim_cid_dss_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       mbim_cid_dss_get_string             (<em class="parameter"><code><a class="link" href="libmbim-glib-Command-IDs.html#MbimCidDss"><span class="type">MbimCidDss</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libmbim-glib-Command-IDs.html#MbimCidDss"><span class="type">MbimCidDss</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a MbimCidDss.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.25.1</div>
+<hr>
+          Generated by GTK-Doc V1.18</div>
 </body>
 </html>

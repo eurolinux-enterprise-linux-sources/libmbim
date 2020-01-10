@@ -1,1 +1,1 @@
-SUBDIRS = reference man
+SUBDIRS = reference
