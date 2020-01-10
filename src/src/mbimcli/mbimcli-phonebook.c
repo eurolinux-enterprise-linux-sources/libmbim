@@ -208,6 +208,7 @@ set_phonebook_write_ready (MbimDevice   *device,
     if (!mbim_message_phonebook_write_response_parse (response, &error)) {
         g_printerr ("error: couldn't parse response message: %s\n", error->message);
         g_error_free (error);
+        mbim_message_unref (response);
         shutdown (FALSE);
         return;
     }
@@ -238,7 +239,9 @@ set_phonebook_delete_ready (MbimDevice   *device,
     if (!mbim_message_phonebook_delete_response_parse (response, &error)) {
         g_printerr ("error: couldn't parse response message: %s\n", error->message);
         g_error_free (error);
+        mbim_message_unref (response);
         shutdown (FALSE);
+        return;
     }
 
     g_print ("Phonebook entry/entries successfully deleted");
@@ -273,6 +276,7 @@ query_phonebook_read_ready (MbimDevice   *device,
                                                      &error)) {
         g_printerr ("error: couldn't parse response message: %s\n", error->message);
         g_error_free (error);
+        mbim_message_unref (response);
         shutdown (FALSE);
         return;
     }
@@ -324,6 +328,7 @@ query_phonebook_configuration_ready (MbimDevice   *device,
                                                               &error)) {
         g_printerr ("error: couldn't parse response message: %s\n", error->message);
         g_error_free (error);
+        mbim_message_unref (response);
         shutdown (FALSE);
         return;
     }
@@ -353,8 +358,7 @@ mbimcli_phonebook_run (MbimDevice   *device,
     /* Initialize context */
     ctx = g_slice_new (Context);
     ctx->device = g_object_ref (device);
-    if (cancellable)
-        ctx->cancellable = g_object_ref (cancellable);
+    ctx->cancellable = cancellable ? g_object_ref (cancellable) : NULL;
 
     /* Request to get configuration? */
     if (phonebook_configuration_flag) {

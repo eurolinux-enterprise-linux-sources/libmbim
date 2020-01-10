@@ -131,6 +131,7 @@ query_firmware_id_ready (MbimDevice   *device,
             &error)) {
         g_printerr ("error: couldn't parse response message: %s\n", error->message);
         g_error_free (error);
+        mbim_message_unref (response);
         shutdown (FALSE);
         return;
     }
@@ -153,8 +154,7 @@ mbimcli_ms_firmware_id_run (MbimDevice   *device,
     /* Initialize context */
     ctx = g_slice_new (Context);
     ctx->device = g_object_ref (device);
-    if (cancellable)
-        ctx->cancellable = g_object_ref (cancellable);
+    ctx->cancellable = cancellable ? g_object_ref (cancellable) : NULL;
 
     /* Request to get firmware ID? */
     if (query_firmware_id_flag) {

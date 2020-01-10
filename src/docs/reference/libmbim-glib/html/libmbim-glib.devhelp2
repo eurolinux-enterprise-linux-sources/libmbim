@@ -562,6 +562,7 @@
     <keyword type="constant" name="MBIM_SUBSCRIBER_READY_STATE_FAILURE" link="libmbim-glib-Enumerations-and-Flags.html#MBIM-SUBSCRIBER-READY-STATE-FAILURE:CAPS"/>
     <keyword type="constant" name="MBIM_SUBSCRIBER_READY_STATE_NOT_ACTIVATED" link="libmbim-glib-Enumerations-and-Flags.html#MBIM-SUBSCRIBER-READY-STATE-NOT-ACTIVATED:CAPS"/>
     <keyword type="constant" name="MBIM_SUBSCRIBER_READY_STATE_DEVICE_LOCKED" link="libmbim-glib-Enumerations-and-Flags.html#MBIM-SUBSCRIBER-READY-STATE-DEVICE-LOCKED:CAPS"/>
+    <keyword type="constant" name="MBIM_READY_INFO_FLAG_NONE" link="libmbim-glib-Enumerations-and-Flags.html#MBIM-READY-INFO-FLAG-NONE:CAPS"/>
     <keyword type="constant" name="MBIM_READY_INFO_FLAG_PROTECT_UNIQUE_ID" link="libmbim-glib-Enumerations-and-Flags.html#MBIM-READY-INFO-FLAG-PROTECT-UNIQUE-ID:CAPS"/>
     <keyword type="constant" name="MBIM_RADIO_SWITCH_STATE_OFF" link="libmbim-glib-Enumerations-and-Flags.html#MBIM-RADIO-SWITCH-STATE-OFF:CAPS"/>
     <keyword type="constant" name="MBIM_RADIO_SWITCH_STATE_ON" link="libmbim-glib-Enumerations-and-Flags.html#MBIM-RADIO-SWITCH-STATE-ON:CAPS"/>

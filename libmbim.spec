@@ -3,14 +3,10 @@
 
 Name: libmbim
 Summary: Support library for the Mobile Broadband Interface Model protocol
-Version: 1.14.0
-Release: 2%{?dist}
+Version: 1.14.2
+Release: 1%{?dist}
 License: LGPLv2+
 URL: http://freedesktop.org/software/libmbim
-
-#
-# Source from http://freedesktop.org/software/libmbim/
-#
 Source: http://freedesktop.org/software/libmbim/%{name}-%{version}.tar.xz
 
 BuildRequires: glib2-devel
@@ -97,6 +93,9 @@ make check
 
 
 %changelog
+* Tue Aug 29 2017 Lubomir Rintel <lrintel@redhat.com> - 1.14.2-1
+- Update to 1.14.2 release (rh #1483051)
+
 * Wed Jul 20 2016 Lubomir Rintel <lkundrak@v3.sk> - 1.14.0-2
 - Preserve the older SONAME too
 
